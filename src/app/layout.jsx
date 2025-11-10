@@ -5,11 +5,11 @@ import '@/styles/tailwind.css'
 
 export const metadata = {
   title: {
-    template: '%s - TaxPal',
-    default: 'TaxPal - Accounting made simple for small businesses',
+    template: '%s - TTA',
+    default: 'TTA - Your Aviation Education Journey Starts Here',
   },
   description:
-    'Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.',
+    'TTA is Hong Kong\'s premier aviation education hub. From youth aviation classes to professional pilot training, we provide comprehensive aviation education for everyone who dreams of flight.',
 }
 
 const inter = Inter({
@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={clsx(
-        'h-full scroll-smooth bg-white antialiased',
+        'h-full scroll-smooth antialiased',
         inter.variable,
         lexend.variable,
       )}
