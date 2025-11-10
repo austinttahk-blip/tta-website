@@ -1,47 +1,35 @@
-# Cryptgen - Crypto Dashboard Template
+# Salient
 
-A modern, responsive cryptocurrency dashboard template built with Next.js and Aceternity UI components. This template provides a sleek interface for tracking crypto assets, market trends, and portfolio management.
+Salient is a [Tailwind Plus](https://tailwindcss.com/plus) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
 
-## Features
+## Getting started
 
-- 🎨 Modern UI with Aceternity components
-- 📱 Fully responsive design
-- 🌙 Dark/Light mode support
-- 📊 Real-time crypto price tracking
-- 💼 Portfolio management interface
-- 📈 Interactive charts and graphs
-- 🔒 Authentication system
-- ⚡ Fast page loads with Next.js
-
-## Tech Stack
-
-- [Next.js](https://nextjs.org/) - React framework
-- [Tailwind CSS](https://tailwindcss.com/) - Styling
-- [Aceternity UI](https://ui.aceternity.com/) - UI components
-- [TypeScript](https://www.typescriptlang.org/) - Type safety
-- [Framer Motion](https://www.framer.com/motion/) - Animations
-
-## Getting Started
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/cryptgen.git
-cd cryptgen
-```
-
-2. Install dependencies:
+To get started with this template, first install the npm dependencies:
 
 ```bash
 npm install
 ```
 
-3. Run the development server:
+Next, run the development server:
 
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
 
-++ deploy
+## Customizing
+
+You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
+
+## License
+
+This site template is a commercial product and is licensed under the [Tailwind Plus license](https://tailwindcss.com/plus/license).
+
+## Learn more
+
+To learn more about the technologies used in this site template, see the following resources:
+
+- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
+- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
+- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
