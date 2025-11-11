@@ -1,8 +1,7 @@
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
-import { PrimaryFeatures } from '@/components/PrimaryFeatures'
-import { SecondaryFeatures } from '@/components/SecondaryFeatures'
+import { Solutions } from '@/components/Solutions'
 import { Testimonials } from '@/components/Testimonials'
 
 export default function Home() {
@@ -13,8 +12,7 @@ export default function Home() {
         <Hero />
       </div>
       <main>
-        <PrimaryFeatures />
-        <SecondaryFeatures />
+        <Solutions />
         <Testimonials />
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export function Hero() {
       <div className="max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10 pt-20 pb-16 text-left lg:pt-32 flex-1 flex flex-col justify-end pb-[20vh]">
         <div className="relative">
           <div className="absolute inset-0 bg-black/40 blur-3xl rounded-full"></div>
-          <h1 className="relative max-w-4xl font-display text-5xl font-medium tracking-tight text-white sm:text-7xl drop-shadow-lg">
+          <h1 className="relative max-w-4xl font-display text-4xl font-medium tracking-tight text-white sm:text-7xl drop-shadow-lg">
             Your {' '}
             <span className="relative whitespace-nowrap text-blue-500">
               <svg
@@ -36,7 +36,7 @@ export function Hero() {
           </h1>
         </div>
         <p className="relative mt-6 max-w-2xl text-lg tracking-tight text-white drop-shadow-md">
-          Hong Kong's leading aviation education hub for aspiring aviators.
+          Hong Kong&apos;s leading aviation education hub for aspiring aviators.
         </p>
         <div className="relative mt-10 flex gap-x-6">
           <Button href="/register" color="blue">

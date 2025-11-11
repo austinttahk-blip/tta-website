@@ -15,12 +15,13 @@ import {
 } from '@/components/ui/resizable-navbar'
 
 const navItems = [
-  { name: 'Courses', link: '#features' },
-  { name: 'Training', link: '#testimonials' },
-  { name: 'About', link: '#about' },
+  { name: 'Simulators', link: '/simulators' },
+  { name: 'Training', link: '/training' },
+  { name: 'Consultation', link: '/consultation' },
+  { name: 'About Us', link: '/about' },
 ]
 
-export function Header() {
+export function Header({ enableColorTransition = true }) {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -31,15 +32,17 @@ export function Header() {
             <NavbarLogo>
               <Logo className="h-8 w-auto" />
             </NavbarLogo>
-            <NavItems items={navItems} visible={visible} />
+            <NavItems items={navItems} visible={visible} enableColorTransition={enableColorTransition} />
             <div className="flex items-center gap-x-4">
               <motion.a
                 href="/login"
                 animate={{
-                  color: visible ? "rgb(0, 0, 0)" : "rgb(255, 255, 255)",
+                  color: enableColorTransition
+                    ? (visible ? "rgb(0, 0, 0)" : "rgb(255, 255, 255)")
+                    : "rgb(0, 0, 0)",
                 }}
                 transition={{ duration: 0.3 }}
-                className="text-sm hover:opacity-80">
+                className="text-sm">
                 Sign in
               </motion.a>
             </div>
@@ -50,7 +53,7 @@ export function Header() {
               <NavbarLogo>
                 <Logo className="h-8 w-auto" />
               </NavbarLogo>
-              <MobileNavToggle isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} visible={visible} />
+              <MobileNavToggle isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} visible={visible} enableColorTransition={enableColorTransition} />
             </MobileNavHeader>
             <MobileNavMenu isOpen={isOpen} onClose={() => setIsOpen(false)}>
               {navItems.map((item, idx) => (

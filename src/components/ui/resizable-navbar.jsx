@@ -79,7 +79,8 @@ export const NavItems = ({
   items,
   className,
   onItemClick,
-  visible
+  visible,
+  enableColorTransition = true
 }) => {
   const [hovered, setHovered] = useState(null);
 
@@ -95,17 +96,21 @@ export const NavItems = ({
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
           style={{
-            color: visible ? "rgb(0, 0, 0)" : "rgb(255, 255, 255)",
+            color: enableColorTransition
+              ? (visible ? "rgb(0, 0, 0)" : "rgb(255, 255, 255)")
+              : "rgb(0, 0, 0)",
             transition: "color 0.3s ease",
           }}
-          className="relative px-4 py-2 hover:opacity-80"
+          className="relative px-4 py-2"
           key={`link-${idx}`}
           href={item.link}>
           {hovered === idx && (
             <motion.div
               layoutId="hovered"
               style={{
-                backgroundColor: visible ? "rgba(0, 0, 0, 0.05)" : "rgba(255, 255, 255, 0.1)",
+                backgroundColor: enableColorTransition
+                  ? (visible ? "rgba(0, 0, 0, 0.05)" : "rgba(255, 255, 255, 0.1)")
+                  : "rgba(0, 0, 0, 0.05)",
                 transition: "background-color 0.3s ease",
               }}
               className="absolute inset-0 h-full w-full rounded-full" />
@@ -189,12 +194,15 @@ export const MobileNavMenu = ({
 export const MobileNavToggle = ({
   isOpen,
   onClick,
-  visible
+  visible,
+  enableColorTransition = true
 }) => {
   return isOpen ? (
     <motion.div
       animate={{
-        color: visible ? "rgb(0, 0, 0)" : "rgb(255, 255, 255)",
+        color: enableColorTransition
+          ? (visible ? "rgb(0, 0, 0)" : "rgb(255, 255, 255)")
+          : "rgb(0, 0, 0)",
       }}
       transition={{ duration: 0.3 }}>
       <IconX onClick={onClick} />
@@ -202,7 +210,9 @@ export const MobileNavToggle = ({
   ) : (
     <motion.div
       animate={{
-        color: visible ? "rgb(0, 0, 0)" : "rgb(255, 255, 255)",
+        color: enableColorTransition
+          ? (visible ? "rgb(0, 0, 0)" : "rgb(255, 255, 255)")
+          : "rgb(0, 0, 0)",
       }}
       transition={{ duration: 0.3 }}>
       <IconMenu2 onClick={onClick} />
@@ -213,7 +223,7 @@ export const MobileNavToggle = ({
 export const NavbarLogo = ({ children }) => {
   return (
     <a
-      href="#"
+      href="/"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal">
       {children}
     </a>

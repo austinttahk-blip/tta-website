@@ -88,7 +88,7 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-slate-700 pt-8">
+        <div className="border-t border-slate-700 pt-8 pb-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-slate-400">
               &copy; {new Date().getFullYear()} Talent Trek Ascend. All rights reserved.
