@@ -192,36 +192,6 @@ export default function FlightSimulatorTrainingPage() {
                       Experience the handling and cockpit layout of one of the world&apos;s most popular training aircraft. This fixed-base simulator features a full Garmin G1000 cockpit and dual controls, providing an authentic environment for both beginners and enthusiasts.
                     </p>
 
-                    {/* Features */}
-                    <div className="bg-gray-50 rounded-xl p-6 my-8">
-                      <h3 className="text-lg font-semibold text-gray-900 mb-4">Simulator Features</h3>
-                      <ul className="space-y-3 text-gray-600">
-                        <li className="flex items-start gap-3">
-                          <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                          </svg>
-                          <span>Full Garmin G1000 glass cockpit</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                          </svg>
-                          <span>Dual flight controls</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                          </svg>
-                          <span>Realistic flight dynamics</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                          </svg>
-                          <span>Professional instructor guidance</span>
-                        </li>
-                      </ul>
-                    </div>
 
                     {/* Course Info Grid */}
                     <div className="grid sm:grid-cols-2 gap-6 my-8">
@@ -249,40 +219,9 @@ export default function FlightSimulatorTrainingPage() {
                             <dt className="text-gray-900 font-semibold">Fee</dt>
                             <dd className="font-bold text-gray-900 text-lg">HKD 799</dd>
                           </div>
-                          <p className="text-xs text-gray-500">per hour</p>
                         </dl>
                       </div>
 
-                      {/* Suitable For */}
-                      <div>
-                        <h4 className="font-semibold text-gray-900 mb-4">Suitable For</h4>
-                        <ul className="space-y-3 text-gray-600">
-                          <li className="flex items-start gap-3">
-                            <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                            </svg>
-                            <span>Beginners exploring aviation</span>
-                          </li>
-                          <li className="flex items-start gap-3">
-                            <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                            </svg>
-                            <span>Student pilots</span>
-                          </li>
-                          <li className="flex items-start gap-3">
-                            <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                            </svg>
-                            <span>Aviation enthusiasts</span>
-                          </li>
-                          <li className="flex items-start gap-3">
-                            <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                            </svg>
-                            <span>Professional pilots for skill maintenance</span>
-                          </li>
-                        </ul>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -305,36 +244,6 @@ export default function FlightSimulatorTrainingPage() {
                       Train on a modern, high-performance aircraft simulator equipped with a G1000 cockpit. Ideal for students transitioning to glass-cockpit environments or seeking to enhance flight precision.
                     </p>
 
-                    {/* Features */}
-                    <div className="bg-gray-50 rounded-xl p-6 my-8">
-                      <h3 className="text-lg font-semibold text-gray-900 mb-4">Advanced Features</h3>
-                      <ul className="space-y-3 text-gray-600">
-                        <li className="flex items-start gap-3">
-                          <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                          </svg>
-                          <span>Advanced Garmin G1000 avionics</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                          </svg>
-                          <span>High-performance aircraft handling</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                          </svg>
-                          <span>Precision flight training</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                          </svg>
-                          <span>Glass-cockpit familiarisation</span>
-                        </li>
-                      </ul>
-                    </div>
 
                     {/* Course Info Grid */}
                     <div className="grid sm:grid-cols-2 gap-6 my-8">
@@ -362,40 +271,9 @@ export default function FlightSimulatorTrainingPage() {
                             <dt className="text-gray-900 font-semibold">Fee</dt>
                             <dd className="font-bold text-gray-900 text-lg">HKD 799</dd>
                           </div>
-                          <p className="text-xs text-gray-500">per hour</p>
                         </dl>
                       </div>
 
-                      {/* Suitable For */}
-                      <div>
-                        <h4 className="font-semibold text-gray-900 mb-4">Suitable For</h4>
-                        <ul className="space-y-3 text-gray-600">
-                          <li className="flex items-start gap-3">
-                            <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                            </svg>
-                            <span>Advanced student pilots</span>
-                          </li>
-                          <li className="flex items-start gap-3">
-                            <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                            </svg>
-                            <span>Glass-cockpit transition training</span>
-                          </li>
-                          <li className="flex items-start gap-3">
-                            <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                            </svg>
-                            <span>Precision flying practice</span>
-                          </li>
-                          <li className="flex items-start gap-3">
-                            <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                            </svg>
-                            <span>Commercial pilot preparation</span>
-                          </li>
-                        </ul>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -418,36 +296,6 @@ export default function FlightSimulatorTrainingPage() {
                       A fully immersive six-axis motion platform that recreates the true sensation of flight. Perfect for advanced flight exercises, including crosswind landings, emergency procedures, and realistic manoeuvres.
                     </p>
 
-                    {/* Features */}
-                    <div className="bg-gray-50 rounded-xl p-6 my-8">
-                      <h3 className="text-lg font-semibold text-gray-900 mb-4">Motion Platform Features</h3>
-                      <ul className="space-y-3 text-gray-600">
-                        <li className="flex items-start gap-3">
-                          <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                          </svg>
-                          <span>Six-axis motion simulation</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                          </svg>
-                          <span>Realistic G-force sensations</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                          </svg>
-                          <span>Advanced emergency procedures</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                          </svg>
-                          <span>Crosswind landing training</span>
-                        </li>
-                      </ul>
-                    </div>
 
                     {/* Course Info Grid */}
                     <div className="grid sm:grid-cols-2 gap-6 my-8">
@@ -479,40 +327,9 @@ export default function FlightSimulatorTrainingPage() {
                             <dt className="text-gray-900 font-semibold">Fee</dt>
                             <dd className="font-bold text-gray-900 text-lg">HKD 899</dd>
                           </div>
-                          <p className="text-xs text-gray-500">per hour</p>
                         </dl>
                       </div>
 
-                      {/* Suitable For */}
-                      <div>
-                        <h4 className="font-semibold text-gray-900 mb-4">Suitable For</h4>
-                        <ul className="space-y-3 text-gray-600">
-                          <li className="flex items-start gap-3">
-                            <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                            </svg>
-                            <span>Advanced pilot training</span>
-                          </li>
-                          <li className="flex items-start gap-3">
-                            <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                            </svg>
-                            <span>Emergency procedure training</span>
-                          </li>
-                          <li className="flex items-start gap-3">
-                            <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                            </svg>
-                            <span>Type rating preparation</span>
-                          </li>
-                          <li className="flex items-start gap-3">
-                            <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                            </svg>
-                            <span>Professional pilot proficiency</span>
-                          </li>
-                        </ul>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -535,36 +352,6 @@ export default function FlightSimulatorTrainingPage() {
                       Operate a full-scale airline cockpit and experience the procedures of commercial jet operations. Students are guided through complete flight phases — from start-up and taxi to climb, cruise, and landing.
                     </p>
 
-                    {/* Features */}
-                    <div className="bg-gray-50 rounded-xl p-6 my-8">
-                      <h3 className="text-lg font-semibold text-gray-900 mb-4">Commercial Jet Features</h3>
-                      <ul className="space-y-3 text-gray-600">
-                        <li className="flex items-start gap-3">
-                          <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                          </svg>
-                          <span>Full-scale Airbus A320 cockpit</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                          </svg>
-                          <span>Commercial airline procedures</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                          </svg>
-                          <span>Complete flight phase training</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                          </svg>
-                          <span>Crew resource management</span>
-                        </li>
-                      </ul>
-                    </div>
 
                     {/* Course Info Grid */}
                     <div className="grid sm:grid-cols-2 gap-6 my-8">
@@ -596,40 +383,9 @@ export default function FlightSimulatorTrainingPage() {
                             <dt className="text-gray-900 font-semibold">Fee</dt>
                             <dd className="font-bold text-gray-900 text-lg">HKD 899</dd>
                           </div>
-                          <p className="text-xs text-gray-500">per hour</p>
                         </dl>
                       </div>
 
-                      {/* Suitable For */}
-                      <div>
-                        <h4 className="font-semibold text-gray-900 mb-4">Suitable For</h4>
-                        <ul className="space-y-3 text-gray-600">
-                          <li className="flex items-start gap-3">
-                            <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                            </svg>
-                            <span>Commercial pilot aspirants</span>
-                          </li>
-                          <li className="flex items-start gap-3">
-                            <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                            </svg>
-                            <span>Airline pilot transition training</span>
-                          </li>
-                          <li className="flex items-start gap-3">
-                            <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                            </svg>
-                            <span>Type rating familiarisation</span>
-                          </li>
-                          <li className="flex items-start gap-3">
-                            <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                            </svg>
-                            <span>Airline operations experience</span>
-                          </li>
-                        </ul>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -639,7 +395,7 @@ export default function FlightSimulatorTrainingPage() {
 
           {/* Right Sidebar - Sticky */}
           <div className="lg:col-span-1">
-            <div className="sticky top-8 space-y-5">
+            <div className="sticky top-16 space-y-5">
 
               {/* Book Trial Flight Card */}
               <div className="bg-white rounded-xl border border-gray-200 p-5">
@@ -651,7 +407,7 @@ export default function FlightSimulatorTrainingPage() {
                   href="/consultation"
                   className="block w-full py-2.5 px-4 bg-blue-600 text-white text-center text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
                 >
-                  Book Now - HKD 399
+                  Book Now
                 </Link>
               </div>
 

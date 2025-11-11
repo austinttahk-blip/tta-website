@@ -5,17 +5,64 @@ export default function TrainingPage() {
   return (
     <div>
       <Header enableColorTransition={false}/>
-      <main className="bg-white px-6 py-32 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center mb-16">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Professional Training
-          </h1>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Comprehensive aviation training programs designed to prepare you for every aspect of your aviation career journey.
-          </p>
+      <div className="overflow-hidden bg-white py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
+          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:max-w-none lg:min-w-full lg:flex-none lg:gap-y-8">
+            <div className="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
+              <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Professional Training</h2>
+              <p className="mt-6 text-xl/8 text-gray-700">
+                Comprehensive aviation training programs designed to prepare you for every aspect of your aviation career journey.
+              </p>
+              <p className="mt-6 text-base/7 text-gray-600">
+                From youth aviation programs to advanced simulator training, our courses provide the knowledge and skills needed for successful careers in aviation.
+              </p>
+              <div className="mt-10 flex">
+                <a
+                  href="#courses"
+                  className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                >
+                  Explore Courses
+                  <span aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
+              <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
+                <img
+                  alt=""
+                  src="https://images.unsplash.com/photo-1670272502246-768d249768ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&q=80"
+                  className="aspect-7/5 w-148 max-w-none rounded-2xl bg-gray-50 object-cover max-sm:w-120"
+                />
+              </div>
+              <div className="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-148 lg:items-start lg:justify-end lg:gap-x-8">
+                <div className="order-first flex w-64 flex-none justify-end self-end max-sm:w-40 lg:w-auto">
+                  <img
+                    alt=""
+                    src="https://images.unsplash.com/photo-1605656816944-971cd5c1407f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80"
+                    className="aspect-4/3 w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
+                  />
+                </div>
+                <div className="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
+                  <img
+                    alt=""
+                    src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&h=842&q=80"
+                    className="aspect-7/5 w-148 max-w-none flex-none rounded-2xl bg-gray-50 object-cover max-sm:w-120"
+                  />
+                </div>
+                <div className="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
+                  <img
+                    alt=""
+                    src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80"
+                    className="aspect-4/3 w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <section className="py-20 bg-slate-50">
+        <section id="courses" className="py-20 bg-slate-50">
           <div className="max-w-7xl mx-auto px-4">
             <h2 className="text-3xl font-bold text-center mb-12 text-slate-900">
               Our Aviation Courses
@@ -132,33 +179,6 @@ export default function TrainingPage() {
               <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
                 <div className="aspect-[4/3] relative overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=80&w=3542&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="SIMULATOR SOLUTIONS"
-                    className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"
-                  />
-                </div>
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-gray-600">
-                    SIMULATOR SOLUTIONS
-                  </h2>
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-                    Custom-built flight simulators designed and manufactured in Hong Kong
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <div className="h-5 w-5 rounded-full bg-gray-400"></div>
-                      <span className="text-sm text-gray-700">TTA Team</span>
-                    </div>
-                    <a href="/training/simulator-solutions" className="text-blue-600 text-sm font-medium hover:text-blue-700">
-                      Learn More →
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
-                <div className="aspect-[4/3] relative overflow-hidden">
-                  <img
                     src="https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="CAREER DEVELOPMENT"
                     className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"
@@ -185,7 +205,6 @@ export default function TrainingPage() {
             </div>
           </div>
         </section>
-      </main>
       <Footer />
     </div>
   )

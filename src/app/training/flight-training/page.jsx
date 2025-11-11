@@ -312,7 +312,7 @@ export default function FlightTrainingPage() {
 
           {/* Right Sidebar - Sticky */}
           <div className="lg:col-span-1">
-            <div className="sticky top-8 space-y-5">
+            <div className="sticky top-16 space-y-5">
 
               {/* Book Training Card */}
               <div className="bg-white rounded-xl border border-gray-200 p-5">

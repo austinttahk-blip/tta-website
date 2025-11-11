@@ -47,173 +47,262 @@ export default function SimulatorsPage() {
         <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-linear-to-t from-white sm:h-32" />
       </div>
 
-      <main className="bg-white px-6 py-32 lg:px-8">
-        <section className="py-20 bg-slate-50" id="courses">
+      <main className="bg-white">
+
+        {/* Simulator Solutions Section */}
+        <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12 text-slate-900">
-              Our Aviation Courses
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
-                <div className="aspect-[4/3] relative overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=80&w=3542&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="YOUTH AVIATION"
-                    className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"
-                  />
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-gray-900 mb-4">Simulator Solutions</h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Professional flight simulators designed and manufactured by TTA for aviation education, research, and training institutions worldwide.
+              </p>
+            </div>
+
+            {/* What We Provide */}
+            <div className="mb-16">
+              <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">What We Provide</h3>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="bg-gray-50 rounded-xl p-6">
+                  <h4 className="text-lg font-semibold text-gray-900 mb-4">Solutions Include</h4>
+                  <ul className="space-y-3 text-gray-600">
+                    <li className="flex items-start gap-3">
+                      <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      <span>Fixed-base simulators (Cessna 172, Diamond DA40)</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      <span>Full-motion simulators for advanced training</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      <span>Custom-built educational simulator systems</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      <span>VR-based aviation training equipment</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      <span>Consultation, installation, and instructor familiarisation</span>
+                    </li>
+                  </ul>
                 </div>
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-gray-600">
-                    YOUTH AVIATION
-                  </h2>
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-                    Inspiring the next generation of aviators through comprehensive youth programs
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <div className="h-5 w-5 rounded-full bg-gray-400"></div>
-                      <span className="text-sm text-gray-700">TTA Team</span>
-                    </div>
-                    <a href="/training/youth-aviation" className="text-blue-600 text-sm font-medium hover:text-blue-700">
-                      Learn More →
-                    </a>
-                  </div>
+
+                <div className="bg-gray-50 rounded-xl p-6">
+                  <h4 className="text-lg font-semibold text-gray-900 mb-4">Applications</h4>
+                  <ul className="space-y-3 text-gray-600">
+                    <li className="flex items-start gap-3">
+                      <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      <span>STEM education and outreach programs</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      <span>University aviation research facilities</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      <span>Flight school training preparation</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      <span>Professional pilot skill maintenance</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      <span>Aviation technology demonstrations</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Why Choose Us */}
+            <div className="mb-16">
+              <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Why Choose Us</h3>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="bg-gray-50 rounded-xl p-6">
+                  <h4 className="text-lg font-semibold text-gray-900 mb-4">Locally Designed & Manufactured</h4>
+                  <ul className="space-y-3 text-gray-600">
+                    <li className="flex items-start gap-3">
+                      <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      <span>Built in Hong Kong with professional aviation engineering standards</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      <span>In-house aviation and engineering expertise</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      <span>Precise handling characteristics and cockpit realism</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-gray-50 rounded-xl p-6">
+                  <h4 className="text-lg font-semibold text-gray-900 mb-4">Trusted by Institutions</h4>
+                  <ul className="space-y-3 text-gray-600">
+                    <li className="flex items-start gap-3">
+                      <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      <span>Partnered with universities and schools across Hong Kong</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      <span>Integrated into STEM and aviation education programs</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      <span>Global reach with overseas flight school partnerships</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
 
-              <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
-                <div className="aspect-[4/3] relative overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1696429175928-793a1cdef1d3?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="AVIATION ENGLISH"
-                    className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"
-                  />
+              {/* Additional Benefits */}
+              <div className="mt-8 bg-blue-50 rounded-xl p-6">
+                <h4 className="text-lg font-semibold text-gray-900 mb-4">Additional Benefits</h4>
+                <ul className="space-y-3 text-gray-600">
+                  <li className="flex items-start gap-3">
+                    <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                    </svg>
+                    <span>Scalable simulator options from entry-level to full-motion systems</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                    </svg>
+                    <span>End-to-end consultation from concept to aftercare</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                    </svg>
+                    <span>Long-term reliability and comprehensive support</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Custom Development */}
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-gray-900 mb-8">Custom Development & Consultation</h3>
+              <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
+                Our team provides complete end-to-end consultation for organisations looking to establish or upgrade aviation training facilities.
+              </p>
+              <div className="grid md:grid-cols-2 gap-8 mb-8">
+                <div className="bg-gray-50 rounded-xl p-6">
+                  <h4 className="text-lg font-semibold text-gray-900 mb-4">Services Include</h4>
+                  <ul className="space-y-3 text-gray-600">
+                    <li className="flex items-start gap-3">
+                      <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      <span>Needs analysis and facility planning</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      <span>Design and fabrication of cockpit and control systems</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      <span>Hardware and software integration</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      <span>Instructor station setup and technical support</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <svg className="shrink-0 size-5 text-blue-600 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                      </svg>
+                      <span>Post-installation maintenance and updates</span>
+                    </li>
+                  </ul>
                 </div>
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-gray-600">
-                    AVIATION ENGLISH
-                  </h2>
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-                    Essential language training for all aviation professionals following ICAO standards
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <div className="h-5 w-5 rounded-full bg-gray-400"></div>
-                      <span className="text-sm text-gray-700">TTA Team</span>
-                    </div>
-                    <a href="/training/aviation-english" className="text-blue-600 text-sm font-medium hover:text-blue-700">
-                      Learn More →
-                    </a>
-                  </div>
+
+                <div className="bg-gray-50 rounded-xl p-6">
+                  <h4 className="text-lg font-semibold text-gray-900 mb-4">Our Process</h4>
+                  <ul className="space-y-3 text-gray-600">
+                    <li className="flex items-start gap-3">
+                      <div className="shrink-0 size-5 bg-blue-600 text-white text-xs font-medium rounded-full flex items-center justify-center mt-0.5">
+                        1
+                      </div>
+                      <span>Initial consultation and requirements assessment</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="shrink-0 size-5 bg-blue-600 text-white text-xs font-medium rounded-full flex items-center justify-center mt-0.5">
+                        2
+                      </div>
+                      <span>Custom design and engineering specifications</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="shrink-0 size-5 bg-blue-600 text-white text-xs font-medium rounded-full flex items-center justify-center mt-0.5">
+                        3
+                      </div>
+                      <span>In-house manufacturing and quality testing</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="shrink-0 size-5 bg-blue-600 text-white text-xs font-medium rounded-full flex items-center justify-center mt-0.5">
+                        4
+                      </div>
+                      <span>On-site installation and instructor training</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="shrink-0 size-5 bg-blue-600 text-white text-xs font-medium rounded-full flex items-center justify-center mt-0.5">
+                        5
+                      </div>
+                      <span>Ongoing support and system maintenance</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
 
-              <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
-                <div className="aspect-[4/3] relative overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="FLIGHT TRAINING"
-                    className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"
-                  />
-                </div>
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-gray-600">
-                    FLIGHT TRAINING
-                  </h2>
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-                    Complete flight training pathway from first flight to professional pilot license
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <div className="h-5 w-5 rounded-full bg-gray-400"></div>
-                      <span className="text-sm text-gray-700">TTA Team</span>
-                    </div>
-                    <a href="/training/flight-training" className="text-blue-600 text-sm font-medium hover:text-blue-700">
-                      Learn More →
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
-                <div className="aspect-[4/3] relative overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=3308&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="SIMULATOR TRAINING"
-                    className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"
-                  />
-                </div>
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-gray-600">
-                    SIMULATOR TRAINING
-                  </h2>
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-                    Professional flight simulation training in Hong Kong&apos;s most realistic simulators
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <div className="h-5 w-5 rounded-full bg-gray-400"></div>
-                      <span className="text-sm text-gray-700">TTA Team</span>
-                    </div>
-                    <a href="/simulators/simulator-training" className="text-blue-600 text-sm font-medium hover:text-blue-700">
-                      Learn More →
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
-                <div className="aspect-[4/3] relative overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=80&w=3542&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="SIMULATOR SOLUTIONS"
-                    className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"
-                  />
-                </div>
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-gray-600">
-                    SIMULATOR SOLUTIONS
-                  </h2>
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-                    Custom-built flight simulators designed and manufactured in Hong Kong
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <div className="h-5 w-5 rounded-full bg-gray-400"></div>
-                      <span className="text-sm text-gray-700">TTA Team</span>
-                    </div>
-                    <a href="/training/simulator-solutions" className="text-blue-600 text-sm font-medium hover:text-blue-700">
-                      Learn More →
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
-                <div className="aspect-[4/3] relative overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    alt="CAREER DEVELOPMENT"
-                    className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"
-                  />
-                </div>
-                <div className="p-4">
-                  <h2 className="text-xl font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-gray-600">
-                    CAREER DEVELOPMENT
-                  </h2>
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-2">
-                    Comprehensive career support including interview preparation and aptitude testing
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <div className="h-5 w-5 rounded-full bg-gray-400"></div>
-                      <span className="text-sm text-gray-700">TTA Team</span>
-                    </div>
-                    <a href="/training/professional-training" className="text-blue-600 text-sm font-medium hover:text-blue-700">
-                      Learn More →
-                    </a>
-                  </div>
-                </div>
+              <div className="text-center">
+                <a
+                  href="/consultation"
+                  className="inline-block rounded-md bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-xs hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                >
+                  Request Consultation
+                </a>
               </div>
             </div>
           </div>
