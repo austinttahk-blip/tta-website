@@ -41,7 +41,7 @@ export function CallToAction({
               {services.map((service, index) => (
                 <div key={index}>
                   <div className="flex items-center gap-4">
-                    <div className="w-1 h-6 bg-blue-600 rounded-full shrink-0"></div>
+                    <div className="w-1 h-6 bg-gray-400 rounded-full shrink-0"></div>
                     <span className="text-lg text-gray-600">{service}</span>
                   </div>
                   {index < services.length - 1 && (

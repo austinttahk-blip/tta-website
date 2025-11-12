@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { CallToAction } from '@/components/CallToAction'
+import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 // Import training images
 import pilotImage from '@/images/training/pilot.jpg'
@@ -11,6 +12,35 @@ import pilot4Image from '@/images/training/pilot-4.jpg'
 import pilot5Image from '@/images/training/pilot-5.jpg'
 import pilot6Image from '@/images/training/pilot-6.jpg'
 import simulatorImage from '@/images/training/simulator.jpg'
+
+// Course menu options
+const courseMenus = {
+  youthAviation: [
+    { name: 'Aviation Discovery Programme (ADP)', description: 'Ages 8-12 • Beginner Level', href: '/training/youth-aviation?tab=adp' },
+    { name: 'Aviation Fundamental Programme (AFP)', description: 'Secondary Students • Intermediate Level', href: '/training/youth-aviation?tab=afp' },
+  ],
+  aviationEnglish: [
+    { name: 'Trial Class', description: 'Introductory Session • 1.5 Hours', href: '/training/aviation-english?tab=trial' },
+    { name: '10-Hour Foundation', description: 'ICAO Level 4 • 10 Hours', href: '/training/aviation-english?tab=foundation' },
+    { name: '18-Hour Intensive', description: 'ICAO Level 5+ • 18 Hours', href: '/training/aviation-english?tab=intensive' },
+  ],
+  flightTraining: [
+    { name: 'Malaysia 🇲🇾', description: 'CAAM-Approved Training', href: '/training/flight-training?tab=malaysia' },
+    { name: 'Australia 🇦🇺', description: 'CASA-Approved Training', href: '/training/flight-training?tab=australia' },
+  ],
+  simulatorTraining: [
+    { name: 'Trial Flight', description: 'Introductory Experience • 1 Hour', href: '/training/flight-simulator-training?tab=trial' },
+    { name: 'Cessna 172 Simulator', description: 'Fixed-Base • Garmin G1000', href: '/training/flight-simulator-training?tab=cessna' },
+    { name: 'Diamond DA40 Fixed-Base', description: 'Modern High-Performance', href: '/training/flight-simulator-training?tab=diamond-fixed' },
+    { name: 'Diamond DA40 Full-Motion', description: 'Six-Axis Motion Platform', href: '/training/flight-simulator-training?tab=diamond-motion' },
+    { name: 'Airbus A320 Simulator', description: 'Commercial Jet • Full-Scale Cockpit', href: '/training/flight-simulator-training?tab=airbus' },
+  ],
+  careerDevelopment: [
+    { name: 'Career Consultation', description: 'One-on-one guidance from real pilots', href: '/training/professional-training' },
+    { name: 'Interview Preparation', description: 'Communication and technical practice', href: '/training/professional-training' },
+    { name: 'CV & Application Review', description: 'Professional application support', href: '/training/professional-training' },
+  ],
+}
 
 export default function TrainingPage() {
   return (
@@ -86,12 +116,12 @@ export default function TrainingPage() {
               Our Aviation Courses
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
-                <div className="aspect-[4/3] relative overflow-hidden">
+              <div className="group rounded-2xl hover:shadow-lg transition duration-200 hover:border-gray-300 border border-transparent">
+                <div className="aspect-[4/3] relative overflow-hidden rounded-t-2xl">
                   <Image
                     src={pilot3Image}
                     alt="YOUTH AVIATION"
-                    className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"
+                    className="object-cover group-hover:scale-105 transition duration-200 w-full h-full"
                     width={400}
                     height={300}
                   />
@@ -104,9 +134,24 @@ export default function TrainingPage() {
                     Inspiring the next generation of aviators through comprehensive youth programs
                   </p>
                   <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <div className="h-5 w-5 rounded-full bg-gray-400"></div>
-                      <span className="text-sm text-gray-700">TTA Team</span>
+                    <div className="relative group/menu">
+                      <button className="inline-flex items-center gap-x-1 text-sm font-medium text-gray-700 hover:text-gray-900">
+                        <span>Courses</span>
+                        <ChevronDownIcon aria-hidden="true" className="size-4" />
+                      </button>
+                      <div className="absolute left-0 z-50 mt-3 w-screen max-w-sm opacity-0 invisible group-hover/menu:opacity-100 group-hover/menu:visible transition-all duration-200">
+                        <div className="rounded-2xl bg-white p-3 shadow-lg ring-1 ring-gray-900/5">
+                          {courseMenus.youthAviation.map((item) => (
+                            <div key={item.name} className="relative rounded-lg p-3 hover:bg-gray-50">
+                              <a href={item.href} className="font-semibold text-gray-900 text-sm">
+                                {item.name}
+                                <span className="absolute inset-0" />
+                              </a>
+                              <p className="mt-1 text-xs text-gray-600">{item.description}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
                     </div>
                     <a href="/training/youth-aviation" className="text-blue-600 text-sm font-medium hover:text-blue-700">
                       Learn More <span aria-hidden="true">→</span>
@@ -115,12 +160,12 @@ export default function TrainingPage() {
                 </div>
               </div>
 
-              <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
-                <div className="aspect-[4/3] relative overflow-hidden">
+              <div className="group rounded-2xl hover:shadow-lg transition duration-200 hover:border-gray-300 border border-transparent">
+                <div className="aspect-[4/3] relative overflow-hidden rounded-t-2xl">
                   <Image
                     src={pilot5Image}
                     alt="AVIATION ENGLISH"
-                    className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"
+                    className="object-cover group-hover:scale-105 transition duration-200 w-full h-full"
                     width={400}
                     height={300}
                   />
@@ -133,9 +178,24 @@ export default function TrainingPage() {
                     Essential language training for all aviation professionals following ICAO standards
                   </p>
                   <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <div className="h-5 w-5 rounded-full bg-gray-400"></div>
-                      <span className="text-sm text-gray-700">TTA Team</span>
+                    <div className="relative group/menu">
+                      <button className="inline-flex items-center gap-x-1 text-sm font-medium text-gray-700 hover:text-gray-900">
+                        <span>Courses</span>
+                        <ChevronDownIcon aria-hidden="true" className="size-4" />
+                      </button>
+                      <div className="absolute left-0 z-50 mt-3 w-screen max-w-sm opacity-0 invisible group-hover/menu:opacity-100 group-hover/menu:visible transition-all duration-200">
+                        <div className="rounded-2xl bg-white p-3 shadow-lg ring-1 ring-gray-900/5">
+                          {courseMenus.aviationEnglish.map((item) => (
+                            <div key={item.name} className="relative rounded-lg p-3 hover:bg-gray-50">
+                              <a href={item.href} className="font-semibold text-gray-900 text-sm">
+                                {item.name}
+                                <span className="absolute inset-0" />
+                              </a>
+                              <p className="mt-1 text-xs text-gray-600">{item.description}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
                     </div>
                     <a href="/training/aviation-english" className="text-blue-600 text-sm font-medium hover:text-blue-700">
                       Learn More <span aria-hidden="true">→</span>
@@ -144,12 +204,12 @@ export default function TrainingPage() {
                 </div>
               </div>
 
-              <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
-                <div className="aspect-[4/3] relative overflow-hidden">
+              <div className="group rounded-2xl hover:shadow-lg transition duration-200 hover:border-gray-300 border border-transparent">
+                <div className="aspect-[4/3] relative overflow-hidden rounded-t-2xl">
                   <Image
                     src={pilotImage}
                     alt="FLIGHT TRAINING"
-                    className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"
+                    className="object-cover group-hover:scale-105 transition duration-200 w-full h-full"
                     width={400}
                     height={300}
                   />
@@ -162,9 +222,24 @@ export default function TrainingPage() {
                     Complete flight training pathway from first flight to professional pilot license
                   </p>
                   <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <div className="h-5 w-5 rounded-full bg-gray-400"></div>
-                      <span className="text-sm text-gray-700">TTA Team</span>
+                    <div className="relative group/menu">
+                      <button className="inline-flex items-center gap-x-1 text-sm font-medium text-gray-700 hover:text-gray-900">
+                        <span>Courses</span>
+                        <ChevronDownIcon aria-hidden="true" className="size-4" />
+                      </button>
+                      <div className="absolute left-0 z-50 mt-3 w-screen max-w-sm opacity-0 invisible group-hover/menu:opacity-100 group-hover/menu:visible transition-all duration-200">
+                        <div className="rounded-2xl bg-white p-3 shadow-lg ring-1 ring-gray-900/5">
+                          {courseMenus.flightTraining.map((item) => (
+                            <div key={item.name} className="relative rounded-lg p-3 hover:bg-gray-50">
+                              <a href={item.href} className="font-semibold text-gray-900 text-sm">
+                                {item.name}
+                                <span className="absolute inset-0" />
+                              </a>
+                              <p className="mt-1 text-xs text-gray-600">{item.description}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
                     </div>
                     <a href="/training/flight-training" className="text-blue-600 text-sm font-medium hover:text-blue-700">
                       Learn More <span aria-hidden="true">→</span>
@@ -173,12 +248,12 @@ export default function TrainingPage() {
                 </div>
               </div>
 
-              <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
-                <div className="aspect-[4/3] relative overflow-hidden">
+              <div className="group rounded-2xl hover:shadow-lg transition duration-200 hover:border-gray-300 border border-transparent">
+                <div className="aspect-[4/3] relative overflow-hidden rounded-t-2xl">
                   <Image
                     src={simulatorImage}
                     alt="SIMULATOR TRAINING"
-                    className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"
+                    className="object-cover group-hover:scale-105 transition duration-200 w-full h-full"
                     width={400}
                     height={300}
                   />
@@ -191,9 +266,24 @@ export default function TrainingPage() {
                     Professional flight simulation training in Hong Kong&apos;s most realistic simulators
                   </p>
                   <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <div className="h-5 w-5 rounded-full bg-gray-400"></div>
-                      <span className="text-sm text-gray-700">TTA Team</span>
+                    <div className="relative group/menu">
+                      <button className="inline-flex items-center gap-x-1 text-sm font-medium text-gray-700 hover:text-gray-900">
+                        <span>Courses</span>
+                        <ChevronDownIcon aria-hidden="true" className="size-4" />
+                      </button>
+                      <div className="absolute left-0 z-50 mt-3 w-screen max-w-sm opacity-0 invisible group-hover/menu:opacity-100 group-hover/menu:visible transition-all duration-200">
+                        <div className="rounded-2xl bg-white p-3 shadow-lg ring-1 ring-gray-900/5">
+                          {courseMenus.simulatorTraining.map((item) => (
+                            <div key={item.name} className="relative rounded-lg p-3 hover:bg-gray-50">
+                              <a href={item.href} className="font-semibold text-gray-900 text-sm">
+                                {item.name}
+                                <span className="absolute inset-0" />
+                              </a>
+                              <p className="mt-1 text-xs text-gray-600">{item.description}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
                     </div>
                     <a href="/training/flight-simulator-training" className="text-blue-600 text-sm font-medium hover:text-blue-700">
                       Learn More <span aria-hidden="true">→</span>
@@ -202,12 +292,12 @@ export default function TrainingPage() {
                 </div>
               </div>
 
-              <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
-                <div className="aspect-[4/3] relative overflow-hidden">
+              <div className="group rounded-2xl hover:shadow-lg transition duration-200 hover:border-gray-300 border border-transparent">
+                <div className="aspect-[4/3] relative overflow-hidden rounded-t-2xl">
                   <Image
                     src={pilot6Image}
                     alt="CAREER DEVELOPMENT"
-                    className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"
+                    className="object-cover group-hover:scale-105 transition duration-200 w-full h-full"
                     width={400}
                     height={300}
                   />
@@ -220,9 +310,24 @@ export default function TrainingPage() {
                     Comprehensive career support including interview preparation and aptitude testing
                   </p>
                   <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <div className="h-5 w-5 rounded-full bg-gray-400"></div>
-                      <span className="text-sm text-gray-700">TTA Team</span>
+                    <div className="relative group/menu">
+                      <button className="inline-flex items-center gap-x-1 text-sm font-medium text-gray-700 hover:text-gray-900">
+                        <span>Services</span>
+                        <ChevronDownIcon aria-hidden="true" className="size-4" />
+                      </button>
+                      <div className="absolute left-0 z-50 mt-3 w-screen max-w-sm opacity-0 invisible group-hover/menu:opacity-100 group-hover/menu:visible transition-all duration-200">
+                        <div className="rounded-2xl bg-white p-3 shadow-lg ring-1 ring-gray-900/5">
+                          {courseMenus.careerDevelopment.map((item) => (
+                            <div key={item.name} className="relative rounded-lg p-3 hover:bg-gray-50">
+                              <a href={item.href} className="font-semibold text-gray-900 text-sm">
+                                {item.name}
+                                <span className="absolute inset-0" />
+                              </a>
+                              <p className="mt-1 text-xs text-gray-600">{item.description}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
                     </div>
                     <a href="/training/professional-training" className="text-blue-600 text-sm font-medium hover:text-blue-700">
                       Learn More <span aria-hidden="true">→</span>

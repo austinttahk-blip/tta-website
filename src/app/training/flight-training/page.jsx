@@ -4,10 +4,19 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useSearchParams } from 'next/navigation'
 
 export default function FlightTrainingPage() {
+  const searchParams = useSearchParams()
   const [activeTab, setActiveTab] = useState('malaysia')
+
+  useEffect(() => {
+    const tab = searchParams.get('tab')
+    if (tab && (tab === 'malaysia' || tab === 'australia')) {
+      setActiveTab(tab)
+    }
+  }, [searchParams])
 
   return (
     <div className="bg-white">

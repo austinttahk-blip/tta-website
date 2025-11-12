@@ -4,10 +4,19 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useSearchParams } from 'next/navigation'
 
 export default function FlightSimulatorTrainingPage() {
+  const searchParams = useSearchParams()
   const [activeTab, setActiveTab] = useState('trial')
+
+  useEffect(() => {
+    const tab = searchParams.get('tab')
+    if (tab && (tab === 'trial' || tab === 'cessna' || tab === 'diamond-fixed' || tab === 'diamond-motion' || tab === 'airbus')) {
+      setActiveTab(tab)
+    }
+  }, [searchParams])
 
   return (
     <div className="bg-white">

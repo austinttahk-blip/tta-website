@@ -7,15 +7,15 @@ import { CallToAction } from '@/components/CallToAction'
 export default function Home() {
   return (
     <>
-      <div className="relative">
-        <Header />
-        <Hero />
-      </div>
+      <Header />
+      <Hero />
       <main>
         <Solutions />
         <CallToAction />
       </main>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }

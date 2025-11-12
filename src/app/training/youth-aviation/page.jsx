@@ -4,10 +4,19 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useSearchParams } from 'next/navigation'
 
 export default function YouthAviationPage() {
+  const searchParams = useSearchParams()
   const [activeTab, setActiveTab] = useState('adp')
+
+  useEffect(() => {
+    const tab = searchParams.get('tab')
+    if (tab && (tab === 'adp' || tab === 'afp')) {
+      setActiveTab(tab)
+    }
+  }, [searchParams])
 
   return (
     <div className="bg-white">
