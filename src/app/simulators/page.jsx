@@ -2,7 +2,6 @@ import Image from 'next/image'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { CallToAction } from '@/components/CallToAction'
-import { Highlight } from '@/components/ui/hero-highlight'
 import {
   CheckIcon,
   WrenchScrewdriverIcon,
@@ -41,12 +40,12 @@ export default function SimulatorsPage() {
               </p>
               <div className="mt-10 flex items-center gap-x-6">
                 <a
-                  href="/simulators/simulator-training"
+                  href="/training/flight-simulator-training"
                   className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                 >
                   Start Training
                 </a>
-                <a href="#courses" className="text-sm/6 font-semibold text-gray-900">
+                <a href="/training#courses" className="text-sm/6 font-semibold text-gray-900">
                   View Courses <span aria-hidden="true">→</span>
                 </a>
               </div>

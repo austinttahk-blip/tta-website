@@ -33,7 +33,6 @@ export default function TrainingPage() {
                   className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                 >
                   Explore Courses
-                  <span aria-hidden="true">&rarr;</span>
                 </a>
               </div>
             </div>
@@ -110,7 +109,7 @@ export default function TrainingPage() {
                       <span className="text-sm text-gray-700">TTA Team</span>
                     </div>
                     <a href="/training/youth-aviation" className="text-blue-600 text-sm font-medium hover:text-blue-700">
-                      Learn More →
+                      Learn More <span aria-hidden="true">→</span>
                     </a>
                   </div>
                 </div>
@@ -139,7 +138,7 @@ export default function TrainingPage() {
                       <span className="text-sm text-gray-700">TTA Team</span>
                     </div>
                     <a href="/training/aviation-english" className="text-blue-600 text-sm font-medium hover:text-blue-700">
-                      Learn More →
+                      Learn More <span aria-hidden="true">→</span>
                     </a>
                   </div>
                 </div>
@@ -168,7 +167,7 @@ export default function TrainingPage() {
                       <span className="text-sm text-gray-700">TTA Team</span>
                     </div>
                     <a href="/training/flight-training" className="text-blue-600 text-sm font-medium hover:text-blue-700">
-                      Learn More →
+                      Learn More <span aria-hidden="true">→</span>
                     </a>
                   </div>
                 </div>
@@ -197,7 +196,7 @@ export default function TrainingPage() {
                       <span className="text-sm text-gray-700">TTA Team</span>
                     </div>
                     <a href="/training/flight-simulator-training" className="text-blue-600 text-sm font-medium hover:text-blue-700">
-                      Learn More →
+                      Learn More <span aria-hidden="true">→</span>
                     </a>
                   </div>
                 </div>
@@ -226,7 +225,7 @@ export default function TrainingPage() {
                       <span className="text-sm text-gray-700">TTA Team</span>
                     </div>
                     <a href="/training/professional-training" className="text-blue-600 text-sm font-medium hover:text-blue-700">
-                      Learn More →
+                      Learn More <span aria-hidden="true">→</span>
                     </a>
                   </div>
                 </div>
@@ -236,9 +235,7 @@ export default function TrainingPage() {
         </section>
 
         {/* CTA Section */}
-        <CallToAction
-          secondaryButton={{ text: "View Our Courses", href: "#courses" }}
-        />
+        <CallToAction />
       <Footer />
     </div>
   )

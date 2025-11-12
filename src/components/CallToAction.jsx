@@ -3,7 +3,7 @@ import { Highlight } from '@/components/ui/hero-highlight'
 export function CallToAction({
   title = "Ready to elevate your flight training? Start with TTA today.",
   primaryButton = { text: "Request Consultation", href: "/consultation" },
-  secondaryButton = { text: "View Our Courses", href: "#courses" },
+  secondaryButton = { text: "View Our Courses", href: "/training#courses" },
   services = [
     "Needs analysis and facility planning",
     "Design and fabrication of cockpit and control systems",

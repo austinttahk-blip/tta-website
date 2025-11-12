@@ -88,7 +88,7 @@ export default function ConsultationPage() {
                       <span className="text-sm text-gray-700">TTA Team</span>
                     </div>
                     <a href="/youth-aviation" className="text-blue-600 text-sm font-medium hover:text-blue-700">
-                      Learn More →
+                      Learn More <span aria-hidden="true">→</span>
                     </a>
                   </div>
                 </div>
@@ -115,7 +115,7 @@ export default function ConsultationPage() {
                       <span className="text-sm text-gray-700">TTA Team</span>
                     </div>
                     <a href="/aviation-english" className="text-blue-600 text-sm font-medium hover:text-blue-700">
-                      Learn More →
+                      Learn More <span aria-hidden="true">→</span>
                     </a>
                   </div>
                 </div>
@@ -142,7 +142,7 @@ export default function ConsultationPage() {
                       <span className="text-sm text-gray-700">TTA Team</span>
                     </div>
                     <a href="/flight-training" className="text-blue-600 text-sm font-medium hover:text-blue-700">
-                      Learn More →
+                      Learn More <span aria-hidden="true">→</span>
                     </a>
                   </div>
                 </div>
@@ -169,7 +169,7 @@ export default function ConsultationPage() {
                       <span className="text-sm text-gray-700">TTA Team</span>
                     </div>
                     <a href="/simulator-training" className="text-blue-600 text-sm font-medium hover:text-blue-700">
-                      Learn More →
+                      Learn More <span aria-hidden="true">→</span>
                     </a>
                   </div>
                 </div>
@@ -196,7 +196,7 @@ export default function ConsultationPage() {
                       <span className="text-sm text-gray-700">TTA Team</span>
                     </div>
                     <a href="/simulator-solutions" className="text-blue-600 text-sm font-medium hover:text-blue-700">
-                      Learn More →
+                      Learn More <span aria-hidden="true">→</span>
                     </a>
                   </div>
                 </div>
@@ -223,7 +223,7 @@ export default function ConsultationPage() {
                       <span className="text-sm text-gray-700">TTA Team</span>
                     </div>
                     <a href="/professional-training" className="text-blue-600 text-sm font-medium hover:text-blue-700">
-                      Learn More →
+                      Learn More <span aria-hidden="true">→</span>
                     </a>
                   </div>
                 </div>
@@ -236,7 +236,6 @@ export default function ConsultationPage() {
       {/* CTA Section */}
       <CallToAction
         title="Ready to get expert aviation consultation? Start with TTA today."
-        secondaryButton={{ text: "View Our Services", href: "#services" }}
       />
       <Footer />
     </div>

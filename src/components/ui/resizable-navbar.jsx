@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { IconMenu2, IconX } from "@tabler/icons-react";
 import {
@@ -222,11 +223,11 @@ export const MobileNavToggle = ({
 
 export const NavbarLogo = ({ children }) => {
   return (
-    <a
+    <Link
       href="/"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal">
       {children}
-    </a>
+    </Link>
   );
 };
 
