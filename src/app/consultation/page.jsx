@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { CallToAction } from '@/components/CallToAction'
@@ -35,9 +36,11 @@ export default function ConsultationPage() {
                     </p>
                   </blockquote>
                   <figcaption className="mt-6 flex gap-x-4 text-sm/6">
-                    <img
+                    <Image
                       alt=""
                       src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+                      width={24}
+                      height={24}
                       className="size-6 flex-none rounded-full"
                     />
                     <div>
@@ -48,7 +51,7 @@ export default function ConsultationPage() {
                 </figure>
               </div>
             </div>
-            <img
+            <Image
               alt="Aviation consulting services"
               src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=2432&h=1442&q=80"
               width={2432}
@@ -69,9 +72,11 @@ export default function ConsultationPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
                 <div className="aspect-[4/3] relative overflow-hidden">
-                  <img
+                  <Image
                     src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=80&w=3542&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="YOUTH AVIATION"
+                    width={400}
+                    height={300}
                     className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"
                   />
                 </div>
@@ -96,9 +101,11 @@ export default function ConsultationPage() {
 
               <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
                 <div className="aspect-[4/3] relative overflow-hidden">
-                  <img
+                  <Image
                     src="https://images.unsplash.com/photo-1696429175928-793a1cdef1d3?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="AVIATION ENGLISH"
+                    width={400}
+                    height={300}
                     className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"
                   />
                 </div>
@@ -123,7 +130,9 @@ export default function ConsultationPage() {
 
               <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
                 <div className="aspect-[4/3] relative overflow-hidden">
-                  <img
+                  <Image
+                    width={400}
+                    height={300}
                     src="https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="FLIGHT TRAINING"
                     className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"
@@ -150,7 +159,9 @@ export default function ConsultationPage() {
 
               <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
                 <div className="aspect-[4/3] relative overflow-hidden">
-                  <img
+                  <Image
+                    width={400}
+                    height={300}
                     src="https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=3308&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="SIMULATOR TRAINING"
                     className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"
@@ -177,7 +188,9 @@ export default function ConsultationPage() {
 
               <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
                 <div className="aspect-[4/3] relative overflow-hidden">
-                  <img
+                  <Image
+                    width={400}
+                    height={300}
                     src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=80&w=3542&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="SIMULATOR SOLUTIONS"
                     className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"
@@ -204,7 +217,9 @@ export default function ConsultationPage() {
 
               <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
                 <div className="aspect-[4/3] relative overflow-hidden">
-                  <img
+                  <Image
+                    width={400}
+                    height={300}
                     src="https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="CAREER DEVELOPMENT"
                     className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"

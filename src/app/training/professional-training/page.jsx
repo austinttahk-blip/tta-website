@@ -3,6 +3,7 @@
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function ProfessionalTrainingPage() {
   return (
@@ -11,9 +12,11 @@ export default function ProfessionalTrainingPage() {
       
       {/* Hero Image Banner */}
       <div className="relative w-full h-[60vh] min-h-[400px] bg-gray-900">
-        <img 
-          src="https://picsum.photos/seed/professional-training/1920/800" 
+        <Image
+          src="https://picsum.photos/seed/professional-training/1920/800"
           alt="Aviation Career Consultation"
+          width={1920}
+          height={800}
           className="w-full h-full object-cover opacity-70"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>

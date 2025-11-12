@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Example() {
   return (
@@ -22,9 +23,11 @@ export default function Example() {
         <header className="mx-auto w-full max-w-7xl px-6 pt-6 sm:pt-10 lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:px-8">
           <Link href="/">
             <span className="sr-only">TTA Aviation</span>
-            <img
+            <Image
               alt="TTA Aviation Logo"
               src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+              width={48}
+              height={40}
               className="h-10 w-auto sm:h-12"
             />
           </Link>
@@ -60,9 +63,11 @@ export default function Example() {
         </footer>
 
         <div className="hidden lg:relative lg:col-start-2 lg:row-start-1 lg:row-end-4 lg:block">
-          <img
+          <Image
             alt="Aviation landscape"
             src="https://images.unsplash.com/photo-1470847355775-e0e3c35a9a2c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1825&q=80"
+            width={1825}
+            height={1217}
             className="absolute inset-0 size-full object-cover"
           />
         </div>
