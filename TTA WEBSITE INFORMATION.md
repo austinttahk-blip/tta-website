@@ -29,7 +29,7 @@ Availability: By schedule – students can register for upcoming sessions
 Contact & Registration
 Campus: TTA Campus – P30, Telford Plaza Phase 1, Kowloon Bay
 WhatsApp / Phone: +852 6936 0374
-Email: info@tta.hk
+Email: info@ttahk.com
 [Book Trial Class – HKD 199]  [Enroll Now – HKD 3,750]
 
 Aviation Fundamental Programme (AFP)
@@ -58,7 +58,7 @@ Availability: By schedule
 Contact & Registration
 Campus: TTA Campus – P30, Telford Plaza Phase 1, Kowloon Bay
 WhatsApp / Phone: +852 6936 0374
-Email: info@tta.hk
+Email: info@ttahk.com
 [Book Trial Class – HKD 199]  [Enroll Now – HKD 3,750]
 
 ## Aviation English Training (ICAO)
@@ -95,7 +95,7 @@ Location: TTA Campus – P30, Telford Plaza Phase 1, Kowloon Bay
 Contact & Registration
 Campus: TTA Campus – P30, Telford Plaza Phase 1, Kowloon Bay
 WhatsApp / Phone: +852 6936 0374
-Email: info@tta.hk
+Email: info@ttahk.com
 [Book Trial Class – HKD 199]  [Enroll in 10-Hour Course – HKD 3,999] 
  [Enroll in 18-Hour Course – HKD 6,999]
 
@@ -139,7 +139,7 @@ All flight training programmes are coordinated directly through TTA in partnersh
 Please contact us for availability, programme details, and training packages.
 Campus: TTA Campus – P30, Telford Plaza Phase 1, Kowloon Bay
 WhatsApp / Phone: +852 6936 0374
-Email: info@tta.hk
+Email: info@ttahk.com
 [Contact Us for More Information]
 
 ## Flight Simulator Training
@@ -195,7 +195,7 @@ All simulator sessions and trial experiences are conducted by schedule.
 Each session includes a full briefing, instructor-led simulator time, and post-flight review.
 Campus: TTA Campus – P30, Telford Plaza Phase 1, Kowloon Bay
 WhatsApp / Phone: +852 6936 0374
-Email: info@tta.hk
+Email: info@ttahk.com
 [Book Trial Flight – HKD 399 (Promo)]  [Book Simulator Session – Starting at HKD 799/hr]
 
 ## Aviation Career Consultation & Pilot Pathway Preparation
@@ -231,7 +231,7 @@ All career consultation sessions are conducted by appointment only.
 Please contact our team to arrange your session and discuss your aviation career goals.
 Campus: TTA Campus – P30, Telford Plaza Phase 1, Kowloon Bay
 WhatsApp / Phone: +852 6936 0374
-Email: info@tta.hk
+Email: info@ttahk.com
 [Contact Us for Appointment Details]
 
 
@@ -275,7 +275,7 @@ Contact & Consultation
 To learn more about our simulator products or to discuss partnership opportunities, please contact us to schedule a consultation.
 Campus: TTA Campus – P30, Telford Plaza Phase 1, Kowloon Bay
 WhatsApp / Phone: +852 6936 0374
-Email: info@tta.hk
+Email: info@ttahk.com
 [Request a Simulator Consultation]
 
 

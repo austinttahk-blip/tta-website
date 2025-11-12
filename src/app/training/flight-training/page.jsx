@@ -350,8 +350,8 @@ export default function FlightTrainingPage() {
                   <div className="flex justify-between py-2">
                     <dt className="text-gray-500 font-medium">Email</dt>
                     <dd className="font-medium text-gray-900">
-                      <a href="mailto:info@tta.hk" className="text-blue-600 hover:text-blue-700 break-all">
-                        info@tta.hk
+                      <a href="mailto:info@ttahk.com" className="text-blue-600 hover:text-blue-700 break-all">
+                        info@ttahk.com
                       </a>
                     </dd>
                   </div>
