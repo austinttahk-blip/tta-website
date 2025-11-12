@@ -4,10 +4,10 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 
-export default function AviationEnglishPage() {
+function AviationEnglishContent() {
   const searchParams = useSearchParams()
   const [activeTab, setActiveTab] = useState('trial')
 
@@ -399,5 +399,13 @@ export default function AviationEnglishPage() {
 
       <Footer />
     </div>
+  )
+}
+
+export default function AviationEnglishPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <AviationEnglishContent />
+    </Suspense>
   )
 }

@@ -4,10 +4,10 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 
-export default function FlightSimulatorTrainingPage() {
+function FlightSimulatorTrainingContent() {
   const searchParams = useSearchParams()
   const [activeTab, setActiveTab] = useState('trial')
 
@@ -459,5 +459,13 @@ export default function FlightSimulatorTrainingPage() {
 
       <Footer />
     </div>
+  )
+}
+
+export default function FlightSimulatorTrainingPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <FlightSimulatorTrainingContent />
+    </Suspense>
   )
 }

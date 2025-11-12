@@ -4,10 +4,10 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 
-export default function FlightTrainingPage() {
+function FlightTrainingContent() {
   const searchParams = useSearchParams()
   const [activeTab, setActiveTab] = useState('malaysia')
 
@@ -375,5 +375,13 @@ export default function FlightTrainingPage() {
 
       <Footer />
     </div>
+  )
+}
+
+export default function FlightTrainingPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <FlightTrainingContent />
+    </Suspense>
   )
 }

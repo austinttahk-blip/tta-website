@@ -1,17 +1,10 @@
 "use client";
 
-import React from "react";
+import React, { useMemo } from "react";
 import Image from 'next/image'
 import { motion } from "motion/react";
 
 import { Button } from '@/components/Button'
-import logoLaravel from '@/images/logos/laravel.svg'
-import logoMirage from '@/images/logos/mirage.svg'
-import logoStatamic from '@/images/logos/statamic.svg'
-import logoStaticKit from '@/images/logos/statickit.svg'
-import logoTransistor from '@/images/logos/transistor.svg'
-import logoTuple from '@/images/logos/tuple.svg'
-
 export function Hero() {
   return (
     <div className="relative min-h-screen flex flex-col">
@@ -84,7 +77,7 @@ const Background = () => {
 };
 
 export function ColourfulText({ text }) {
-  const colors = [
+  const colors = useMemo(() => [
     "rgb(131, 179, 32)",
     "rgb(47, 195, 106)",
     "rgb(42, 169, 210)",
@@ -95,7 +88,7 @@ export function ColourfulText({ text }) {
     "rgb(230, 64, 92)",
     "rgb(232, 98, 63)",
     "rgb(249, 129, 47)",
-  ];
+  ], []);
 
   const [currentColors, setCurrentColors] = React.useState(colors);
   const [count, setCount] = React.useState(0);
@@ -108,7 +101,7 @@ export function ColourfulText({ text }) {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [colors]);
 
   return (
     <span className="relative whitespace-nowrap">
