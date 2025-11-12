@@ -1,5 +1,16 @@
+import Image from 'next/image'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
+import { CallToAction } from '@/components/CallToAction'
+
+// Import training images
+import pilotImage from '@/images/training/pilot.jpg'
+import pilot2Image from '@/images/training/pilot-2.jpg'
+import pilot3Image from '@/images/training/pilot-3.jpg'
+import pilot4Image from '@/images/training/pilot-4.jpg'
+import pilot5Image from '@/images/training/pilot-5.jpg'
+import pilot6Image from '@/images/training/pilot-6.jpg'
+import simulatorImage from '@/images/training/simulator.jpg'
 
 export default function TrainingPage() {
   return (
@@ -28,32 +39,40 @@ export default function TrainingPage() {
             </div>
             <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
               <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
-                <img
+                <Image
                   alt=""
-                  src="https://images.unsplash.com/photo-1670272502246-768d249768ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&q=80"
+                  src={simulatorImage}
                   className="aspect-7/5 w-148 max-w-none rounded-2xl bg-gray-50 object-cover max-sm:w-120"
+                  width={800}
+                  height={571}
                 />
               </div>
               <div className="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-148 lg:items-start lg:justify-end lg:gap-x-8">
                 <div className="order-first flex w-64 flex-none justify-end self-end max-sm:w-40 lg:w-auto">
-                  <img
+                  <Image
                     alt=""
-                    src="https://images.unsplash.com/photo-1605656816944-971cd5c1407f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80"
+                    src={pilot4Image}
                     className="aspect-4/3 w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
+                    width={384}
+                    height={288}
                   />
                 </div>
                 <div className="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
-                  <img
+                  <Image
                     alt=""
-                    src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&h=842&q=80"
+                    src={pilot2Image}
                     className="aspect-7/5 w-148 max-w-none flex-none rounded-2xl bg-gray-50 object-cover max-sm:w-120"
+                    width={800}
+                    height={571}
                   />
                 </div>
                 <div className="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
-                  <img
+                  <Image
                     alt=""
-                    src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80"
+                    src={pilot6Image}
                     className="aspect-4/3 w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover"
+                    width={384}
+                    height={288}
                   />
                 </div>
               </div>
@@ -70,10 +89,12 @@ export default function TrainingPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
                 <div className="aspect-[4/3] relative overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=80&w=3542&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  <Image
+                    src={pilot3Image}
                     alt="YOUTH AVIATION"
                     className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"
+                    width={400}
+                    height={300}
                   />
                 </div>
                 <div className="p-4">
@@ -97,10 +118,12 @@ export default function TrainingPage() {
 
               <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
                 <div className="aspect-[4/3] relative overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1696429175928-793a1cdef1d3?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  <Image
+                    src={pilot5Image}
                     alt="AVIATION ENGLISH"
                     className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"
+                    width={400}
+                    height={300}
                   />
                 </div>
                 <div className="p-4">
@@ -124,10 +147,12 @@ export default function TrainingPage() {
 
               <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
                 <div className="aspect-[4/3] relative overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  <Image
+                    src={pilotImage}
                     alt="FLIGHT TRAINING"
                     className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"
+                    width={400}
+                    height={300}
                   />
                 </div>
                 <div className="p-4">
@@ -151,10 +176,12 @@ export default function TrainingPage() {
 
               <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
                 <div className="aspect-[4/3] relative overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=3308&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  <Image
+                    src={simulatorImage}
                     alt="SIMULATOR TRAINING"
                     className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"
+                    width={400}
+                    height={300}
                   />
                 </div>
                 <div className="p-4">
@@ -178,10 +205,12 @@ export default function TrainingPage() {
 
               <div className="group rounded-2xl overflow-hidden hover:shadow-lg transition duration-200 hover:border-gray-300">
                 <div className="aspect-[4/3] relative overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1697577418970-95d99b5a55cf?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  <Image
+                    src={pilot6Image}
                     alt="CAREER DEVELOPMENT"
                     className="object-cover group-hover:scale-105 transition duration-200 rounded-xl w-full h-full"
+                    width={400}
+                    height={300}
                   />
                 </div>
                 <div className="p-4">
@@ -205,6 +234,11 @@ export default function TrainingPage() {
             </div>
           </div>
         </section>
+
+        {/* CTA Section */}
+        <CallToAction
+          secondaryButton={{ text: "View Our Courses", href: "#courses" }}
+        />
       <Footer />
     </div>
   )

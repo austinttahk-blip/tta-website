@@ -61,15 +61,15 @@ export function Header({ enableColorTransition = true }) {
                   key={idx}
                   href={item.link}
                   onClick={() => setIsOpen(false)}
-                  className="text-neutral-600 dark:text-neutral-300">
+                  className="text-neutral-600">
                   {item.name}
                 </a>
               ))}
-              <hr className="my-2 border-neutral-200 dark:border-neutral-800" />
+              <hr className="my-2 border-neutral-200" />
               <a
                 href="/login"
                 onClick={() => setIsOpen(false)}
-                className="text-neutral-600 dark:text-neutral-300">
+                className="text-neutral-600">
                 Sign in
               </a>
             </MobileNavMenu>

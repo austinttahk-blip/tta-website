@@ -1,37 +1,58 @@
-import Image from 'next/image'
+import { Highlight } from '@/components/ui/hero-highlight'
 
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background-call-to-action.jpg'
-
-export function CallToAction() {
+export function CallToAction({
+  title = "Ready to elevate your flight training? Start with TTA today.",
+  primaryButton = { text: "Request Consultation", href: "/consultation" },
+  secondaryButton = { text: "View Our Courses", href: "#courses" },
+  services = [
+    "Needs analysis and facility planning",
+    "Design and fabrication of cockpit and control systems",
+    "Hardware and software integration",
+    "Instructor station setup and technical support",
+    "Post-installation maintenance and updates"
+  ]
+}) {
   return (
-    <section
-      id="get-started-today"
-      className="relative overflow-hidden bg-blue-600 py-32"
-    >
-      <Image
-        className="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2"
-        src={backgroundImage}
-        alt=""
-        width={2347}
-        height={1244}
-        unoptimized
-      />
-      <Container className="relative">
-        <div className="mx-auto max-w-lg text-center">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
-            Get started today
-          </h2>
-          <p className="mt-4 text-lg tracking-tight text-white">
-            It’s time to take control of your books. Buy our software so you can
-            feel like you’re doing something productive.
-          </p>
-          <Button href="/register" color="white" className="mt-10">
-            Get 6 months free
-          </Button>
+    <section className="bg-white py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center">
+          <div>
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-neutral-700 max-w-4xl leading-relaxed lg:leading-snug">
+              {title.includes('flight training') ? (
+                <>Ready to elevate your <Highlight className="text-black">flight training</Highlight>? Start with TTA today.</>
+              ) : (
+                title
+              )}
+            </h2>
+            <div className="mt-10 flex items-center gap-x-6">
+              <a
+                href={primaryButton.href}
+                className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+              >
+                {primaryButton.text}
+              </a>
+              <a href={secondaryButton.href} className="text-sm/6 font-semibold text-gray-900">
+                {secondaryButton.text} <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+          <div className="mt-12 lg:mt-0">
+            <div className="space-y-5">
+              {services.map((service, index) => (
+                <div key={index}>
+                  <div className="flex items-center gap-4">
+                    <div className="w-1 h-6 bg-blue-600 rounded-full shrink-0"></div>
+                    <span className="text-lg text-gray-600">{service}</span>
+                  </div>
+                  {index < services.length - 1 && (
+                    <div className="w-full border-t border-gray-200 mt-5"></div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-      </Container>
+      </div>
     </section>
   )
 }

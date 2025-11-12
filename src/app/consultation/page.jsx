@@ -1,5 +1,6 @@
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
+import { CallToAction } from '@/components/CallToAction'
 
 export default function ConsultationPage() {
   return (
@@ -11,7 +12,7 @@ export default function ConsultationPage() {
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start">
             <div className="lg:pt-4 lg:pr-4">
               <div className="lg:max-w-lg">
-                <h2 className="text-base/7 font-semibold text-indigo-600">Expert Consultation</h2>
+                <h2 className="text-base/7 font-semibold text-blue-600">Expert Consultation</h2>
                 <p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
                   Aviation Consulting Services
                 </p>
@@ -22,7 +23,7 @@ export default function ConsultationPage() {
                 <div className="mt-8">
                   <a
                     href="#services"
-                    className="inline-flex rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    className="inline-flex rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                   >
                     Learn More
                   </a>
@@ -231,6 +232,12 @@ export default function ConsultationPage() {
           </div>
         </section>
       </main>
+
+      {/* CTA Section */}
+      <CallToAction
+        title="Ready to get expert aviation consultation? Start with TTA today."
+        secondaryButton={{ text: "View Our Services", href: "#services" }}
+      />
       <Footer />
     </div>
   )

@@ -245,14 +245,13 @@ Our simulators are trusted by educational institutions, universities, and flight
 Whether for academic instruction, outreach, or professional pilot training, TTA provides complete simulator development and installation services tailored to each client’s needs.
 
 What We Provide
-TTA manufactures and supplies a wide range of simulator systems, from entry-level training models to advanced full-motion cockpit environments.
-All systems are built to deliver realistic operational experiences, suitable for both educational and professional use.
+1. TTA manufactures and supplies a wide range of simulator systems, from entry-level training models to advanced full-motion cockpit environments. All systems are built to deliver realistic operational experiences, suitable for both educational and professional use.
 Solutions Include:
-Fixed-base simulators (Cessna 172, Diamond DA40, and similar types)
-Full-motion simulators for advanced flight training
-Custom-built educational simulator systems
-VR-based aviation training equipment
-Consultation, installation, and instructor familiarisation
+    Fixed-base simulators (Cessna 172, Diamond DA40, and similar types)
+    Full-motion simulators for advanced **flight** training
+    Custom-built educational simulator systems
+    VR-based aviation training **equipment**
+    Consultation, installation, and instructor familiarisation
 
 Why Choose Us
 At TTA, we don’t resell — we build.

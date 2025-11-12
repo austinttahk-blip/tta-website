@@ -5,6 +5,14 @@ import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Logo } from '@/components/Logo'
 import { Footer } from '@/components/Footer'
+import Image from 'next/image'
+
+// Import training images for hero section
+import pilot3Image from '@/images/training/pilot-3.jpg'
+import pilot5Image from '@/images/training/pilot-5.jpg'
+import cockpitImage from '@/images/training/cockpit.jpg'
+import pilot4Image from '@/images/training/pilot-4.jpg'
+import pilot6Image from '@/images/training/pilot-6.jpg'
 
 const navigation = [
   { name: 'Simulators', href: '/simulators' },
@@ -313,46 +321,56 @@ export default function AboutPage() {
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
                   <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-0 xl:pt-80">
                     <div className="relative">
-                      <img
+                      <Image
                         alt=""
-                        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                        src={pilot3Image}
                         className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                        width={352}
+                        height={528}
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset" />
                     </div>
                   </div>
                   <div className="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                     <div className="relative">
-                      <img
+                      <Image
                         alt=""
-                        src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                        src={pilot5Image}
                         className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                        width={352}
+                        height={528}
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset" />
                     </div>
                     <div className="relative">
-                      <img
+                      <Image
                         alt=""
-                        src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-x=.4&w=396&h=528&q=80"
+                        src={cockpitImage}
                         className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                        width={352}
+                        height={528}
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset" />
                     </div>
                   </div>
                   <div className="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                     <div className="relative">
-                      <img
+                      <Image
                         alt=""
-                        src="https://images.unsplash.com/photo-1670272504528-790c24957dda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=left&w=400&h=528&q=80"
+                        src={pilot4Image}
                         className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                        width={352}
+                        height={528}
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset" />
                     </div>
                     <div className="relative">
-                      <img
+                      <Image
                         alt=""
-                        src="https://images.unsplash.com/photo-1670272505284-8faba1c31f7d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&h=528&q=80"
+                        src={pilot6Image}
                         className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                        width={352}
+                        height={528}
                       />
                       <div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset" />
                     </div>
