@@ -68,7 +68,6 @@ export default function ConsultationPage() {
 
       {/* CTA Section */}
       <CallToAction
-        title="Ready to get expert aviation consultation? Start with TTA today."
       />
       <Footer />
     </div>

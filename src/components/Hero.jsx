@@ -38,7 +38,7 @@ export function Hero() {
             </span>
           </Button>
           <Button
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            href="#"
             variant="outline"
             className="bg-white/10 backdrop-blur-sm border-white text-white hover:text-white hover:bg-white/20"
           >

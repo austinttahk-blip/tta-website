@@ -79,7 +79,7 @@ export function Footer() {
 
   return (
     <div
-      className="relative w-full overflow-hidden border-t border-neutral-100 bg-white px-8 py-12 dark:border-white/[0.1] dark:bg-neutral-950">
+      className="relative w-full overflow-hidden border-t border-neutral-100 bg-white px-8 py-12">
       <div
         className="mx-auto flex container flex-col items-start justify-between text-sm text-neutral-500 sm:flex-row md:px-8 gap-8 lg:gap-12">
         <div className="flex-2/5">
@@ -93,7 +93,7 @@ export function Footer() {
             {socials.map((social, idx) => (
               <Link
                 key={"social-icon" + idx}
-                className="text-neutral-600 transition-colors hover:text-neutral-800 dark:text-neutral-300 dark:hover:text-neutral-100"
+                className="text-neutral-600 transition-colors hover:text-neutral-800  "
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer">
@@ -119,11 +119,11 @@ export function Footer() {
         <div className="flex-3/5 mt-10 grid grid-cols-2 items-start gap-10 sm:mt-0 md:mt-0 lg:grid-cols-5">
           <div className="flex w-full flex-col justify-center space-y-4">
             <p
-              className="font-bold text-neutral-600 transition-colors hover:text-neutral-800 dark:text-neutral-300">
+              className="font-bold text-neutral-600 transition-colors hover:text-neutral-800 ">
               Our Courses
             </p>
             <ul
-              className="list-none space-y-4 text-neutral-600 transition-colors dark:text-neutral-300">
+              className="list-none space-y-4 text-neutral-600 transition-colors ">
               {pages.map((page, idx) => (
                 <li key={"pages" + idx} className="list-none">
                   <Link
@@ -138,11 +138,11 @@ export function Footer() {
 
           <div className="flex flex-col justify-center space-y-4">
             <p
-              className="font-bold text-neutral-600 transition-colors hover:text-neutral-800 dark:text-neutral-300">
+              className="font-bold text-neutral-600 transition-colors hover:text-neutral-800 ">
               Quick Links
             </p>
             <ul
-              className="list-none space-y-4 text-neutral-600 transition-colors dark:text-neutral-300">
+              className="list-none space-y-4 text-neutral-600 transition-colors ">
               {legals.map((legal, idx) => (
                 <li key={"legal" + idx} className="list-none">
                   <Link
@@ -157,11 +157,11 @@ export function Footer() {
 
           <div className="flex flex-col justify-center space-y-4 col-span-3">
             <p
-              className="font-bold text-neutral-600 transition-colors hover:text-neutral-800 dark:text-neutral-300">
+              className="font-bold text-neutral-600 transition-colors hover:text-neutral-800 ">
               Contact Us
             </p>
             <ul
-              className="list-none space-y-4 text-neutral-600 transition-colors dark:text-neutral-300">
+              className="list-none space-y-4 text-neutral-600 transition-colors ">
               {contacts.map((contact, idx) => (
                 <li key={"contact" + idx} className="list-none">
                   <Link
