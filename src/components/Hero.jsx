@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useMemo } from "react";
-import Image from 'next/image'
 import { motion } from "motion/react";
 
 import { Button } from '@/components/Button'
@@ -69,7 +68,7 @@ const Background = () => {
         loop
         playsInline
         className="h-full w-full object-cover">
-        <source src="https://www.cae.com/content/videos/cae_corporate-video_snippet_16022024_1.mp4" type="video/mp4" />
+        <source src="/videos/hero.mp4" type="video/mp4" />
       </video>
       <div className="absolute inset-0 bg-black/30"></div>
     </motion.div>
