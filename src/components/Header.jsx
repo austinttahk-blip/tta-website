@@ -33,19 +33,6 @@ export function Header({ enableColorTransition = true }) {
               <Logo className="h-8 w-auto" />
             </NavbarLogo>
             <NavItems items={navItems} visible={visible} enableColorTransition={enableColorTransition} />
-            <div className="flex items-center gap-x-4">
-              <motion.a
-                href="/login"
-                animate={{
-                  color: enableColorTransition
-                    ? (visible ? "rgb(0, 0, 0)" : "rgb(255, 255, 255)")
-                    : "rgb(0, 0, 0)",
-                }}
-                transition={{ duration: 0.3 }}
-                className="text-sm">
-                Sign in
-              </motion.a>
-            </div>
           </NavBody>
 
           <MobileNav visible={visible}>
@@ -65,13 +52,6 @@ export function Header({ enableColorTransition = true }) {
                   {item.name}
                 </a>
               ))}
-              <hr className="my-2 border-neutral-200" />
-              <a
-                href="/login"
-                onClick={() => setIsOpen(false)}
-                className="text-neutral-600">
-                Sign in
-              </a>
             </MobileNavMenu>
           </MobileNav>
         </>
