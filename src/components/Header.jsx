@@ -15,9 +15,10 @@ import {
 } from '@/components/ui/resizable-navbar'
 
 const navItems = [
+  { name: 'Projects', link: '/projects' },
   { name: 'Simulators', link: '/simulators' },
-  { name: 'Training', link: '/training' },
-  { name: 'Consultation', link: '/consultation' },
+  { name: 'Investors', link: '/investors' },
+  { name: 'Education', link: '/education' },
   { name: 'About Us', link: '/about' },
 ]
 

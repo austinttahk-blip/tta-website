@@ -3,7 +3,7 @@ import React from "react";
 import ReactMarkdown from "react-markdown";
 import Link from "next/link";
 
-// Event data - shared with UpcomingEvents component
+// Event data - shared with RecentEvents component
 const events = [
   {
     id: 1,

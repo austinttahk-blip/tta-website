@@ -9,23 +9,23 @@ export function Footer() {
   const pages = [
     {
       title: "Youth Aviation",
-      href: "/training/youth-aviation",
+      href: "/education/youth-aviation",
     },
     {
       title: "Aviation English",
-      href: "/training/aviation-english",
+      href: "/education/aviation-english",
     },
     {
       title: "Flight Training",
-      href: "/training/flight-training",
+      href: "/education/flight-training",
     },
     {
       title: "Simulator Training",
-      href: "/training/flight-simulator-training",
+      href: "/education/flight-simulator-training",
     },
     {
-      title: "Simulator Solutions",
-      href: "/training/simulator-solutions",
+      title: "Professional Training",
+      href: "/education/professional-training",
     },
   ];
 
@@ -46,16 +46,24 @@ export function Footer() {
 
   const legals = [
     {
-      title: "Courses",
-      href: "/training",
+      title: "Projects",
+      href: "/projects",
     },
     {
-      title: "About",
+      title: "Simulators",
+      href: "/simulators",
+    },
+    {
+      title: "Investors",
+      href: "/investors",
+    },
+    {
+      title: "Education",
+      href: "/education",
+    },
+    {
+      title: "About Us",
       href: "/about",
-    },
-    {
-      title: "Consultation",
-      href: "/consultation",
     },
   ];
 

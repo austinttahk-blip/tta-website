@@ -334,7 +334,7 @@ function YouthAviationContent() {
                   Experience our aviation programs firsthand with a 1.5-hour trial session.
                 </p>
                 <Link 
-                  href="/consultation"
+                  href="/education/youth-aviation?tab=adp"
                   className="block w-full py-2.5 px-4 bg-blue-600 text-white text-center text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
                 >
                   Book Now

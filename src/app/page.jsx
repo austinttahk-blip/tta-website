@@ -2,8 +2,8 @@ import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { Solutions } from '@/components/Solutions'
-import { UpcomingEvents } from '@/components/UpcomingEvents'
-import { CallToAction } from '@/components/CallToAction'
+import { JoinUs } from '@/components/JoinUs'
+import { RecentEvents } from '@/components/RecentEvents'
 
 export default function Home() {
   return (
@@ -13,9 +13,9 @@ export default function Home() {
       <main>
         <Solutions />
 
-        <UpcomingEvents />
+        <JoinUs />
 
-        <CallToAction />
+        <RecentEvents />
       </main>
       <footer>
         <Footer />

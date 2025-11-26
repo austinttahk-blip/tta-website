@@ -31,7 +31,7 @@ export function Hero() {
           Hong Kong&apos;s leading aviation education hub for aspiring aviators.
         </p>
         <div className="relative mt-10 flex gap-x-6">
-          <Button href="/consultation" color="blue">
+          <Button href="/education" color="blue">
             <span>
               Book a trial <span className="hidden lg:inline">class</span>
             </span>

@@ -1,6 +1,5 @@
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
-import { CallToAction } from '@/components/CallToAction'
 import Image from 'next/image'
 
 // Import training images for hero section
@@ -418,9 +417,6 @@ export default function AboutPage() {
 
 
       </main>
-
-      {/* Call to Action */}
-      <CallToAction />
 
       {/* Footer */}
       <Footer />

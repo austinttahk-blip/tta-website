@@ -41,13 +41,13 @@ export default function ProfessionalTrainingPage() {
             
             {/* Breadcrumb */}
             <Link 
-              href="/training" 
+              href="/education" 
               className="inline-flex items-center gap-x-1.5 text-sm text-gray-500 hover:text-blue-600 transition-colors mb-8"
             >
               <svg className="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="m15 18-6-6 6-6"/>
               </svg>
-              Back to Training
+              Back to Education
             </Link>
 
             {/* Program Overview */}
@@ -210,7 +210,7 @@ export default function ProfessionalTrainingPage() {
                   Schedule a personalized career consultation with our experienced aviation mentors.
                 </p>
                 <Link 
-                  href="/consultation"
+                  href="mailto:info@ttahk.com?subject=Career%20Consultation"
                   className="block w-full py-2.5 px-4 bg-blue-600 text-white text-center text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
                 >
                   Contact Us

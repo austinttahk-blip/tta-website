@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
-import { CallToAction } from '@/components/CallToAction'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 // Import training images
@@ -16,29 +15,29 @@ import simulatorImage from '@/images/training/simulator.jpg'
 // Course menu options
 const courseMenus = {
   youthAviation: [
-    { name: 'Aviation Discovery Programme (ADP)', description: 'Ages 8-12 • Beginner Level', href: '/training/youth-aviation?tab=adp' },
-    { name: 'Aviation Fundamental Programme (AFP)', description: 'Secondary Students • Intermediate Level', href: '/training/youth-aviation?tab=afp' },
+    { name: 'Aviation Discovery Programme (ADP)', description: 'Ages 8-12 • Beginner Level', href: '/education/youth-aviation?tab=adp' },
+    { name: 'Aviation Fundamental Programme (AFP)', description: 'Secondary Students • Intermediate Level', href: '/education/youth-aviation?tab=afp' },
   ],
   aviationEnglish: [
-    { name: 'Trial Class', description: 'Introductory Session • 1.5 Hours', href: '/training/aviation-english?tab=trial' },
-    { name: '10-Hour Foundation', description: 'ICAO Level 4 • 10 Hours', href: '/training/aviation-english?tab=foundation' },
-    { name: '18-Hour Intensive', description: 'ICAO Level 5+ • 18 Hours', href: '/training/aviation-english?tab=intensive' },
+    { name: 'Trial Class', description: 'Introductory Session • 1.5 Hours', href: '/education/aviation-english?tab=trial' },
+    { name: '10-Hour Foundation', description: 'ICAO Level 4 • 10 Hours', href: '/education/aviation-english?tab=foundation' },
+    { name: '18-Hour Intensive', description: 'ICAO Level 5+ • 18 Hours', href: '/education/aviation-english?tab=intensive' },
   ],
   flightTraining: [
-    { name: 'Malaysia 🇲🇾', description: 'CAAM-Approved Training', href: '/training/flight-training?tab=malaysia' },
-    { name: 'Australia 🇦🇺', description: 'CASA-Approved Training', href: '/training/flight-training?tab=australia' },
+    { name: 'Malaysia 🇲🇾', description: 'CAAM-Approved Training', href: '/education/flight-training?tab=malaysia' },
+    { name: 'Australia 🇦🇺', description: 'CASA-Approved Training', href: '/education/flight-training?tab=australia' },
   ],
   simulatorTraining: [
-    { name: 'Trial Flight', description: 'Introductory Experience • 1 Hour', href: '/training/flight-simulator-training?tab=trial' },
-    { name: 'Cessna 172 Simulator', description: 'Fixed-Base • Garmin G1000', href: '/training/flight-simulator-training?tab=cessna' },
-    { name: 'Diamond DA40 Fixed-Base', description: 'Modern High-Performance', href: '/training/flight-simulator-training?tab=diamond-fixed' },
-    { name: 'Diamond DA40 Full-Motion', description: 'Six-Axis Motion Platform', href: '/training/flight-simulator-training?tab=diamond-motion' },
-    { name: 'Airbus A320 Simulator', description: 'Commercial Jet • Full-Scale Cockpit', href: '/training/flight-simulator-training?tab=airbus' },
+    { name: 'Trial Flight', description: 'Introductory Experience • 1 Hour', href: '/education/flight-simulator-training?tab=trial' },
+    { name: 'Cessna 172 Simulator', description: 'Fixed-Base • Garmin G1000', href: '/education/flight-simulator-training?tab=cessna' },
+    { name: 'Diamond DA40 Fixed-Base', description: 'Modern High-Performance', href: '/education/flight-simulator-training?tab=diamond-fixed' },
+    { name: 'Diamond DA40 Full-Motion', description: 'Six-Axis Motion Platform', href: '/education/flight-simulator-training?tab=diamond-motion' },
+    { name: 'Airbus A320 Simulator', description: 'Commercial Jet • Full-Scale Cockpit', href: '/education/flight-simulator-training?tab=airbus' },
   ],
   careerDevelopment: [
-    { name: 'Career Consultation', description: 'One-on-one guidance from real pilots', href: '/training/professional-training' },
-    { name: 'Interview Preparation', description: 'Communication and technical practice', href: '/training/professional-training' },
-    { name: 'CV & Application Review', description: 'Professional application support', href: '/training/professional-training' },
+    { name: 'Career Consultation', description: 'One-on-one guidance from real pilots', href: '/education/professional-training' },
+    { name: 'Interview Preparation', description: 'Communication and technical practice', href: '/education/professional-training' },
+    { name: 'CV & Application Review', description: 'Professional application support', href: '/education/professional-training' },
   ],
 }
 
@@ -153,7 +152,7 @@ export default function TrainingPage() {
                         </div>
                       </div>
                     </div>
-                    <a href="/training/youth-aviation" className="text-blue-600 text-sm font-medium hover:text-blue-700">
+                    <a href="/education/youth-aviation" className="text-blue-600 text-sm font-medium hover:text-blue-700">
                       Learn More <span aria-hidden="true">→</span>
                     </a>
                   </div>
@@ -197,7 +196,7 @@ export default function TrainingPage() {
                         </div>
                       </div>
                     </div>
-                    <a href="/training/aviation-english" className="text-blue-600 text-sm font-medium hover:text-blue-700">
+                    <a href="/education/aviation-english" className="text-blue-600 text-sm font-medium hover:text-blue-700">
                       Learn More <span aria-hidden="true">→</span>
                     </a>
                   </div>
@@ -241,7 +240,7 @@ export default function TrainingPage() {
                         </div>
                       </div>
                     </div>
-                    <a href="/training/flight-training" className="text-blue-600 text-sm font-medium hover:text-blue-700">
+                    <a href="/education/flight-training" className="text-blue-600 text-sm font-medium hover:text-blue-700">
                       Learn More <span aria-hidden="true">→</span>
                     </a>
                   </div>
@@ -285,7 +284,7 @@ export default function TrainingPage() {
                         </div>
                       </div>
                     </div>
-                    <a href="/training/flight-simulator-training" className="text-blue-600 text-sm font-medium hover:text-blue-700">
+                    <a href="/education/flight-simulator-training" className="text-blue-600 text-sm font-medium hover:text-blue-700">
                       Learn More <span aria-hidden="true">→</span>
                     </a>
                   </div>
@@ -329,7 +328,7 @@ export default function TrainingPage() {
                         </div>
                       </div>
                     </div>
-                    <a href="/training/professional-training" className="text-blue-600 text-sm font-medium hover:text-blue-700">
+                    <a href="/education/professional-training" className="text-blue-600 text-sm font-medium hover:text-blue-700">
                       Learn More <span aria-hidden="true">→</span>
                     </a>
                   </div>
@@ -339,8 +338,6 @@ export default function TrainingPage() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <CallToAction />
       <Footer />
     </div>
   )
