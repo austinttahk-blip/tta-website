@@ -1,199 +1,227 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
-import {
-  CheckIcon,
-  WrenchScrewdriverIcon,
-  BuildingLibraryIcon,
-  GlobeAmericasIcon,
-  PuzzlePieceIcon,
-  ClipboardDocumentCheckIcon
-} from '@heroicons/react/24/outline'
-
-// Import simulator image
-import simulatorImage from '@/images/training/simulator.jpg'
+import heroImage from '@/images/training/simulator.jpg'
+import cockpitImage from '@/images/training/cockpit.jpg'
+import pilotFourImage from '@/images/training/pilot-4.jpg'
+import pilotFiveImage from '@/images/training/pilot-5.jpg'
+import pilotSixImage from '@/images/training/pilot-6.jpg'
 
 export const metadata = {
   title: 'Flight Simulators - TTA Aviation',
 }
 
+const highlightSystems = [
+  {
+    title: 'TTA XR Series Full-Flight Simulator',
+    description:
+      'A level-D capable simulator engineered in Hong Kong for airlines and academies that need full-envelope fidelity without compromise.',
+    bullets: [
+      'Tropos-style spherical visuals with weather, night and terrain realism',
+      'Connected instructor station for live monitoring, debrief, and analytics',
+      'Upset recovery, low-visibility, and emergency add-on modules',
+    ],
+    image: cockpitImage,
+    link: '/projects',
+  },
+  {
+    title: 'Advanced Rotary Simulator',
+    description:
+      'Custom helicopter environment with interchangeable avionics suites for offshore, EMS, and training missions.',
+    bullets: [
+      'High-fidelity cueing with dynamic control loading',
+      'Mission rehearsal packages with sling, winch, and hoist profiles',
+      'Glass cockpit integrations for AS350, H145, and similar fleets',
+    ],
+    image: pilotFiveImage,
+    link: '/projects',
+  },
+]
+
+const relatedEquipment = [
+  {
+    title: 'Simfinity XR Desktop Trainers',
+    description: 'Compact systems for classrooms and pre-briefing suites with detachable controls.',
+    image: pilotFourImage,
+    href: '/education/flight-simulator-training',
+  },
+  {
+    title: 'Flight Training Devices',
+    description: 'Fixed-base solutions for ab-initio syllabi and IR refreshers.',
+    image: heroImage,
+    href: '/education',
+  },
+  {
+    title: 'Lifecycle Services',
+    description: 'Installation, calibration, and preventative maintenance coverage across Asia.',
+    image: pilotSixImage,
+    href: '/projects',
+  },
+]
+
 export default function SimulatorsPage() {
   return (
-    <div>
-      <Header enableColorTransition={false} />
+    <div className="bg-white text-gray-900">
+      <Header enableColorTransition={true} />
 
-      <div className="relative isolate overflow-hidden bg-linear-to-b from-blue-100/20">
-        <div
-          aria-hidden="true"
-          className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl ring-1 shadow-blue-600/10 ring-blue-50 sm:-mr-80 lg:-mr-96"
-        />
-        <div className="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
-            <h1 className="max-w-2xl text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">
-              Flight Simulators
-            </h1>
-            <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-              <p className="text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
-                Experience professional-grade flight simulation training in Hong Kong&apos;s most realistic simulators.
-                From fixed-base systems to full-motion VR simulators, perfect for building aviation skills.
-              </p>
-              <div className="mt-10 flex items-center gap-x-6">
-                <a
-                  href="/education/flight-simulator-training"
-                  className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-                >
-                  Start Training
-                </a>
-                <a href="/education#courses" className="text-sm/6 font-semibold text-gray-900">
-                  View Courses <span aria-hidden="true">→</span>
-                </a>
-              </div>
-            </div>
-            <Image
-              alt="Flight Simulator Cockpit"
-              src={simulatorImage}
-              className="mt-10 aspect-6/5 w-full max-w-lg rounded-2xl object-cover outline-1 -outline-offset-1 outline-black/5 sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
-              width={800}
-              height={667}
-            />
-          </div>
-        </div>
-        <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-linear-to-t from-white sm:h-32" />
-      </div>
-
-      <main className="bg-white">
-
-        {/* Overview Section */}
-        <section className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-base font-semibold text-blue-600">Overview</h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Simulator Solutions</p>
-            </div>
-            <div className="mx-auto max-w-3xl text-lg/8 text-gray-600">
-              <p>
-                The TTA Simulator Solutions Division specialises in the design and manufacturing of professional flight simulators for aviation education, research, and training. Each simulator is developed and assembled by TTA's in-house engineering and aviation team, ensuring precise handling characteristics, cockpit realism, and long-term reliability.
-              </p>
-              <p className="mt-6">
-                Our simulators are trusted by educational institutions, universities, and flight schools both in Hong Kong and overseas. Whether for academic instruction, outreach, or professional pilot training, TTA provides complete simulator development and installation services tailored to each client's needs.
-              </p>
-            </div>
-                </div>
-        </section>
-
-        {/* What We Provide Section */}
-        <section className="py-20 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-start">
+      <main>
+        <section className="relative isolate overflow-hidden bg-slate-950">
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-sky-900/60 to-slate-900" />
+          <div className="container mx-auto grid gap-12 px-6 py-24 lg:grid-cols-12 lg:items-center">
+            <div className="relative z-10 space-y-6 lg:col-span-5">
               <div>
-                <h2 className="text-base font-semibold text-blue-600">Solutions</h2>
-                <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">What We Provide</p>
-                <p className="mt-6 text-lg/8 text-gray-600">
-                  TTA manufactures and supplies a wide range of simulator systems, from entry-level training models to advanced full-motion cockpit environments. All systems are built to deliver realistic operational experiences, suitable for both educational and professional use.
+                <p className="mb-4 text-xs uppercase tracking-[0.3em] text-blue-200">Professional Simulation</p>
+                <h1 className="text-4xl font-bold text-white sm:text-5xl">Full-Flight Simulators</h1>
+                <p className="mt-4 text-lg text-slate-200">
+                  TTA builds flight simulators from the ground up. We combine our in-house engineering team with airline experience to
+                  deliver highly realistic training platforms for fixed-wing and rotary operators across Asia.
                 </p>
               </div>
-              <div className="mt-10 lg:mt-0">
-                <h3 className="text-lg font-semibold text-gray-900 mb-6">Solutions Include:</h3>
-                <ul className="space-y-4">
-                    <li className="flex items-start gap-3">
-                    <CheckIcon className="size-6 text-blue-600 shrink-0 mt-0.5" aria-hidden="true" />
-                    <span className="text-gray-600">Fixed-base simulators (Cessna 172, Diamond DA40, and similar types)</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                    <CheckIcon className="size-6 text-blue-600 shrink-0 mt-0.5" aria-hidden="true" />
-                    <span className="text-gray-600">Full-motion simulators for advanced flight training</span>
-                    </li>
-                  <li className="flex items-start gap-3">
-                    <CheckIcon className="size-6 text-blue-600 shrink-0 mt-0.5" aria-hidden="true" />
-                    <span className="text-gray-600">Custom-built educational simulator systems</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckIcon className="size-6 text-blue-600 shrink-0 mt-0.5" aria-hidden="true" />
-                    <span className="text-gray-600">VR-based aviation training equipment</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckIcon className="size-6 text-blue-600 shrink-0 mt-0.5" aria-hidden="true" />
-                    <span className="text-gray-600">Consultation, installation, and instructor familiarisation</span>
-                  </li>
-                </ul>
+              <div className="flex flex-wrap gap-4">
+                <Link
+                  href="/education/flight-simulator-training"
+                  className="inline-flex items-center justify-center rounded-full bg-blue-500 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-400"
+                >
+                  Start Training
+                </Link>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white hover:border-white hover:text-white"
+                >
+                  Talk to our team
+                </Link>
+              </div>
+            </div>
+            <div className="relative z-10 lg:col-span-7">
+              <div className="relative h-64 w-full overflow-hidden rounded-3xl border border-white/10 bg-white/5 sm:h-96">
+                <Image src={heroImage} alt="TTA full-flight simulator" className="size-full object-cover" priority />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60" />
               </div>
             </div>
           </div>
         </section>
 
-        {/* Why Choose Us Section */}
-        <section className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-base font-semibold text-blue-600">Our Advantage</h2>
-              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Why Choose Us</p>
-              <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
-                At TTA, we don't resell — we build. Our simulators are fully designed and manufactured by our own aviation and engineering teams, giving clients confidence in quality, performance, and after-sales support.
-              </p>
-            </div>
-            <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              <div className="relative">
-                <dt>
-                  <div className="flex size-10 items-center justify-center rounded-xl bg-blue-600">
-                    <WrenchScrewdriverIcon className="size-5 text-white" aria-hidden="true" />
-                  </div>
-                  <p className="mt-4 text-lg font-semibold text-gray-900">Locally Designed & Manufactured</p>
-                </dt>
-                <dd className="mt-2 text-base/7 text-gray-600">
-                  Built in Hong Kong with professional aviation engineering standards.
-                </dd>
+        <section className="border-b border-gray-100 bg-white py-16">
+          <div className="container mx-auto grid gap-10 px-6 lg:[grid-template-columns:minmax(0,3fr)_minmax(0,1fr)]">
+            <div className="space-y-10">
+              <div className="space-y-4">
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-600">Description</p>
+                <p className="text-lg leading-relaxed text-gray-600">
+                  We build simulators that mirror the CAE flagship layout—a clean, focused information column with highlighted aircraft
+                  systems next to a call-to-action side card. Every TTA unit is shipped ready for installation, with performance
+                  verification and recurrent support.
+                </p>
               </div>
-              <div className="relative">
-                <dt>
-                  <div className="flex size-10 items-center justify-center rounded-xl bg-blue-600">
-                    <BuildingLibraryIcon className="size-5 text-white" aria-hidden="true" />
-                  </div>
-                  <p className="mt-4 text-lg font-semibold text-gray-900">Trusted by Institutions</p>
-                </dt>
-                <dd className="mt-2 text-base/7 text-gray-600">
-                  Partnered with universities and schools across Hong Kong to integrate simulators into STEM and aviation education.
-                </dd>
-              </div>
-              <div className="relative">
-                <dt>
-                  <div className="flex size-10 items-center justify-center rounded-xl bg-blue-600">
-                    <GlobeAmericasIcon className="size-5 text-white" aria-hidden="true" />
-                  </div>
-                  <p className="mt-4 text-lg font-semibold text-gray-900">Global Reach</p>
-                </dt>
-                <dd className="mt-2 text-base/7 text-gray-600">
-                  TTA simulators are used by overseas flight schools for training and demonstration.
-                </dd>
-              </div>
-              <div className="relative">
-                <dt>
-                  <div className="flex size-10 items-center justify-center rounded-xl bg-blue-600">
-                    <PuzzlePieceIcon className="size-5 text-white" aria-hidden="true" />
-                  </div>
-                  <p className="mt-4 text-lg font-semibold text-gray-900">Custom Solutions</p>
-                </dt>
-                <dd className="mt-2 text-base/7 text-gray-600">
-                  Scalable simulator options from entry-level trainers to full-motion systems.
-                </dd>
-              </div>
-              <div className="relative">
-                <dt>
-                  <div className="flex size-10 items-center justify-center rounded-xl bg-blue-600">
-                    <ClipboardDocumentCheckIcon className="size-5 text-white" aria-hidden="true" />
-                  </div>
-                  <p className="mt-4 text-lg font-semibold text-gray-900">End-to-End Consultation</p>
-                </dt>
-                <dd className="mt-2 text-base/7 text-gray-600">
-                  From concept and design to installation and aftercare.
-                </dd>
+
+              <div className="space-y-12">
+                {highlightSystems.map((system) => (
+                  <article
+                    key={system.title}
+                    className="flex gap-6 flex-col sm:flex-row sm:items-stretch sm:gap-10 lg:gap-14"
+                  >
+                    <div className="relative w-56 overflow-hidden rounded-2xl bg-gray-100 sm:flex-shrink-0 sm:w-64 lg:w-72">
+                      <Image
+                        src={system.image}
+                        alt={system.title}
+                        fill
+                        className="object-cover"
+                        sizes="(min-width: 1024px) 18rem, (min-width: 640px) 16rem, 14rem"
+                      />
+                    </div>
+                    <div className="flex flex-1 flex-col">
+                      <p className="text-xs font-semibold uppercase tracking-[0.3em] text-blue-500">Highlight</p>
+                      <h2 className="mt-2 text-2xl font-semibold text-gray-900">{system.title}</h2>
+                      <p className="mt-3 text-gray-600">{system.description}</p>
+                      <ul className="mt-4 space-y-2 text-sm text-gray-700">
+                        {system.bullets.map((bullet) => (
+                          <li key={bullet} className="flex gap-2">
+                            <span className="text-blue-600">•</span>
+                            <span>{bullet}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      <Link
+                        href={system.link}
+                        className="mt-6 inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-500"
+                      >
+                        Discover more<span className="ml-2">→</span>
+                      </Link>
+                    </div>
+                  </article>
+                ))}
               </div>
             </div>
+
+            <aside className="self-start rounded-3xl border border-gray-100 bg-slate-50 p-6">
+              <div className="space-y-4">
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-600">Need more information?</p>
+                <h3 className="text-2xl font-semibold text-gray-900">Connect with our simulator team</h3>
+                <p className="text-sm text-gray-600">
+                  Request a brochure, talk through certification requirements, or line up an engineering workshop.
+                </p>
+              </div>
+              <div className="mt-6 space-y-4 text-sm text-gray-700">
+                <p>P30, Telford Plaza Phase 1, Kowloon Bay</p>
+                <a href="tel:+85269360374" className="block font-semibold text-blue-600">
+                  +852 6936 0374
+                </a>
+                <a href="mailto:info@ttahk.com" className="block font-semibold text-blue-600">
+                  info@ttahk.com
+                </a>
+              </div>
+              <div className="mt-8 space-y-3">
+                <Link
+                  href="mailto:info@ttahk.com?subject=TTA%20Simulator%20Brochure"
+                  className="inline-flex w-full items-center justify-center rounded-full border border-blue-600 px-4 py-3 text-sm font-semibold text-blue-600 hover:bg-blue-50"
+                >
+                  Request brochure
+                </Link>
+                <Link
+                  href="/contact"
+                  className="inline-flex w-full items-center justify-center rounded-full bg-blue-600 px-4 py-3 text-sm font-semibold text-white hover:bg-blue-500"
+                >
+                  Contact us
+                </Link>
+              </div>
+            </aside>
           </div>
         </section>
 
+        <section className="bg-gray-50 py-16">
+          <div className="container mx-auto px-6">
+            <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-500">Other Training Equipment</p>
+                <h3 className="text-3xl font-bold text-gray-900">Complementary Solutions</h3>
+                <p className="mt-2 text-gray-600">Inspired by the CAE carousel, explore the rest of our training ecosystem.</p>
+              </div>
+              <Link href="/education#courses" className="text-sm font-semibold text-blue-600 hover:text-blue-500">
+                Browse all equipment →
+              </Link>
+            </div>
+
+            <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {relatedEquipment.map((item) => (
+                <article key={item.title} className="flex flex-col rounded-3xl bg-white shadow-sm">
+                  <div className="overflow-hidden rounded-3xl">
+                    <Image src={item.image} alt={item.title} className="h-60 w-full object-cover" />
+                  </div>
+                  <div className="flex flex-1 flex-col p-6">
+                    <h4 className="text-lg font-semibold text-gray-900">{item.title}</h4>
+                    <p className="mt-2 flex-1 text-sm text-gray-600">{item.description}</p>
+                    <Link href={item.href} className="mt-4 inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-500">
+                      Learn more<span className="ml-2">→</span>
+                    </Link>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
       </main>
+
       <Footer />
     </div>
   )
 }
-
