@@ -54,10 +54,6 @@ export function Footer() {
       href: "/simulators",
     },
     {
-      title: "Investors",
-      href: "/investors",
-    },
-    {
       title: "Education",
       href: "/education",
     },

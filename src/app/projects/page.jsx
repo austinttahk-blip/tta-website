@@ -26,27 +26,9 @@ const initiativeTracks = [
     image: campusImage,
     link: '/contact?topic=projects',
   },
-  {
-    title: 'Experience & Investor Platforms',
-    description:
-      'Pop-up simulators, investor demo suites, and mobile outreach fleets that activate new markets while capturing partner data.',
-    bullets: [
-      'Modular enclosures for malls, museums, and events',
-      'Integrated ticketing, CRM, and sponsor analytics',
-      'Flight ops, safety, and maintenance playbooks included',
-    ],
-    image: outreachImage,
-    link: '/investors',
-  },
 ]
 
 const relatedCapabilities = [
-  {
-    title: 'Lifecycle Program Management',
-    description: 'Governance, reporting, and capital planning dashboards that keep stakeholders aligned.',
-    image: labImage,
-    href: '/investors',
-  },
   {
     title: 'Simulator & Training Ecosystems',
     description: 'Full-flight, FTD, and classroom trainers that slot directly into each project scope.',
@@ -85,12 +67,6 @@ export default function ProjectsPage() {
                   className="inline-flex items-center justify-center rounded-full bg-blue-500 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-400"
                 >
                   Start a project
-                </Link>
-                <Link
-                  href="/investors"
-                  className="inline-flex items-center justify-center rounded-full border border-white/30 px-6 py-3 text-sm font-semibold text-white hover:border-white hover:text-white"
-                >
-                  Meet our investors
                 </Link>
               </div>
             </div>
