@@ -30,7 +30,7 @@ export function Header({ enableColorTransition = true }) {
         <>
           <NavBody visible={visible}>
             <NavbarLogo>
-              <Logo className="h-8 w-auto" />
+              <Logo className="h-8 w-auto" visible={visible} enableColorTransition={enableColorTransition} />
             </NavbarLogo>
             <NavItems items={navItems} visible={visible} enableColorTransition={enableColorTransition} />
           </NavBody>
@@ -38,7 +38,7 @@ export function Header({ enableColorTransition = true }) {
           <MobileNav visible={visible}>
             <MobileNavHeader>
               <NavbarLogo>
-                <Logo className="h-8 w-auto" />
+                <Logo className="h-8 w-auto" visible={visible} enableColorTransition={enableColorTransition} />
               </NavbarLogo>
               <MobileNavToggle isOpen={isOpen} onClick={() => setIsOpen(!isOpen)} visible={visible} enableColorTransition={enableColorTransition} />
             </MobileNavHeader>

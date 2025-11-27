@@ -10,10 +10,32 @@ import pilot4Image from '@/images/training/pilot-4.jpg'
 import pilot6Image from '@/images/training/pilot-6.jpg'
 
 
-const stats = [
-  { label: 'Students Trained', value: '500+' },
-  { label: 'Flight Hours', value: '10,000+' },
-  { label: 'Success Rate', value: '95%' },
+const milestones = [
+  {
+    title: 'Vision ignited',
+    period: '2017',
+    description: 'Defined an airline-ready pathway for Hong Kong cadets.',
+  },
+  {
+    title: 'Training hub launches',
+    period: '2018',
+    description: 'Opened an integrated campus with classrooms and briefing suites.',
+  },
+  {
+    title: 'Simulator revolution',
+    period: '2020',
+    description: 'Installed Airbus and Boeing sims aligned with airline SOPs.',
+  },
+  {
+    title: 'Partnership network',
+    period: '2022',
+    description: 'Secured airline and university bridge programs.',
+  },
+  {
+    title: 'Next-gen expansion',
+    period: '2024+',
+    description: 'Scaling blended learning and mission-ready modules.',
+  },
 ]
 
 const values = [
@@ -358,42 +380,41 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Content section */}
+        {/* Milestone timeline section */}
         <div className="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
-          <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-            <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Our mission</h2>
-            <div className="mt-6 flex flex-col gap-x-8 gap-y-20 lg:flex-row">
-              <div className="lg:w-full lg:max-w-2xl lg:flex-auto">
-                <p className="text-xl/8 text-gray-600">
-                  To provide world-class aviation education and training that combines cutting-edge technology with expert instruction, preparing students for successful careers in aviation and setting new standards for aviation education in Asia.
-                </p>
-                <p className="mt-10 max-w-xl text-base/7 text-gray-700">
-                  Founded in Hong Kong, TTA Aviation has established itself as the region&apos;s leading aviation training provider. Our comprehensive programs cover everything from initial flight training to advanced simulator operations, ensuring our graduates meet international aviation standards and are ready for the global aviation industry.
-                </p>
+          <div className="mx-auto max-w-7xl lg:max-w-none">
+            <div className="grid gap-12 lg:grid-cols-[minmax(0,420px)_1fr] lg:items-start">
+              <div className="relative aspect-[3/5] overflow-hidden rounded-3xl bg-gray-100 shadow-2xl">
+                <Image
+                  alt="Cadets preparing for a simulator session"
+                  src={pilot5Image}
+                  width={960}
+                  height={1440}
+                  className="h-full w-full object-cover"
+                />
+                <div className="pointer-events-none absolute inset-0 ring-1 ring-gray-900/10" />
               </div>
-              <div className="lg:flex lg:flex-auto lg:justify-center">
-                <dl className="w-64 space-y-8 xl:w-80">
-                  {stats.map((stat) => (
-                    <div key={stat.label} className="flex flex-col-reverse gap-y-4">
-                      <dt className="text-base/7 text-gray-600">{stat.label}</dt>
-                      <dd className="text-5xl font-semibold tracking-tight text-gray-900">{stat.value}</dd>
-                    </div>
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-600">milestone</p>
+                <h2 className="mt-4 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
+                  Our Roadmap
+                </h2>
+                <ol className="mt-8 space-y-8">
+                  {milestones.map((item) => (
+                    <li key={item.title} className="relative border-l border-gray-200 pl-8">
+                      <span
+                        aria-hidden="true"
+                        className="absolute left-0 top-3 h-3 w-3 -translate-x-1/2 transform rounded-full border border-gray-300 bg-gray-200"
+                      />
+                      <div className="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500">{item.period}</div>
+                      <h3 className="mt-1 text-lg font-semibold text-gray-900">{item.title}</h3>
+                      <p className="mt-1 text-sm text-gray-600">{item.description}</p>
+                    </li>
                   ))}
-                </dl>
+                </ol>
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Image section */}
-        <div className="mt-32 sm:mt-40 xl:mx-auto xl:max-w-7xl xl:px-8">
-          <Image
-            alt="TTA Aviation Training Facility"
-            src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
-            width={2832}
-            height={1133}
-            className="aspect-5/2 w-full object-cover outline-1 -outline-offset-1 outline-black/5 xl:rounded-3xl"
-          />
         </div>
 
         {/* Feature section */}
