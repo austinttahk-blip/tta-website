@@ -166,7 +166,7 @@ export default function SimulatorsPage() {
                     <span className="text-[#00205B]">{family.subtitle}</span>
                   </h2>
                   {/* Blue underline bar */}
-                  <div className="mt-4 h-1 w-12 bg-[#00205B]" />
+                  <div className="mt-4 h-1 w-12 bg-[#00122e]" />
 
                   {/* Description paragraphs */}
                   <div className="mt-8 space-y-4">
@@ -180,7 +180,7 @@ export default function SimulatorsPage() {
                   {/* CTA Button - Airbus style */}
                   <Link
                     href={family.ctaLink}
-                    className="mt-8 inline-flex items-center justify-center rounded bg-[#00205B] px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-[#001a4d]"
+                    className="mt-8 inline-flex items-center justify-center rounded bg-[#00122e] px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-[#000814]"
                   >
                     {family.ctaText}
                   </Link>
@@ -301,7 +301,7 @@ export default function SimulatorsPage() {
         </section>
 
         {/* Contact CTA Section */}
-        <section className="bg-[#00205B] py-20">
+        <section className="bg-[#00122e] py-20">
           <div className="container mx-auto px-6">
             <div className="mx-auto max-w-3xl text-center">
               <h2 className="text-3xl font-light text-white sm:text-4xl">
@@ -313,7 +313,7 @@ export default function SimulatorsPage() {
               <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <Link
                   href="mailto:info@ttahk.com?subject=TTA%20Simulator%20Brochure"
-                  className="inline-flex items-center justify-center rounded border border-white px-8 py-3 text-sm font-medium text-white transition-colors hover:bg-white hover:text-[#00205B]"
+                  className="inline-flex items-center justify-center rounded border border-white px-8 py-3 text-sm font-medium text-white transition-colors hover:bg-white hover:text-[#00122e]"
                 >
                   Request brochure
                 </Link>

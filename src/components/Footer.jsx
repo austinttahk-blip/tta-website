@@ -83,12 +83,12 @@ export function Footer() {
 
   return (
     <div
-      className="relative w-full overflow-hidden border-t border-neutral-100 bg-white px-8 py-12">
+      className="relative w-full overflow-hidden bg-slate-950 px-8 py-12 text-white">
       <div
-        className="mx-auto flex container flex-col items-start justify-between text-sm text-neutral-500 sm:flex-row md:px-8 gap-8 lg:gap-12">
+        className="mx-auto flex container flex-col items-start justify-between text-sm text-slate-200 sm:flex-row md:px-8 gap-8 lg:gap-12">
         <div className="flex-2/5">
           <div className="mr-0 mb-4 md:mr-4 md:flex">
-            <Logo className="h-8 w-auto" />
+            <Logo className="h-12 w-auto" />
           </div>
           <div className="mt-2 ml-2">
             &copy; {new Date().getFullYear()} Talent Trek Ascend. All rights reserved.
@@ -97,7 +97,7 @@ export function Footer() {
             {socials.map((social, idx) => (
               <Link
                 key={"social-icon" + idx}
-                className="text-neutral-600 transition-colors hover:text-neutral-800  "
+                className="text-slate-400 transition-colors hover:text-white  "
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer">
@@ -123,15 +123,15 @@ export function Footer() {
         <div className="flex-3/5 mt-10 grid grid-cols-2 items-start gap-10 sm:mt-0 md:mt-0 lg:grid-cols-5">
           <div className="flex w-full flex-col justify-center space-y-4">
             <p
-              className="font-bold text-neutral-600 transition-colors hover:text-neutral-800 ">
+              className="font-bold text-white transition-colors hover:text-white ">
               Our Courses
             </p>
             <ul
-              className="list-none space-y-4 text-neutral-600 transition-colors ">
+              className="list-none space-y-4 text-slate-400 transition-colors ">
               {pages.map((page, idx) => (
                 <li key={"pages" + idx} className="list-none">
                   <Link
-                    className="transition-colors hover:text-neutral-800"
+                    className="transition-colors hover:text-white"
                     href={page.href}>
                     {page.title}
                   </Link>
@@ -142,15 +142,15 @@ export function Footer() {
 
           <div className="flex flex-col justify-center space-y-4">
             <p
-              className="font-bold text-neutral-600 transition-colors hover:text-neutral-800 ">
+              className="font-bold text-white transition-colors hover:text-white ">
               Quick Links
             </p>
             <ul
-              className="list-none space-y-4 text-neutral-600 transition-colors ">
+              className="list-none space-y-4 text-slate-400 transition-colors ">
               {legals.map((legal, idx) => (
                 <li key={"legal" + idx} className="list-none">
                   <Link
-                    className="transition-colors hover:text-neutral-800"
+                    className="transition-colors hover:text-white"
                     href={legal.href}>
                     {legal.title}
                   </Link>
@@ -161,15 +161,15 @@ export function Footer() {
 
           <div className="flex flex-col justify-center space-y-4 col-span-3">
             <p
-              className="font-bold text-neutral-600 transition-colors hover:text-neutral-800 ">
+              className="font-bold text-white transition-colors hover:text-white ">
               Contact Us
             </p>
             <ul
-              className="list-none space-y-4 text-neutral-600 transition-colors ">
+              className="list-none space-y-4 text-slate-400 transition-colors ">
               {contacts.map((contact, idx) => (
                 <li key={"contact" + idx} className="list-none">
                   <Link
-                    className="flex items-center space-x-2 transition-colors hover:text-neutral-800"
+                    className="flex items-center space-x-2 transition-colors hover:text-white"
                     href={contact.href}
                     {...(contact.icon === "location" && { target: "_blank", rel: "noopener noreferrer" })}>
                     {contact.icon === "location" && (
@@ -196,10 +196,6 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <p
-        className="inset-x-0 mt-4 bg-gradient-to-b from-neutral-50 to-neutral-200 bg-clip-text text-center text-5xl font-bold text-transparent md:text-9xl">
-        Talent Trek Ascend
-      </p>
     </div>
   );
 }
