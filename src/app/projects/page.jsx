@@ -93,13 +93,17 @@ export default function ProjectsPage() {
 
               <div className="space-y-12">
                 {initiativeTracks.map((track) => (
-                  <article key={track.title} className="flex gap-6 flex-col sm:flex-row sm:items-stretch sm:gap-10 lg:gap-14">
+                  <Link
+                    key={track.title}
+                    href={track.link}
+                    className="group flex gap-6 flex-col sm:flex-row sm:items-stretch sm:gap-10 lg:gap-14 transition-all duration-300 hover:scale-[1.01] cursor-pointer"
+                  >
                     <div className="relative w-56 overflow-hidden rounded-2xl bg-gray-100 sm:flex-shrink-0 sm:w-64 lg:w-72">
                       <Image
                         src={track.image}
                         alt={track.title}
                         fill
-                        className="object-cover"
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
                         sizes="(min-width: 1024px) 18rem, (min-width: 640px) 16rem, 14rem"
                       />
                     </div>
@@ -115,14 +119,11 @@ export default function ProjectsPage() {
                           </li>
                         ))}
                       </ul>
-                      <Link
-                        href={track.link}
-                        className="mt-6 inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-500"
-                      >
+                      <span className="mt-6 inline-flex items-center text-sm font-semibold text-blue-600 transition-colors group-hover:text-blue-500">
                         Discover more<span className="ml-2">→</span>
-                      </Link>
+                      </span>
                     </div>
-                  </article>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -175,18 +176,22 @@ export default function ProjectsPage() {
 
             <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {relatedCapabilities.map((item) => (
-                <article key={item.title} className="flex flex-col rounded-3xl bg-white shadow-sm">
+                <Link
+                  key={item.title}
+                  href={item.href}
+                  className="group flex flex-col rounded-3xl bg-white shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer"
+                >
                   <div className="overflow-hidden rounded-3xl">
-                    <Image src={item.image} alt={item.title} className="h-60 w-full object-cover" />
+                    <Image src={item.image} alt={item.title} className="h-60 w-full object-cover transition-transform duration-300 group-hover:scale-105" />
                   </div>
                   <div className="flex flex-1 flex-col p-6">
                     <h4 className="text-lg font-semibold text-gray-900">{item.title}</h4>
                     <p className="mt-2 flex-1 text-sm text-gray-600">{item.description}</p>
-                    <Link href={item.href} className="mt-4 inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-500">
+                    <span className="mt-4 inline-flex items-center text-sm font-semibold text-blue-600 transition-colors group-hover:text-blue-500">
                       Learn more<span className="ml-2">→</span>
-                    </Link>
+                    </span>
                   </div>
-                </article>
+                </Link>
               ))}
             </div>
           </div>

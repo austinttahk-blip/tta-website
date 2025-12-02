@@ -8,41 +8,37 @@ const missionTracks = [
     title: 'Simulator Solutions',
     eyebrow: 'Flight Simulator Lab',
     description:
-      'Design, build and integrate smart, cost-effective training simulators that mirror real-world cockpits and operations.',
+      'Designing and building smart, cost-effective flight simulators and training systems that turn concepts into realistic, high-impact training environments.',
     highlights: ['Full-stack builds', 'XR + mixed reality labs', 'Operator integration'],
     link: '/simulators',
-    image:
-      'https://images.unsplash.com/photo-1476842634003-7dcca8f832de?auto=format&fit=crop&w=2200&q=80',
+    image: '/images/simulators.jpeg',
   },
   {
-    title: 'Low-Altitude Economy R&D',
-    eyebrow: 'Future LAE Ecosystem',
-    description:
-      'Prototype, test and validate UAV, eVTOL and low-altitude concepts with simulation-driven R&D workflows.',
-    highlights: ['Flight science squads', 'Test range digital twins', 'Concept incubation'],
-    link: '/lae-rnd',
-    image:
-      'https://images.unsplash.com/photo-1474224017046-182ece80b263?auto=format&fit=crop&w=2200&q=80',
-  },
-  {
-    title: 'Education & Training',
+    title: 'Education & Training Solutions',
     eyebrow: 'Talent Acceleration',
     description:
-      'Deliver immersive aviation education from STEM to foundation training with pathways tailored to every learner.',
+      'Creating aviation-themed programmes and curricula that move learners from basic understanding to industry-ready knowledge and skills.',
     highlights: ['ICAO English', 'STEM makerspaces', 'Foundation flight schools'],
     link: '/education',
-    image:
-      'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2200&q=80',
+    image: '/images/education.jpeg',
   },
   {
-    title: 'Talent Pathway & Advisory',
+    title: 'Low-Altitude Economy (LAE) & R&D Solutions',
+    eyebrow: 'Future LAE Ecosystem',
+    description:
+      'Transforming aviation and LAE ideas into tested, workable models through simulation, prototyping and project support.',
+    highlights: ['Flight science squads', 'Test range digital twins', 'Concept incubation'],
+    link: '/lae-rnd',
+    image: '/images/LAE.jpeg',
+  },
+  {
+    title: 'Talent Pathway & Advisory Solutions',
     eyebrow: 'Industry Linkage',
     description:
-      'Connect students, schools and operators through advisory, mentorship and job-ready aviation talent pipelines.',
+      'Building clear pathways and strategies that connect people, schools and organisations to real aviation and low-altitude career and business opportunities.',
     highlights: ['Career bridge labs', 'Operator partnerships', 'Advisory councils'],
     link: '/talent-advisory',
-    image:
-      'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=2200&q=80',
+    image: '/images/talent.jpeg',
   },
 ]
 
@@ -60,11 +56,10 @@ export function Solutions() {
         {/* Header - Left aligned */}
         <div className="mb-12 max-w-2xl sm:mb-16">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Our mission
+            Our Mission
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            We craft end-to-end training ecosystems — simulators, education, research and talent
-            pipelines — so every pilot, student and operator can thrive.
+            From education to operational reality, we turn aviation and LAE ideas from paper into working solutions
           </p>
         </div>
 
@@ -143,7 +138,7 @@ function MissionCard({ mission, stepNumber, isActive, hasHover, onHover, onBlur,
 
           {/* Title - grows on active */}
           <h3
-            className={`mt-2 font-semibold leading-tight transition-all duration-300 ${
+            className={`mt-2 font-semibold leading-tight ${
               isActive ? 'text-2xl sm:text-3xl' : 'text-xl sm:text-2xl'
             }`}
           >
@@ -153,7 +148,7 @@ function MissionCard({ mission, stepNumber, isActive, hasHover, onHover, onBlur,
           {/* Expandable content - uses CSS grid for smooth height animation */}
           <div
             className={`grid transition-all duration-500 ease-out ${
-              isActive ? 'mt-4 grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
+              isActive ? 'mt-4 grid-rows-[1fr]' : 'grid-rows-[0fr]'
             }`}
           >
             <div className="overflow-hidden">
@@ -173,15 +168,8 @@ function MissionCard({ mission, stepNumber, isActive, hasHover, onHover, onBlur,
                 ))}
               </div>
 
-              {/* CTA */}
-              <button
-                type="button"
-                onClick={(event) => {
-                  event.stopPropagation()
-                  onNavigate()
-                }}
-                className="mt-6 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-white/90 transition-colors hover:text-white"
-              >
+              {/* CTA - Visual element only, card handles navigation */}
+              <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-white/90 transition-colors group-hover:text-white">
                 Explore more
                 <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path
@@ -191,7 +179,7 @@ function MissionCard({ mission, stepNumber, isActive, hasHover, onHover, onBlur,
                     d="M5 12h14M13 5l7 7-7 7"
                   />
                 </svg>
-              </button>
+              </span>
             </div>
           </div>
         </div>

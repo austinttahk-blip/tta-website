@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export function RecentEvents() {
   const featuredEvent = {
     title: 'Future Flight Innovation Expo',
@@ -55,7 +57,10 @@ export function RecentEvents() {
           <p className="mt-2 text-lg/8 text-gray-600">Stay updated with our latest training programs and aviation events.</p>
         </div>
         <div className="mx-auto mt-12 lg:mx-0">
-          <article className="group relative flex min-h-[22rem] flex-col justify-end overflow-hidden border border-slate-200 text-white shadow-2xl">
+          <Link
+            href={featuredEvent.href}
+            className="group relative flex min-h-[22rem] flex-col justify-end overflow-hidden border border-slate-200 text-white shadow-2xl transition-all duration-300 hover:shadow-3xl hover:scale-[1.01] cursor-pointer"
+          >
             <img
               src={featuredEvent.imageUrl}
               alt=""
@@ -79,24 +84,22 @@ export function RecentEvents() {
                   {featuredEvent.title}
                 </h3>
                 <p className="text-base text-white/85 sm:text-lg">{featuredEvent.description}</p>
-                <a
-                  href={featuredEvent.href}
-                  className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-white transition hover:text-emerald-300"
-                >
+                <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-white transition group-hover:text-emerald-300">
                   Reserve your seat
                   <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M13 5l7 7-7 7" />
                   </svg>
-                </a>
+                </span>
               </div>
             </div>
-          </article>
+          </Link>
         </div>
         <div className="mx-auto mt-4 grid max-w-2xl grid-cols-1 gap-4 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {events.map((event) => (
-            <article
+            <Link
               key={event.id}
-              className="group relative flex h-[24rem] flex-col justify-between overflow-hidden border border-slate-200 text-white shadow-2xl transition"
+              href={event.href}
+              className="group relative flex h-[24rem] flex-col justify-between overflow-hidden border border-slate-200 text-white shadow-2xl transition-all duration-300 hover:shadow-3xl hover:scale-[1.02] cursor-pointer"
             >
               <img
                 src={event.imageUrl}
@@ -115,17 +118,14 @@ export function RecentEvents() {
                   {event.category.title}
                 </span>
                 <h3 className="text-2xl font-semibold leading-tight">{event.title}</h3>
-                <a
-                  href={event.href}
-                  className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-white/90 transition hover:text-emerald-300"
-                >
+                <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-white/90 transition group-hover:text-emerald-300">
                   Explore event
                   <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M13 5l7 7-7 7" />
                   </svg>
-                </a>
+                </span>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </div>

@@ -1,4 +1,8 @@
+'use client'
+
 import Image from 'next/image'
+import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
@@ -42,6 +46,8 @@ const courseMenus = {
 }
 
 export default function TrainingPage() {
+  const router = useRouter()
+  
   return (
     <div>
       <Header enableColorTransition={false}/>
@@ -115,12 +121,15 @@ export default function TrainingPage() {
               Our Aviation Courses
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="group rounded-2xl hover:shadow-lg transition duration-200 hover:border-gray-300 border border-transparent">
+              <Link
+                href="/education/youth-aviation"
+                className="group rounded-2xl hover:shadow-lg transition-all duration-300 hover:border-gray-300 border border-transparent hover:scale-[1.02] cursor-pointer"
+              >
                 <div className="aspect-[4/3] relative overflow-hidden rounded-t-2xl">
                   <Image
                     src={pilot3Image}
                     alt="YOUTH AVIATION"
-                    className="object-cover group-hover:scale-105 transition duration-200 w-full h-full"
+                    className="object-cover group-hover:scale-105 transition duration-300 w-full h-full"
                     width={400}
                     height={300}
                   />
@@ -133,7 +142,7 @@ export default function TrainingPage() {
                     Inspiring the next generation of aviators through comprehensive youth programs
                   </p>
                   <div className="flex items-center justify-between">
-                    <div className="relative group/menu">
+                    <div className="relative group/menu" onClick={(e) => e.stopPropagation()}>
                       <button className="inline-flex items-center gap-x-1 text-sm font-medium text-gray-700 hover:text-gray-900">
                         <span>Courses</span>
                         <ChevronDownIcon aria-hidden="true" className="size-4" />
@@ -142,29 +151,38 @@ export default function TrainingPage() {
                         <div className="rounded-2xl bg-white p-3 shadow-lg ring-1 ring-gray-900/5">
                           {courseMenus.youthAviation.map((item) => (
                             <div key={item.name} className="relative rounded-lg p-3 hover:bg-gray-50">
-                              <a href={item.href} className="font-semibold text-gray-900 text-sm">
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation()
+                                  router.push(item.href)
+                                }}
+                                className="font-semibold text-gray-900 text-sm text-left w-full"
+                              >
                                 {item.name}
                                 <span className="absolute inset-0" />
-                              </a>
+                              </button>
                               <p className="mt-1 text-xs text-gray-600">{item.description}</p>
                             </div>
                           ))}
                         </div>
                       </div>
                     </div>
-                    <a href="/education/youth-aviation" className="text-blue-600 text-sm font-medium hover:text-blue-700">
+                    <span className="text-blue-600 text-sm font-medium transition-colors group-hover:text-blue-700">
                       Learn More <span aria-hidden="true">→</span>
-                    </a>
+                    </span>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="group rounded-2xl hover:shadow-lg transition duration-200 hover:border-gray-300 border border-transparent">
+              <Link
+                href="/education/aviation-english"
+                className="group rounded-2xl hover:shadow-lg transition-all duration-300 hover:border-gray-300 border border-transparent hover:scale-[1.02] cursor-pointer"
+              >
                 <div className="aspect-[4/3] relative overflow-hidden rounded-t-2xl">
                   <Image
                     src={pilot5Image}
                     alt="AVIATION ENGLISH"
-                    className="object-cover group-hover:scale-105 transition duration-200 w-full h-full"
+                    className="object-cover group-hover:scale-105 transition duration-300 w-full h-full"
                     width={400}
                     height={300}
                   />
@@ -177,7 +195,7 @@ export default function TrainingPage() {
                     Essential language training for all aviation professionals following ICAO standards
                   </p>
                   <div className="flex items-center justify-between">
-                    <div className="relative group/menu">
+                    <div className="relative group/menu" onClick={(e) => e.stopPropagation()}>
                       <button className="inline-flex items-center gap-x-1 text-sm font-medium text-gray-700 hover:text-gray-900">
                         <span>Courses</span>
                         <ChevronDownIcon aria-hidden="true" className="size-4" />
@@ -186,29 +204,38 @@ export default function TrainingPage() {
                         <div className="rounded-2xl bg-white p-3 shadow-lg ring-1 ring-gray-900/5">
                           {courseMenus.aviationEnglish.map((item) => (
                             <div key={item.name} className="relative rounded-lg p-3 hover:bg-gray-50">
-                              <a href={item.href} className="font-semibold text-gray-900 text-sm">
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation()
+                                  router.push(item.href)
+                                }}
+                                className="font-semibold text-gray-900 text-sm text-left w-full"
+                              >
                                 {item.name}
                                 <span className="absolute inset-0" />
-                              </a>
+                              </button>
                               <p className="mt-1 text-xs text-gray-600">{item.description}</p>
                             </div>
                           ))}
                         </div>
                       </div>
                     </div>
-                    <a href="/education/aviation-english" className="text-blue-600 text-sm font-medium hover:text-blue-700">
+                    <span className="text-blue-600 text-sm font-medium transition-colors group-hover:text-blue-700">
                       Learn More <span aria-hidden="true">→</span>
-                    </a>
+                    </span>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="group rounded-2xl hover:shadow-lg transition duration-200 hover:border-gray-300 border border-transparent">
+              <Link
+                href="/education/flight-training"
+                className="group rounded-2xl hover:shadow-lg transition-all duration-300 hover:border-gray-300 border border-transparent hover:scale-[1.02] cursor-pointer"
+              >
                 <div className="aspect-[4/3] relative overflow-hidden rounded-t-2xl">
                   <Image
                     src={pilotImage}
                     alt="FLIGHT TRAINING"
-                    className="object-cover group-hover:scale-105 transition duration-200 w-full h-full"
+                    className="object-cover group-hover:scale-105 transition duration-300 w-full h-full"
                     width={400}
                     height={300}
                   />
@@ -221,7 +248,7 @@ export default function TrainingPage() {
                     Complete flight training pathway from first flight to professional pilot license
                   </p>
                   <div className="flex items-center justify-between">
-                    <div className="relative group/menu">
+                    <div className="relative group/menu" onClick={(e) => e.stopPropagation()}>
                       <button className="inline-flex items-center gap-x-1 text-sm font-medium text-gray-700 hover:text-gray-900">
                         <span>Courses</span>
                         <ChevronDownIcon aria-hidden="true" className="size-4" />
@@ -230,29 +257,38 @@ export default function TrainingPage() {
                         <div className="rounded-2xl bg-white p-3 shadow-lg ring-1 ring-gray-900/5">
                           {courseMenus.flightTraining.map((item) => (
                             <div key={item.name} className="relative rounded-lg p-3 hover:bg-gray-50">
-                              <a href={item.href} className="font-semibold text-gray-900 text-sm">
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation()
+                                  router.push(item.href)
+                                }}
+                                className="font-semibold text-gray-900 text-sm text-left w-full"
+                              >
                                 {item.name}
                                 <span className="absolute inset-0" />
-                              </a>
+                              </button>
                               <p className="mt-1 text-xs text-gray-600">{item.description}</p>
                             </div>
                           ))}
                         </div>
                       </div>
                     </div>
-                    <a href="/education/flight-training" className="text-blue-600 text-sm font-medium hover:text-blue-700">
+                    <span className="text-blue-600 text-sm font-medium transition-colors group-hover:text-blue-700">
                       Learn More <span aria-hidden="true">→</span>
-                    </a>
+                    </span>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="group rounded-2xl hover:shadow-lg transition duration-200 hover:border-gray-300 border border-transparent">
+              <Link
+                href="/education/flight-simulator-training"
+                className="group rounded-2xl hover:shadow-lg transition-all duration-300 hover:border-gray-300 border border-transparent hover:scale-[1.02] cursor-pointer"
+              >
                 <div className="aspect-[4/3] relative overflow-hidden rounded-t-2xl">
                   <Image
                     src={simulatorImage}
                     alt="SIMULATOR TRAINING"
-                    className="object-cover group-hover:scale-105 transition duration-200 w-full h-full"
+                    className="object-cover group-hover:scale-105 transition duration-300 w-full h-full"
                     width={400}
                     height={300}
                   />
@@ -265,7 +301,7 @@ export default function TrainingPage() {
                     Professional flight simulation training in Hong Kong&apos;s most realistic simulators
                   </p>
                   <div className="flex items-center justify-between">
-                    <div className="relative group/menu">
+                    <div className="relative group/menu" onClick={(e) => e.stopPropagation()}>
                       <button className="inline-flex items-center gap-x-1 text-sm font-medium text-gray-700 hover:text-gray-900">
                         <span>Courses</span>
                         <ChevronDownIcon aria-hidden="true" className="size-4" />
@@ -274,29 +310,38 @@ export default function TrainingPage() {
                         <div className="rounded-2xl bg-white p-3 shadow-lg ring-1 ring-gray-900/5">
                           {courseMenus.simulatorTraining.map((item) => (
                             <div key={item.name} className="relative rounded-lg p-3 hover:bg-gray-50">
-                              <a href={item.href} className="font-semibold text-gray-900 text-sm">
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation()
+                                  router.push(item.href)
+                                }}
+                                className="font-semibold text-gray-900 text-sm text-left w-full"
+                              >
                                 {item.name}
                                 <span className="absolute inset-0" />
-                              </a>
+                              </button>
                               <p className="mt-1 text-xs text-gray-600">{item.description}</p>
                             </div>
                           ))}
                         </div>
                       </div>
                     </div>
-                    <a href="/education/flight-simulator-training" className="text-blue-600 text-sm font-medium hover:text-blue-700">
+                    <span className="text-blue-600 text-sm font-medium transition-colors group-hover:text-blue-700">
                       Learn More <span aria-hidden="true">→</span>
-                    </a>
+                    </span>
                   </div>
                 </div>
-              </div>
+              </Link>
 
-              <div className="group rounded-2xl hover:shadow-lg transition duration-200 hover:border-gray-300 border border-transparent">
+              <Link
+                href="/education/professional-training"
+                className="group rounded-2xl hover:shadow-lg transition-all duration-300 hover:border-gray-300 border border-transparent hover:scale-[1.02] cursor-pointer"
+              >
                 <div className="aspect-[4/3] relative overflow-hidden rounded-t-2xl">
                   <Image
                     src={pilot6Image}
                     alt="CAREER DEVELOPMENT"
-                    className="object-cover group-hover:scale-105 transition duration-200 w-full h-full"
+                    className="object-cover group-hover:scale-105 transition duration-300 w-full h-full"
                     width={400}
                     height={300}
                   />
@@ -309,7 +354,7 @@ export default function TrainingPage() {
                     Comprehensive career support including interview preparation and aptitude testing
                   </p>
                   <div className="flex items-center justify-between">
-                    <div className="relative group/menu">
+                    <div className="relative group/menu" onClick={(e) => e.stopPropagation()}>
                       <button className="inline-flex items-center gap-x-1 text-sm font-medium text-gray-700 hover:text-gray-900">
                         <span>Services</span>
                         <ChevronDownIcon aria-hidden="true" className="size-4" />
@@ -318,22 +363,28 @@ export default function TrainingPage() {
                         <div className="rounded-2xl bg-white p-3 shadow-lg ring-1 ring-gray-900/5">
                           {courseMenus.careerDevelopment.map((item) => (
                             <div key={item.name} className="relative rounded-lg p-3 hover:bg-gray-50">
-                              <a href={item.href} className="font-semibold text-gray-900 text-sm">
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation()
+                                  router.push(item.href)
+                                }}
+                                className="font-semibold text-gray-900 text-sm text-left w-full"
+                              >
                                 {item.name}
                                 <span className="absolute inset-0" />
-                              </a>
+                              </button>
                               <p className="mt-1 text-xs text-gray-600">{item.description}</p>
                             </div>
                           ))}
                         </div>
                       </div>
                     </div>
-                    <a href="/education/professional-training" className="text-blue-600 text-sm font-medium hover:text-blue-700">
+                    <span className="text-blue-600 text-sm font-medium transition-colors group-hover:text-blue-700">
                       Learn More <span aria-hidden="true">→</span>
-                    </a>
+                    </span>
                   </div>
                 </div>
-              </div>
+              </Link>
             </div>
           </div>
         </section>

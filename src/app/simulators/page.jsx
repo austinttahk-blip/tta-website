@@ -283,18 +283,22 @@ export default function SimulatorsPage() {
 
             <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {relatedEquipment.map((item) => (
-                <article key={item.title} className="flex flex-col rounded-3xl bg-white shadow-sm">
+                <Link
+                  key={item.title}
+                  href={item.href}
+                  className="group flex flex-col rounded-3xl bg-white shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer"
+                >
                   <div className="overflow-hidden rounded-3xl">
-                    <Image src={item.image} alt={item.title} className="h-60 w-full object-cover" />
+                    <Image src={item.image} alt={item.title} className="h-60 w-full object-cover transition-transform duration-300 group-hover:scale-105" />
                   </div>
                   <div className="flex flex-1 flex-col p-6">
                     <h4 className="text-lg font-semibold text-gray-900">{item.title}</h4>
                     <p className="mt-2 flex-1 text-sm text-gray-600">{item.description}</p>
-                    <Link href={item.href} className="mt-4 inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-500">
+                    <span className="mt-4 inline-flex items-center text-sm font-semibold text-blue-600 transition-colors group-hover:text-blue-500">
                       Learn more<span className="ml-2">→</span>
-                    </Link>
+                    </span>
                   </div>
-                </article>
+                </Link>
               ))}
             </div>
           </div>
