@@ -26,7 +26,7 @@ const initiativeTracks = [
       'Training support for schools, academies and industry clients across the region',
     ],
     image: simulatorImage,
-    link: '/contact?topic=projects',
+    link: '/projects/simulator-projects',
   },
   {
     title: 'LAE Projects',
@@ -38,7 +38,7 @@ const initiativeTracks = [
       'From concept to safe, scalable real-world deployment',
     ],
     image: laeImage,
-    link: '/contact?topic=projects',
+    link: '/projects/lae-projects',
   },
 ]
 

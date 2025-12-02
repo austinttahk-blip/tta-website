@@ -32,7 +32,7 @@ const missionTracks = [
     description:
       'Transforming aviation and LAE ideas into tested, workable models through simulation, prototyping and project support.',
     highlights: ['Flight science squads', 'Test range digital twins', 'Concept incubation'],
-    link: '/lae-rnd',
+    link: '/projects/lae-projects',
     image: laeImage,
   },
   {
