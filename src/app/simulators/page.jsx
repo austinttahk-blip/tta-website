@@ -10,6 +10,11 @@ import pilotThreeImage from '@/images/training/pilot-3.jpg'
 import pilotFourImage from '@/images/training/pilot-4.jpg'
 import pilotFiveImage from '@/images/training/pilot-5.jpg'
 import pilotSixImage from '@/images/training/pilot-6.jpg'
+import standardSolutionImage from '@/images/solutions/standard-solution.jpeg'
+import customSolutionImage from '@/images/solutions/custom-solution.jpeg'
+import educationSolutionImage from '@/images/solutions/education_solution.jpeg'
+import trainingSolutionsImage from '@/images/solutions/training_solutions.jpeg'
+import lifecycleServicesImage from '@/images/solutions/lifecycle_services.jpeg'
 
 export const metadata = {
   title: 'Flight Simulators - TTA Aviation',
@@ -27,7 +32,7 @@ const simulatorFamilies = [
     ],
     ctaText: 'Discover Standard Solutions',
     ctaLink: '/simulators/standard-solutions',
-    image: '/images/standard-solution.jpeg',
+    image: standardSolutionImage,
     stats: [
       { value: '4', label: 'Aircraft Types', icon: 'aircraft' },
       { value: '3', label: 'Training Stages', icon: 'certificate' },
@@ -43,7 +48,7 @@ const simulatorFamilies = [
     ],
     ctaText: 'Discover Custom Solutions',
     ctaLink: '/simulators/custom-solutions',
-    image: '/images/custom-solution.jpeg',
+    image: customSolutionImage,
     stats: [
       { value: '3', label: 'Design Phases', icon: 'certificate' },
       { value: '2', label: 'Core Applications', icon: 'display' },
@@ -56,19 +61,19 @@ const relatedEquipment = [
   {
     title: 'Simulator education solutions',
     description: 'Compact systems for classrooms and pre-briefing suites with detachable controls.',
-    image: pilotFourImage,
+    image: educationSolutionImage,
     href: '/education',
   },
   {
     title: 'Flight Training Devices',
     description: 'Fixed-base solutions for ab-initio syllabi and IR refreshers.',
-    image: heroImage,
+    image: trainingSolutionsImage,
     href: '/education',
   },
   {
     title: 'Lifecycle Services',
     description: 'Installation, calibration, and preventative maintenance coverage across Asia.',
-    image: pilotSixImage,
+    image: lifecycleServicesImage,
     href: '/projects',
   },
 ]
@@ -132,9 +137,9 @@ export default function SimulatorsPage() {
               <h1 className="max-w-3xl text-4xl font-light text-white sm:text-5xl lg:text-6xl">
                 TTA Flight Simulators
               </h1>
-              <p className="mt-6 max-w-2xl text-lg text-white/90 lg:text-xl">
+              <p className="mt-6 max-w-4xl text-lg text-white/90 lg:text-xl">
                 Discover TTA&apos;s professional flight simulator solutions, engineered in Hong Kong for airlines and training academies across Asia.
-              </p>
+                Education-focused flight simulator solutions, engineered in Hong Kong for schools, academies and flying clubs realistic, reliable platforms for ab-initio and cadet training.              </p>
             </div>
           </div>
         </section>
@@ -273,7 +278,7 @@ export default function SimulatorsPage() {
 
         {/* Related Equipment Section */}
         <section className="bg-gray-50 py-16">
-          <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto px-6">
             <div>
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-500">Training Ecosystem</p>
               <h3 className="text-3xl font-bold text-gray-900">Comprehensive Solutions</h3>
@@ -287,8 +292,8 @@ export default function SimulatorsPage() {
                   href={item.href}
                   className="group flex flex-col rounded-3xl bg-white shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer"
                 >
-                  <div className="overflow-hidden rounded-3xl">
-                    <Image src={item.image} alt={item.title} className="h-60 w-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                  <div className="relative h-60 w-full overflow-hidden rounded-3xl">
+                    <Image src={item.image} alt={item.title} fill className="object-cover transition-transform duration-300 group-hover:scale-105" />
                   </div>
                   <div className="flex flex-1 flex-col p-6">
                     <h4 className="text-lg font-semibold text-gray-900">{item.title}</h4>

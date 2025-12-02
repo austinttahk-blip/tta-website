@@ -2,6 +2,10 @@
 
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
+import simulatorsImage from '@/images/solutions/simulators.jpeg'
+import educationImage from '@/images/solutions/education.jpeg'
+import laeImage from '@/images/solutions/LAE.jpeg'
+import talentImage from '@/images/solutions/talent.jpeg'
 
 const missionTracks = [
   {
@@ -11,7 +15,7 @@ const missionTracks = [
       'Designing and building smart, cost-effective flight simulators and training systems that turn concepts into realistic, high-impact training environments.',
     highlights: ['Full-stack builds', 'XR + mixed reality labs', 'Operator integration'],
     link: '/simulators',
-    image: '/images/simulators.jpeg',
+    image: simulatorsImage,
   },
   {
     title: 'Education & Training Solutions',
@@ -20,7 +24,7 @@ const missionTracks = [
       'Creating aviation-themed programmes and curricula that move learners from basic understanding to industry-ready knowledge and skills.',
     highlights: ['ICAO English', 'STEM makerspaces', 'Foundation flight schools'],
     link: '/education',
-    image: '/images/education.jpeg',
+    image: educationImage,
   },
   {
     title: 'Low-Altitude Economy (LAE) & R&D Solutions',
@@ -29,7 +33,7 @@ const missionTracks = [
       'Transforming aviation and LAE ideas into tested, workable models through simulation, prototyping and project support.',
     highlights: ['Flight science squads', 'Test range digital twins', 'Concept incubation'],
     link: '/lae-rnd',
-    image: '/images/LAE.jpeg',
+    image: laeImage,
   },
   {
     title: 'Talent Pathway & Advisory Solutions',
@@ -38,7 +42,7 @@ const missionTracks = [
       'Building clear pathways and strategies that connect people, schools and organisations to real aviation and low-altitude career and business opportunities.',
     highlights: ['Career bridge labs', 'Operator partnerships', 'Advisory councils'],
     link: '/talent-advisory',
-    image: '/images/talent.jpeg',
+    image: talentImage,
   },
 ]
 
@@ -117,7 +121,7 @@ function MissionCard({ mission, stepNumber, isActive, hasHover, onHover, onBlur,
       aria-expanded={isActive}
       className="relative isolate flex min-h-[14rem] cursor-pointer flex-col overflow-hidden rounded-xl text-white shadow-xl transition-all duration-500 ease-out md:h-full md:min-h-0 md:min-w-[14rem] md:rounded-none"
       style={{
-        backgroundImage: `linear-gradient(180deg, rgba(2,6,23,0.3) 0%, rgba(2,6,23,0.85) 75%), url(${mission.image})`,
+        backgroundImage: `linear-gradient(180deg, rgba(2,6,23,0.3) 0%, rgba(2,6,23,0.85) 75%), url(${mission.image.src})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         flexBasis: desktopBasis,

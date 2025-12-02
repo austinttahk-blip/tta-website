@@ -18,6 +18,10 @@ function AviationEnglishContent() {
     }
   }, [searchParams])
 
+  const getBrochureDownloadLink = () => {
+    return 'https://drive.google.com/drive/folders/1KVLbu6EgHkLETvayEebJC4LYqwdMw-N-?usp=drive_link'
+  }
+
   return (
     <div className="bg-white">
       <Header />
@@ -356,12 +360,22 @@ function AviationEnglishContent() {
                 <p className="text-sm text-gray-600 mb-4">
                   Experience our ICAO English training with a 1.5-hour trial session.
                 </p>
-                <Link 
-                  href="/education/aviation-english?tab=trial"
+                <a
+                  href="https://forms.gle/KYfGTLABdkR7kBi57"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block w-full py-2.5 px-4 bg-blue-600 text-white text-center text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
                 >
                   Book Now
-                </Link>
+                </a>
+                <a
+                  href="https://drive.google.com/drive/folders/1KVLbu6EgHkLETvayEebJC4LYqwdMw-N-?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full py-2.5 px-4 border-2 border-blue-500 text-blue-500 text-center text-sm font-medium rounded-lg hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600 transition-colors mt-3"
+                >
+                  view Brochure
+                </a>
               </div>
 
               {/* Contact Info */}

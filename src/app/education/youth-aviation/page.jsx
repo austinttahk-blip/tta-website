@@ -18,6 +18,42 @@ function YouthAviationContent() {
     }
   }, [searchParams])
 
+  // 根据当前 tab 获取对应的 Google Form 链接
+  const getFormLink = () => {
+    const formLinks = {
+      adp: 'https://forms.gle/wxSdK7nGMS11TBxg9', // ADP
+      afp: 'https://forms.gle/rvFc7YybcnH9nA8i9', // AFP
+    }
+    return formLinks[activeTab] || formLinks.adp
+  }
+
+  // 根据当前 tab 获取对应的 Google Drive 链接
+  const getBrochureLink = () => {
+    const brochureLinks = {
+      adp: 'https://drive.google.com/drive/folders/1DDT3PzJ_oHQkOa-ROM_Q_tF9Kr0fHcpD?usp=drive_link', // ADP
+      afp: 'https://drive.google.com/drive/folders/1qCJSfJhFom0SHcRo-Lrnd1JEuC9b2MVt?usp=drive_link', // AFP
+    }
+    return brochureLinks[activeTab] || brochureLinks.adp
+  }
+
+  // 根据当前 tab 获取卡片标题
+  const getCardTitle = () => {
+    const titles = {
+      adp: 'Book a Trial Class - ADP',
+      afp: 'Book a Trial Class - AFP',
+    }
+    return titles[activeTab] || titles.adp
+  }
+
+  // 根据当前 tab 获取卡片描述
+  const getCardDescription = () => {
+    const descriptions = {
+      adp: 'Experience our Aviation Discovery Programme (ADP) with a 1.5-hour trial session.',
+      afp: 'Experience our Aviation Fundamental Programme (AFP) with a 1.5-hour trial session.',
+    }
+    return descriptions[activeTab] || descriptions.adp
+  }
+
   return (
     <div className="bg-white">
       <Header />
@@ -329,16 +365,26 @@ function YouthAviationContent() {
               
               {/* Book Trial Class Card */}
               <div className="bg-white rounded-xl border border-gray-200 p-5">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Book a Trial Class</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{getCardTitle()}</h3>
                 <p className="text-sm text-gray-600 mb-4">
-                  Experience our aviation programs firsthand with a 1.5-hour trial session.
+                  {getCardDescription()}
                 </p>
-                <Link 
-                  href="/education/youth-aviation?tab=adp"
+                <a
+                  href={getFormLink()}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block w-full py-2.5 px-4 bg-blue-600 text-white text-center text-sm font-medium rounded-lg hover:bg-blue-700 transition-colors"
                 >
                   Book Now
-                </Link>
+                </a>
+                <a
+                  href={getBrochureLink()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full py-2.5 px-4 border-2 border-blue-500 text-blue-500 text-center text-sm font-medium rounded-lg hover:bg-blue-50 hover:border-blue-600 hover:text-blue-600 transition-colors mt-3"
+                >
+                  View Brochure
+                </a>
               </div>
 
               {/* Contact Info */}
