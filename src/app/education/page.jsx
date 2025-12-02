@@ -4,12 +4,16 @@ import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
-// Import training images
-import pilotImage from '@/images/training/pilot.jpg'
+// Import course images
+import youthAviationImage from '@/images/courses/youth_aviation.jpeg'
+import aviationEnglishImage from '@/images/courses/aviation_english.jpeg'
+import workshopImage from '@/images/courses/workshop.jpeg'
+import flightTrainingImage from '@/images/courses/flight_training.jpg'
+import simulatorTrainingImage from '@/images/courses/simulator_training.jpeg'
+import careerDevelopmentImage from '@/images/courses/career_development.jpeg'
+// Import training images for hero section
 import pilot2Image from '@/images/training/pilot-2.jpg'
-import pilot3Image from '@/images/training/pilot-3.jpg'
 import pilot4Image from '@/images/training/pilot-4.jpg'
-import pilot5Image from '@/images/training/pilot-5.jpg'
 import pilot6Image from '@/images/training/pilot-6.jpg'
 import simulatorImage from '@/images/training/simulator.jpg'
 
@@ -123,7 +127,7 @@ export default function TrainingPage() {
               <div className="group relative rounded-2xl hover:shadow-lg transition-all duration-300 hover:border-gray-300 border border-transparent hover:scale-[1.02] cursor-pointer hover:z-10 has-[.group\/menu:hover]:z-20">
                 <div className="aspect-[4/3] relative overflow-hidden rounded-t-2xl">
                   <Image
-                    src={pilot3Image}
+                    src={youthAviationImage}
                     alt="YOUTH AVIATION"
                     className="object-cover group-hover:scale-105 transition duration-300 w-full h-full"
                     width={400}
@@ -168,7 +172,7 @@ export default function TrainingPage() {
               <div className="group relative rounded-2xl hover:shadow-lg transition-all duration-300 hover:border-gray-300 border border-transparent hover:scale-[1.02] cursor-pointer hover:z-10 has-[.group\/menu:hover]:z-20">
                 <div className="aspect-[4/3] relative overflow-hidden rounded-t-2xl">
                   <Image
-                    src={pilot5Image}
+                    src={aviationEnglishImage}
                     alt="AVIATION ENGLISH"
                     className="object-cover group-hover:scale-105 transition duration-300 w-full h-full"
                     width={400}
@@ -213,7 +217,7 @@ export default function TrainingPage() {
               <div className="group relative rounded-2xl hover:shadow-lg transition-all duration-300 hover:border-gray-300 border border-transparent hover:scale-[1.02] cursor-pointer hover:z-10 has-[.group\/menu:hover]:z-20">
                 <div className="aspect-[4/3] relative overflow-hidden rounded-t-2xl">
                   <Image
-                    src={pilot4Image}
+                    src={workshopImage}
                     alt="WORKSHOP"
                     className="object-cover group-hover:scale-105 transition duration-300 w-full h-full"
                     width={400}
@@ -258,7 +262,7 @@ export default function TrainingPage() {
               <div className="group relative rounded-2xl hover:shadow-lg transition-all duration-300 hover:border-gray-300 border border-transparent hover:scale-[1.02] cursor-pointer hover:z-10 has-[.group\/menu:hover]:z-20">
                 <div className="aspect-[4/3] relative overflow-hidden rounded-t-2xl">
                   <Image
-                    src={pilotImage}
+                    src={flightTrainingImage}
                     alt="FLIGHT TRAINING"
                     className="object-cover group-hover:scale-105 transition duration-300 w-full h-full"
                     width={400}
@@ -303,7 +307,7 @@ export default function TrainingPage() {
               <div className="group relative rounded-2xl hover:shadow-lg transition-all duration-300 hover:border-gray-300 border border-transparent hover:scale-[1.02] cursor-pointer hover:z-10 has-[.group\/menu:hover]:z-20">
                 <div className="aspect-[4/3] relative overflow-hidden rounded-t-2xl">
                   <Image
-                    src={simulatorImage}
+                    src={simulatorTrainingImage}
                     alt="SIMULATOR TRAINING"
                     className="object-cover group-hover:scale-105 transition duration-300 w-full h-full"
                     width={400}
@@ -348,7 +352,7 @@ export default function TrainingPage() {
               <div className="group relative rounded-2xl hover:shadow-lg transition-all duration-300 hover:border-gray-300 border border-transparent hover:scale-[1.02] cursor-pointer hover:z-10 has-[.group\/menu:hover]:z-20">
                 <div className="aspect-[4/3] relative overflow-hidden rounded-t-2xl">
                   <Image
-                    src={pilot6Image}
+                    src={careerDevelopmentImage}
                     alt="CAREER DEVELOPMENT"
                     className="object-cover group-hover:scale-105 transition duration-300 w-full h-full"
                     width={400}
