@@ -54,21 +54,6 @@ const values = [
     description:
       'We embrace the latest aviation technologies and modern teaching methods to provide immersive, effective learning experiences that prepare students for real-world challenges.',
   },
-  {
-    name: 'Industry Expertise',
-    description:
-      'Our team brings decades of combined aviation experience, ensuring our training programs meet international standards and prepare students for successful careers.',
-  },
-  {
-    name: 'Community Building',
-    description:
-      'We foster a supportive community of aviation professionals and enthusiasts, creating networks that extend beyond training and into lifelong industry connections.',
-  },
-  {
-    name: 'Global Standards',
-    description:
-      'Our programs adhere to ICAO standards and international aviation regulations, ensuring our graduates are recognized and respected worldwide.',
-  },
 ]
 
 

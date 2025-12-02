@@ -45,7 +45,7 @@ const simulatorFamilies = [
       'High-fidelity cueing with dynamic control loading, mission rehearsal packages with sling, winch, and hoist profiles for helicopter operations.',
     ],
     ctaText: 'Discover Custom Solutions',
-    ctaLink: '/projects',
+    ctaLink: '/simulators/custom-solutions',
     image: pilotFiveImage,
     stats: [
       { value: '100%', label: 'FLEET MATCH', icon: 'aircraft' },

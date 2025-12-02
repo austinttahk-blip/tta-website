@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+import { StandardSolutionShowcase } from '@/components/StandardSolutionShowcase'
 import heroImage from '@/images/training/simulator.jpg'
 import cockpitImage from '@/images/training/cockpit.jpg'
 import pilotFiveImage from '@/images/training/pilot-5.jpg'
@@ -11,71 +12,89 @@ import pilotTwoImage from '@/images/training/pilot-2.jpg'
 import pilotThreeImage from '@/images/training/pilot-3.jpg'
 
 export const metadata = {
-  title: 'TTA Standard Flight Simulator Solutions',
+  title: 'TTA Custom Flight Simulator Solutions',
   description:
-    'A detail-rich view of the TTA Standard Simulator portfolio, inspired by flagship OEM programme pages and built for training leaders who need depth.',
+    'A detail-rich view of the TTA Custom Simulator portfolio, tailored to your fleet and mission requirements, built for training leaders who need precision.',
 }
 
 const galleryImages = [heroImage, cockpitImage, pilotFiveImage, pilotSixImage, pilotImage, pilotThreeImage]
 
+const solutionHighlights = [
+  {
+    title: 'Fleet-Matched FFS',
+    category: 'Custom flight deck',
+    timeline: '100% fleet match',
+    description: 'Cockpit configurations that mirror your exact aircraft type, avionics suite, and operational procedures.',
+    metrics: [
+      { label: 'Fleet match', value: '100%' },
+      { label: 'Deployment', value: 'Custom timeline' },
+    ],
+    image: cockpitImage,
+  },
+  {
+    title: 'Mission-Specific Rotary',
+    category: 'HEMS / SAR',
+    timeline: 'Mission ready',
+    description: 'Tailored helicopter simulators with dynamic control loading, hoist profiles, and NVG-ready interiors for specialized operations.',
+    metrics: [
+      { label: 'Mission kits', value: 'HEMS / SAR' },
+      { label: 'Interior', value: 'NVG ready' },
+    ],
+    image: pilotThreeImage,
+  },
+  {
+    title: 'Custom Avionics Suite',
+    category: 'Integrated systems',
+    timeline: 'Your configuration',
+    description: 'Avionics packages configured to match your specific aircraft systems, EFB integration, and training requirements.',
+    metrics: [
+      { label: 'Avionics', value: 'Custom config' },
+      { label: 'Integration', value: 'Fleet-specific' },
+    ],
+    image: pilotFiveImage,
+  },
+]
+
 const productSections = [
   {
-    name: 'core',
-    title: 'Core flight decks',
-    subtitle: 'airline-grade baseline',
+    name: 'fleet',
+    title: 'Fleet-matched simulators',
+    subtitle: 'tailored to your aircraft',
     description: [
-      'Level-D pathing with dual GNSS, integrated EFBs, and 210-degree domes tuned for Asia-Pacific met models.',
-      'Pods arrive with motion, data, and instructor cabling pre-routed so installations stay inside sub-18-week windows.',
-      'Instructor decks mirror the layout on /simulators but add telemetry for maintenance planners and dispatch leads.',
+      'Every detail of the cockpit, avionics, and visual systems adapted to your airline or rotary fleet so you can train the way you fly.',
+      'Configurable environments that mirror your fleet—fixed-wing, rotary, or mission-specific—while keeping integrations turnkey.',
+      'High-fidelity cueing with dynamic control loading, mission rehearsal packages with sling, winch, and hoist profiles for helicopter operations.',
     ],
-    ctaText: 'Explore flagship builds',
+    ctaText: 'Explore custom builds',
     ctaLink: '/simulators',
     image: cockpitImage,
     stats: [
-      { value: '210°', label: 'Visual dome' },
-      { value: '99.3%', label: 'Availability' },
-      { value: 'Level-D', label: 'Qualification' },
+      { value: '100%', label: 'Fleet match' },
+      { value: 'NVG', label: 'Ready interior' },
+      { value: 'Custom', label: 'Configuration' },
     ],
   },
   {
     name: 'mission',
-    title: 'Mission variants',
-    subtitle: 'rotary + cabin kits',
+    title: 'Mission-specific kits',
+    subtitle: 'rotary + specialized ops',
     description: [
-      'SAR and EMS packs blend hoists, sling loads, and NVG-ready domes tied into the same instructor/data spine.',
-      'Cabin safety trainers bolt to the flight deck infrastructure so power + diagnostics remain unified.',
-      'Analytics layers surface utilisation, fault codes, and maintenance prompts live for ops managers.',
+      'HEMS and SAR mission packs with hoists, sling loads, and NVG-ready domes tailored to your operational requirements.',
+      'Cabin configurations and safety trainers designed to match your specific aircraft interior and emergency procedures.',
+      'Analytics and telemetry layers customized to track the metrics that matter most to your training program.',
     ],
-    ctaText: 'See mission-ready kits',
+    ctaText: 'See mission kits',
     ctaLink: '/projects',
     image: pilotFiveImage,
     stats: [
-      { value: '3', label: 'Mission packs' },
+      { value: 'HEMS', label: 'Mission kits' },
       { value: 'NVG', label: 'Calibrated' },
-      { value: 'EMS', label: 'Ready' },
-    ],
-  },
-  {
-    name: 'training',
-    title: 'Training infrastructure',
-    subtitle: 'instructor stations + analytics',
-    description: [
-      'Advanced instructor operator stations with comprehensive debrief capabilities and real-time monitoring of training sessions.',
-      'Integrated training analytics platforms that track pilot performance, identify skill gaps, and optimize training curricula.',
-      'Unified data management systems connecting simulators, training records, and compliance reporting across your entire fleet.',
-    ],
-    ctaText: 'Explore training systems',
-    ctaLink: '/education',
-    image: pilotTwoImage,
-    stats: [
-      { value: 'Real-time', label: 'Monitoring' },
-      { value: 'Advanced', label: 'Analytics' },
-      { value: 'Unified', label: 'Data platform' },
+      { value: 'Custom', label: 'Profiles' },
     ],
   },
 ]
 
-export default function StandardSolutionsPage() {
+export default function CustomSolutionsPage() {
   return (
     <div className="bg-white text-slate-900">
       <Header enableColorTransition />
@@ -83,20 +102,21 @@ export default function StandardSolutionsPage() {
       <main>
         <section className="relative isolate min-h-[60vh] overflow-hidden bg-slate-950 text-white">
           <div className="absolute inset-0">
-            <Image src={heroImage} alt="Standard simulator hero" className="size-full object-cover" priority />
+            <Image src={heroImage} alt="Custom simulator hero" className="size-full object-cover" priority />
             <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/70 to-slate-950" />
           </div>
           <div className="relative z-10 mx-auto flex min-h-[60vh] w-full max-w-5xl items-end px-6 pb-16">
             <div className="max-w-2xl">
-              <p className="text-xs font-semibold uppercase tracking-[0.4em] text-blue-200">Standard Solutions</p>
-              <h1 className="mt-4 text-4xl font-semibold leading-tight text-white md:text-5xl">Flight deck ecosystems ready for airline deployment</h1>
+              <p className="text-xs font-semibold uppercase tracking-[0.4em] text-blue-200">Custom Solutions</p>
+              <h1 className="mt-4 text-4xl font-semibold leading-tight text-white md:text-5xl">Flight deck ecosystems tailored to your fleet and mission</h1>
               <p className="mt-4 text-base text-slate-100">
-                Full-flight simulators, rotorcraft suites, and instructor hubs engineered as a cohesive catalogue for crews who need reliable, repeatable
-                training hours.
+                Full-flight simulators, rotorcraft suites, and instructor hubs engineered to match your exact aircraft configurations, operational procedures, and training requirements.
               </p>
             </div>
           </div>
         </section>
+
+        <StandardSolutionShowcase items={solutionHighlights} />
 
         {productSections.map((section, index) => (
           <section key={section.name} className="bg-white">
@@ -110,7 +130,7 @@ export default function StandardSolutionsPage() {
                 }`}
               >
                 <div className="max-w-xl">
-                  <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-400">Standard Solutions</p>
+                  <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-400">Custom Solutions</p>
                   <h2 className="text-3xl font-semibold text-slate-900 sm:text-4xl lg:text-[42px] lg:leading-tight">
                     {section.title}
                     <br />
@@ -146,7 +166,7 @@ export default function StandardSolutionsPage() {
                 <h2 className="text-3xl font-bold">Visual tour</h2>
               </div>
               <p className="max-w-2xl text-base text-slate-200">
-                A strip of imagery similar to Airbus’ media gallery, showing cockpits, cabin mock-ups, and mission kits.
+                A strip of imagery showing custom cockpits, cabin mock-ups, and mission-specific configurations tailored to client requirements.
               </p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -162,23 +182,22 @@ export default function StandardSolutionsPage() {
         <section className="bg-slate-950 py-20 text-white">
           <div className="mx-auto max-w-5xl space-y-6 px-6 text-center">
             <p className="text-xs font-semibold uppercase tracking-[0.4em] text-blue-200">Get started</p>
-            <h2 className="text-3xl font-bold">Line up your delivery slot</h2>
+            <h2 className="text-3xl font-bold">Discuss your custom requirements</h2>
             <p className="text-base text-slate-200">
-              Share your fleet mix, regulatory pathway, and preferred motion options. Our programme managers will lock the right baseline
-              configuration and guide you to factory acceptance.
+              Share your fleet specifications, mission profiles, and training objectives. Our engineering team will design a simulator solution that perfectly matches your operational needs.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Link
-                href="mailto:info@ttahk.com?subject=TTA%20Standard%20Simulator%20Catalogue"
+                href="mailto:info@ttahk.com?subject=TTA%20Custom%20Simulator%20Consultation"
                 className="inline-flex items-center justify-center rounded-full bg-blue-500 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-400"
               >
-                Request catalogue
+                Request consultation
               </Link>
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center rounded-full border border-white px-6 py-3 text-sm font-semibold text-white hover:bg-white/10"
               >
-                Schedule consultation
+                Schedule meeting
               </Link>
             </div>
           </div>
@@ -189,3 +208,4 @@ export default function StandardSolutionsPage() {
     </div>
   )
 }
+
