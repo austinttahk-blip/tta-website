@@ -25,7 +25,7 @@ const courseMenus = {
     { name: '18-Hour Intensive', description: 'ICAO Level 5+ • 18 Hours', href: '/education/aviation-english?tab=intensive' },
   ],
   workshop: [
-    { name: 'Aviation Workshops', description: 'Hands-on learning experiences', href: '/education/workshop' },
+    { name: 'Build Your Own Engine Workshop', description: 'Hands-on learning experiences', href: '/education/workshop' },
   ],
   flightTraining: [
     { name: 'Malaysia 🇲🇾', description: 'CAAM-Approved Training', href: '/education/flight-training?tab=malaysia' },

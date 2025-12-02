@@ -3,7 +3,7 @@ import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { Solutions } from '@/components/Solutions'
 import { JoinUs } from '@/components/JoinUs'
-import { RecentEvents } from '@/components/RecentEvents'
+import { PopularCourses } from '@/components/PopularCourses'
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
 
         <JoinUs />
 
-        <RecentEvents />
+        <PopularCourses />
       </main>
       <footer>
         <Footer />
