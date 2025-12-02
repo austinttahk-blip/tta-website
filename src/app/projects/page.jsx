@@ -2,12 +2,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
-import heroImage from '@/images/training/pilot-3.jpg'
+import heroImage from '@/images/education/take-off.jpeg'
 import campusImage from '@/images/training/pilot.jpg'
 import labImage from '@/images/training/pilot-2.jpg'
 import outreachImage from '@/images/training/pilot-4.jpg'
 import pilotSixImage from '@/images/training/pilot-6.jpg'
 import cockpitImage from '@/images/training/cockpit.jpg'
+import simulatorImage from '@/images/training/simulator.jpeg'
+import laeImage from '@/images/solutions/LAE.jpeg'
 
 export const metadata = {
   title: 'Projects - TTA Aviation',
@@ -15,15 +17,27 @@ export const metadata = {
 
 const initiativeTracks = [
   {
-    title: 'Aviation Innovation Campuses',
+    title: 'Simulator Projects',
     description:
-      'Integrated STEM hubs with XR galleries, avionics benches, and flexible hangar studios delivered from concept design through commissioning.',
+      'Our simulator projects cover the full journey from 3D design and prototyping to installation and training support, delivering practical flight training devices for schools, academies and industry clients across the region.',
     bullets: [
-      'Academic partnerships with turnkey accreditation support',
-      'Digital twin and data backbones for research programs',
-      'Operations manuals plus instructor onboarding squads',
+      'From cockpit concept to training-ready device',
+      '3D design, prototyping, and installation services',
+      'Training support for schools, academies and industry clients across the region',
     ],
-    image: campusImage,
+    image: simulatorImage,
+    link: '/contact?topic=projects',
+  },
+  {
+    title: 'LAE Projects',
+    description:
+      'TTA\'s LAE projects focus on UAV, eVTOL and low-altitude operations, using simulation, training and consulting to help partners move from concept on paper to safe, scalable real-world deployment.',
+    bullets: [
+      'Building the future low-altitude ecosystem',
+      'UAV, eVTOL and low-altitude operations expertise',
+      'From concept to safe, scalable real-world deployment',
+    ],
+    image: laeImage,
     link: '/contact?topic=projects',
   },
 ]
@@ -49,32 +63,24 @@ export default function ProjectsPage() {
       <Header enableColorTransition={true} />
 
       <main>
-        <section className="relative isolate overflow-hidden bg-slate-950">
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-sky-900/60 to-slate-900" />
-          <div className="container mx-auto grid gap-12 px-6 py-24 lg:grid-cols-12 lg:items-center">
-            <div className="relative z-10 space-y-6 lg:col-span-5">
-              <div>
-                <p className="mb-4 text-xs uppercase tracking-[0.3em] text-blue-200">Flagship Delivery</p>
-                <h1 className="text-4xl font-bold text-white sm:text-5xl">Aviation Projects Studio</h1>
-                <p className="mt-4 text-lg text-slate-200">
-                  TTA architects and builds aviation campuses, experiential labs, and investor showcases end-to-end. We pair
-                  program management with flight operations expertise so concepts launch on time and stay calibrated.
-                </p>
-              </div>
-              <div className="flex flex-wrap gap-4">
-                <Link
-                  href="/contact?topic=projects"
-                  className="inline-flex items-center justify-center rounded-full bg-blue-500 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-400"
-                >
-                  Start a project
-                </Link>
-              </div>
-            </div>
-            <div className="relative z-10 lg:col-span-7">
-              <div className="relative h-64 w-full overflow-hidden rounded-3xl border border-white/10 bg-white/5 sm:h-96">
-                <Image src={heroImage} alt="TTA project buildout" className="size-full object-cover" priority />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60" />
-              </div>
+        {/* Hero Section - Airbus style */}
+        <section className="relative h-screen min-h-[600px] overflow-hidden">
+          <Image
+            src={heroImage}
+            alt="Aviation Projects Studio"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/50 to-slate-900/80" />
+          <div className="absolute inset-0 flex items-end">
+            <div className="container mx-auto px-6 pb-24 lg:pb-32">
+              <h1 className="max-w-3xl text-4xl font-light text-white sm:text-5xl lg:text-6xl">
+                Our Projects
+              </h1>
+              <p className="mt-6 max-w-4xl text-lg text-white/90 lg:text-xl">
+                At TTA, we turn aviation and low-altitude ideas into real, working solutions – from early concepts to operating platforms.
+              </p>
             </div>
           </div>
         </section>
@@ -162,7 +168,7 @@ export default function ProjectsPage() {
         </section>
 
         <section className="bg-gray-50 py-16">
-          <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto px-6">
             <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-500">Project Ecosystem</p>

@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useEffect, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
+import map1Image from '@/images/education/map1.jpeg'
 
 function AviationEnglishContent() {
   const searchParams = useSearchParams()
@@ -18,10 +19,6 @@ function AviationEnglishContent() {
     }
   }, [searchParams])
 
-  const getBrochureDownloadLink = () => {
-    return 'https://drive.google.com/drive/folders/1KVLbu6EgHkLETvayEebJC4LYqwdMw-N-?usp=drive_link'
-  }
-
   return (
     <div className="bg-white">
       <Header />
@@ -29,7 +26,7 @@ function AviationEnglishContent() {
       {/* Hero Image Banner */}
       <div className="relative w-full h-[60vh] min-h-[400px] bg-gray-900">
         <Image
-          src="https://picsum.photos/seed/aviation-english/1920/800"
+          src={map1Image}
           alt="Aviation English Training"
           width={1920}
           height={800}

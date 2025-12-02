@@ -8,33 +8,29 @@ import pilot5Image from '@/images/training/pilot-5.jpg'
 import cockpitImage from '@/images/training/cockpit.jpg'
 import pilot4Image from '@/images/training/pilot-4.jpg'
 import pilot6Image from '@/images/training/pilot-6.jpg'
+import ffsImage from '@/images/education/ffs.jpeg'
 
 
 const milestones = [
   {
-    title: 'Vision ignited',
-    period: '2017',
-    description: 'Defined an airline-ready pathway for Hong Kong cadets.',
+    title: 'Preparation for TTA and initial R&D for simulator',
+    period: 'Early 2024',
+    description: '',
   },
   {
-    title: 'Training hub launches',
-    period: '2018',
-    description: 'Opened an integrated campus with classrooms and briefing suites.',
+    title: 'Company Founded',
+    period: 'May 2024',
+    description: '',
   },
   {
-    title: 'Simulator revolution',
-    period: '2020',
-    description: 'Installed Airbus and Boeing sims aligned with airline SOPs.',
+    title: 'Education center with Hong Kong Bluebell College',
+    period: 'Sept 2024',
+    description: '',
   },
   {
-    title: 'Partnership network',
-    period: '2022',
-    description: 'Secured airline and university bridge programs.',
-  },
-  {
-    title: 'Next-gen expansion',
-    period: '2024+',
-    description: 'Scaling blended learning and mission-ready modules.',
+    title: 'R&D center in Hong Kong Science and Technology Park',
+    period: 'July 2025',
+    description: '',
   },
 ]
 
@@ -42,17 +38,17 @@ const values = [
   {
     name: 'Safety First',
     description:
-      'Safety is paramount in aviation. We instill this principle in every training session, ensuring our students develop the highest safety standards and emergency response capabilities.',
+      'We place safety at the centre of every lesson, simulator session and programme, building habits and judgement that match real-world aviation standards.',
   },
   {
-    name: 'Excellence in Education',
+    name: 'Excellence in Training',
     description:
-      'We strive for excellence in every aspect of our training programs, combining cutting-edge technology with expert instruction to deliver world-class aviation education.',
+      'We combine solid aviation knowledge, structured curricula and professional instructors to deliver clear, consistent and high-quality learning outcomes.',
   },
   {
     name: 'Innovation & Technology',
     description:
-      'We embrace the latest aviation technologies and modern teaching methods to provide immersive, effective learning experiences that prepare students for real-world challenges.',
+      'We use modern simulators, digital tools and new teaching methods to create immersive learning experiences that prepare students for tomorrow\'s aviation and LAE environment.',
   },
 ]
 
@@ -299,7 +295,7 @@ export default function AboutPage() {
                     Pioneering Aviation Education in Hong Kong
                   </h1>
                   <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">
-                    TTA Aviation is Hong Kong&apos;s premier aviation education hub, dedicated to inspiring and training the next generation of aviation professionals through cutting-edge technology and expert instruction.
+                    TTA Aviation is a Hong Kong-based aviation education and simulation hub, dedicated to inspiring and developing the next generation of aviation and low-altitude professionals through practical training, modern simulators and experienced instructors.
                   </p>
                 </div>
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
@@ -368,32 +364,34 @@ export default function AboutPage() {
         {/* Milestone timeline section */}
         <div className="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
           <div className="mx-auto max-w-7xl lg:max-w-none">
-            <div className="grid gap-12 lg:grid-cols-[minmax(0,420px)_1fr] lg:items-start">
-              <div className="relative aspect-[3/5] overflow-hidden rounded-3xl bg-gray-100 shadow-2xl">
+            <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-stretch">
+              {/* Image - 50% width */}
+              <div className="relative h-full min-h-[500px] overflow-hidden rounded-3xl bg-gray-100 shadow-2xl">
                 <Image
-                  alt="Cadets preparing for a simulator session"
-                  src={pilot5Image}
+                  alt="Full Flight Simulator"
+                  src={ffsImage}
                   width={960}
-                  height={1440}
+                  height={1200}
                   className="h-full w-full object-cover"
                 />
-                <div className="pointer-events-none absolute inset-0 ring-1 ring-gray-900/10" />
+                <div className="pointer-events-none absolute inset-0 rounded-3xl ring-1 ring-gray-900/10 ring-inset" />
               </div>
-              <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-600">milestone</p>
+              
+              {/* Timeline - 50% width */}
+              <div className="flex h-full min-h-[500px] flex-col justify-center">
+                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-600">Milestone</p>
                 <h2 className="mt-4 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
                   Our Roadmap
                 </h2>
-                <ol className="mt-8 space-y-8">
-                  {milestones.map((item) => (
-                    <li key={item.title} className="relative border-l border-gray-200 pl-8">
-                      <span
-                        aria-hidden="true"
-                        className="absolute left-0 top-3 h-3 w-3 -translate-x-1/2 transform rounded-full border border-gray-300 bg-gray-200"
-                      />
-                      <div className="text-xs font-semibold uppercase tracking-[0.2em] text-gray-500">{item.period}</div>
-                      <h3 className="mt-1 text-lg font-semibold text-gray-900">{item.title}</h3>
-                      <p className="mt-1 text-sm text-gray-600">{item.description}</p>
+                <ol className="relative mt-10 border-s border-gray-200">
+                  {milestones.map((item, index) => (
+                    <li key={item.title} className={`ms-4 ${index < milestones.length - 1 ? 'mb-10' : ''}`}>
+                      <div className="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-300" />
+                      <time className="text-sm font-normal leading-none text-gray-500">{item.period}</time>
+                      <h3 className="my-2 text-lg font-semibold text-gray-900">{item.title}</h3>
+                      {item.description && (
+                        <p className="text-base font-normal text-gray-600">{item.description}</p>
+                      )}
                     </li>
                   ))}
                 </ol>
@@ -405,9 +403,9 @@ export default function AboutPage() {
         {/* Feature section */}
         <div className="mx-auto my-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Our values</h2>
+            <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Our Values</h2>
             <p className="mt-6 text-lg/8 text-gray-700">
-              These core values guide everything we do at TTA Aviation, from our training programs to our relationships with students and industry partners.
+              Guided by safety, excellence and innovation, we shape every TTA programme to build responsible, capable and future-ready aviation talent.
             </p>
           </div>
           <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base/7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">

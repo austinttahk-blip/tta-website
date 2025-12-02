@@ -11,11 +11,8 @@ import workshopImage from '@/images/courses/workshop.jpeg'
 import flightTrainingImage from '@/images/courses/flight_training.jpg'
 import simulatorTrainingImage from '@/images/courses/simulator_training.jpeg'
 import careerDevelopmentImage from '@/images/courses/career_development.jpeg'
-// Import training images for hero section
-import pilot2Image from '@/images/training/pilot-2.jpg'
-import pilot4Image from '@/images/training/pilot-4.jpg'
-import pilot6Image from '@/images/training/pilot-6.jpg'
-import simulatorImage from '@/images/training/simulator.jpg'
+// Import training image for hero section
+import heroImage from '@/images/education/flight-view.jpeg'
 
 // Course menu options
 const courseMenus = {
@@ -51,71 +48,31 @@ const courseMenus = {
 
 export default function TrainingPage() {
   return (
-    <div>
-      <Header enableColorTransition={false}/>
-      <div className="overflow-hidden bg-white py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
-          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:max-w-none lg:min-w-full lg:flex-none lg:gap-y-8">
-            <div className="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
-              <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Professional Training</h2>
-              <p className="mt-6 text-xl/8 text-gray-700">
-                Comprehensive aviation training programs designed to prepare you for every aspect of your aviation career journey.
+    <div className="bg-white text-gray-900">
+      <Header enableColorTransition={true} />
+
+      <main>
+        {/* Hero Section - Airbus style */}
+        <section className="relative h-screen min-h-[600px] overflow-hidden">
+          <Image
+            src={heroImage}
+            alt="Professional Training"
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/50 to-slate-900/80" />
+          <div className="absolute inset-0 flex items-end">
+            <div className="container mx-auto px-6 pb-24 lg:pb-32">
+              <h1 className="max-w-3xl text-4xl font-light text-white sm:text-5xl lg:text-6xl">
+                Professional Training
+              </h1>
+              <p className="mt-6 max-w-4xl text-lg text-white/90 lg:text-xl">
+                Comprehensive aviation training programs designed to prepare you for every aspect of your aviation career journey. From youth aviation programs to advanced simulator training, our courses provide the knowledge and skills needed for successful careers in aviation.
               </p>
-              <p className="mt-6 text-base/7 text-gray-600">
-                From youth aviation programs to advanced simulator training, our courses provide the knowledge and skills needed for successful careers in aviation.
-              </p>
-              <div className="mt-10 flex">
-                <a
-                  href="#courses"
-                  className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-blue-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-                >
-                  Explore Courses
-                </a>
-              </div>
-            </div>
-            <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
-              <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
-                <Image
-                  alt=""
-                  src={simulatorImage}
-                  className="aspect-7/5 w-148 max-w-none rounded-2xl bg-gray-50 object-cover max-sm:w-120"
-                  width={800}
-                  height={571}
-                />
-              </div>
-              <div className="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-148 lg:items-start lg:justify-end lg:gap-x-8">
-                <div className="order-first flex w-64 flex-none justify-end self-end max-sm:w-40 lg:w-auto">
-                  <Image
-                    alt=""
-                    src={pilot4Image}
-                    className="aspect-4/3 w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
-                    width={384}
-                    height={288}
-                  />
-                </div>
-                <div className="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
-                  <Image
-                    alt=""
-                    src={pilot2Image}
-                    className="aspect-7/5 w-148 max-w-none flex-none rounded-2xl bg-gray-50 object-cover max-sm:w-120"
-                    width={800}
-                    height={571}
-                  />
-                </div>
-                <div className="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
-                  <Image
-                    alt=""
-                    src={pilot6Image}
-                    className="aspect-4/3 w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover"
-                    width={384}
-                    height={288}
-                  />
-                </div>
-              </div>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
 
         <section id="courses" className="py-20 bg-slate-50">
           <div className="max-w-7xl mx-auto px-4">
@@ -395,6 +352,7 @@ export default function TrainingPage() {
             </div>
           </div>
         </section>
+      </main>
 
       <Footer />
     </div>

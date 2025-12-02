@@ -41,7 +41,7 @@ const missionTracks = [
     description:
       'Building clear pathways and strategies that connect people, schools and organisations to real aviation and low-altitude career and business opportunities.',
     highlights: ['Career bridge labs', 'Operator partnerships', 'Advisory councils'],
-    link: '/talent-advisory',
+    link: '/education/professional-training',
     image: talentImage,
   },
 ]

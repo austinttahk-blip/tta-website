@@ -4,6 +4,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import Link from 'next/link'
 import Image from 'next/image'
+import map4Image from '@/images/education/map4.jpeg'
 
 export default function ProfessionalTrainingPage() {
   return (
@@ -13,7 +14,7 @@ export default function ProfessionalTrainingPage() {
       {/* Hero Image Banner */}
       <div className="relative w-full h-[60vh] min-h-[400px] bg-gray-900">
         <Image
-          src="https://picsum.photos/seed/professional-training/1920/800"
+          src={map4Image}
           alt="Aviation Career Consultation"
           width={1920}
           height={800}

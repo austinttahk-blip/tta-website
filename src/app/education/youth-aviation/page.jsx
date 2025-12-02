@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useEffect, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
+import map6Image from '@/images/education/map6.jpeg'
 
 function YouthAviationContent() {
   const searchParams = useSearchParams()
@@ -61,7 +62,7 @@ function YouthAviationContent() {
       {/* Hero Image Banner */}
       <div className="relative w-full h-[60vh] min-h-[400px] bg-gray-900">
         <Image
-          src="https://picsum.photos/seed/aviation-youth/1920/800"
+          src={map6Image}
           alt="Youth Aviation Programs"
           width={1920}
           height={800}

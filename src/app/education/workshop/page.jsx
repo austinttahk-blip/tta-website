@@ -4,6 +4,7 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import Link from 'next/link'
 import Image from 'next/image'
+import map5Image from '@/images/education/map5.jpeg'
 
 export default function WorkshopPage() {
   return (
@@ -13,7 +14,7 @@ export default function WorkshopPage() {
       {/* Hero Image Banner */}
       <div className="relative w-full h-[60vh] min-h-[400px] bg-gray-900">
         <Image
-          src="https://picsum.photos/seed/workshop/1920/800"
+          src={map5Image}
           alt="Aviation Workshops"
           width={1920}
           height={800}
