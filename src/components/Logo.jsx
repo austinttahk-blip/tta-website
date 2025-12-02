@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import logoImage from '@/images/logos/logo.png'
-import logoDarkImage from '@/images/logos/logo-dark.png'
+import logoImage from '@/images/logos/logo.svg'
+import logoDarkImage from '@/images/logos/logo-dark.svg'
 
 export function Logo({ visible, enableColorTransition = true, ...props }) {
   const logoSrc = enableColorTransition
