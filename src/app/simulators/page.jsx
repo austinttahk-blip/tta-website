@@ -19,38 +19,35 @@ export const metadata = {
 const simulatorFamilies = [
   {
     name: 'Standard Solutions',
-    title: 'TTA Standard Solutions:',
-    subtitle: 'turnkey simulator excellence',
+    title: 'TTA Standard Simulator Solutions',
+    subtitle: 'Turnkey training simulators for education',
     description: [
-      'TTA Standard Flight Simulator solutions come pre-validated and installation-ready, delivering the fidelity, data, and compliance airlines and academies expect.',
-      'Engineered in Hong Kong with Level-D capable architecture, our simulators feature Tropos-style spherical visuals with weather, night and terrain realism.',
-      'Connected instructor stations enable live monitoring, comprehensive debrief capabilities, and training analytics that optimize pilot development programs.',
+      'TTA provides ready-to-install simulators for DA40, C172, DA42 and A320, engineered in Hong Kong specifically for education, ab-initio and cadet preparation.',
+      'High-fidelity visuals, solid flight models and integrated instructor stations give schools, academies and clubs a reliable platform for procedural, skills and scenario-based training.',
     ],
     ctaText: 'Discover Standard Solutions',
     ctaLink: '/simulators/standard-solutions',
-    image: cockpitImage,
+    image: '/images/standard-solution.jpeg',
     stats: [
-      { value: 'Level-D', label: 'QUALIFICATION', icon: 'certificate' },
-      { value: '210°', label: 'VISUAL DOME', icon: 'display' },
-      { value: '6-DOF', label: 'MOTION SYSTEM', icon: 'motion' },
+      { value: '4', label: 'Aircraft Types', icon: 'aircraft' },
+      { value: '3', label: 'Training Stages', icon: 'certificate' },
+      { value: '1', label: 'Turnkey System', icon: 'display' },
     ],
   },
   {
     name: 'Custom Solutions',
-    title: 'TTA Custom Solutions:',
-    subtitle: 'tailored to your fleet',
+    title: 'TTA Custom Simulator Solutions',
+    subtitle: 'Built around your aircraft, your procedures, your space.',
     description: [
-      'TTA Custom Flight Simulators Solutions adapt every detail of the cockpit, avionics, and visual systems to your airline or rotary fleet so you can train the way you fly.',
-      'Configurable environments that mirror your fleet—fixed-wing, rotary, or mission-specific—while keeping integrations turnkey.',
-      'High-fidelity cueing with dynamic control loading, mission rehearsal packages with sling, winch, and hoist profiles for helicopter operations.',
+      'TTA Custom Simulator Solutions are co-designed with your team, delivering bespoke cockpits, layouts and features that match your fleet, training syllabus and physical constraints – from concept mock-ups to full training and R&D platforms.',
     ],
     ctaText: 'Discover Custom Solutions',
     ctaLink: '/simulators/custom-solutions',
-    image: pilotFiveImage,
+    image: '/images/custom-solution.jpeg',
     stats: [
-      { value: '100%', label: 'FLEET MATCH', icon: 'aircraft' },
-      { value: 'NVG', label: 'READY INTERIOR', icon: 'night' },
-      { value: 'HEMS', label: 'MISSION KITS', icon: 'mission' },
+      { value: '3', label: 'Design Phases', icon: 'certificate' },
+      { value: '2', label: 'Core Applications', icon: 'display' },
+      { value: '1', label: 'Dedicated Project Team', icon: 'mission' },
     ],
   },
 ]
@@ -159,11 +156,13 @@ export default function SimulatorsPage() {
               {/* Content Section */}
               <div className={`flex flex-col justify-center px-6 py-16 lg:px-16 xl:px-24 ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
                 <div className="max-w-xl">
-                  {/* Title with blue underline */}
-                  <h2 className="text-3xl font-normal text-[#00205B] sm:text-4xl lg:text-[42px] lg:leading-tight">
+                  {/* Eyebrow */}
+                  <p className="text-lg font-semibold">
                     {family.title}
-                    <br />
-                    <span className="text-[#00205B]">{family.subtitle}</span>
+                  </p>
+                  {/* Title with blue underline */}
+                  <h2 className="mt-2 text-3xl font-normal text-[#00205B] sm:text-4xl lg:text-[42px] lg:leading-tight">
+                    {family.subtitle}
                   </h2>
                   {/* Blue underline bar */}
                   <div className="mt-4 h-1 w-12 bg-[#00122e]" />
@@ -236,13 +235,13 @@ export default function SimulatorsPage() {
 
                 <h2 className="text-3xl font-light text-white sm:text-4xl lg:text-5xl">
 
-                  Level-D Fidelity Training
+                  Integrated Training Journey
 
                 </h2>
 
                 <p className="mt-6 text-lg leading-relaxed text-white/80">
 
-                  Our simulators deliver the highest level of fidelity with Tropos-style spherical visuals, dynamic weather systems, and terrain realism that meets or exceeds regulatory requirements. Advanced instructor stations enable live monitoring, comprehensive debrief capabilities, and training analytics that help optimize pilot development programs.
+                  From simulator design and custom builds to school programmes and talent pathways, TTA creates an integrated training journey that turns today&apos;s learners into tomorrow&apos;s aviation professionals.
 
                 </p>
 

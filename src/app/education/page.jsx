@@ -27,6 +27,9 @@ const courseMenus = {
     { name: '10-Hour Foundation', description: 'ICAO Level 4 • 10 Hours', href: '/education/aviation-english?tab=foundation' },
     { name: '18-Hour Intensive', description: 'ICAO Level 5+ • 18 Hours', href: '/education/aviation-english?tab=intensive' },
   ],
+  workshop: [
+    { name: 'Aviation Workshops', description: 'Hands-on learning experiences', href: '/education/workshop' },
+  ],
   flightTraining: [
     { name: 'Malaysia 🇲🇾', description: 'CAAM-Approved Training', href: '/education/flight-training?tab=malaysia' },
     { name: 'Australia 🇦🇺', description: 'CASA-Approved Training', href: '/education/flight-training?tab=australia' },
@@ -203,6 +206,59 @@ export default function TrainingPage() {
                       <div className="absolute left-0 z-50 mt-3 w-screen max-w-sm opacity-0 invisible group-hover/menu:opacity-100 group-hover/menu:visible transition-all duration-200">
                         <div className="rounded-2xl bg-white p-3 shadow-lg ring-1 ring-gray-900/5">
                           {courseMenus.aviationEnglish.map((item) => (
+                            <div key={item.name} className="relative rounded-lg p-3 hover:bg-gray-50">
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation()
+                                  router.push(item.href)
+                                }}
+                                className="font-semibold text-gray-900 text-sm text-left w-full"
+                              >
+                                {item.name}
+                                <span className="absolute inset-0" />
+                              </button>
+                              <p className="mt-1 text-xs text-gray-600">{item.description}</p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                    <span className="text-blue-600 text-sm font-medium transition-colors group-hover:text-blue-700">
+                      Learn More <span aria-hidden="true">→</span>
+                    </span>
+                  </div>
+                </div>
+              </Link>
+
+              <Link
+                href="/education/workshop"
+                className="group rounded-2xl hover:shadow-lg transition-all duration-300 hover:border-gray-300 border border-transparent hover:scale-[1.02] cursor-pointer"
+              >
+                <div className="aspect-[4/3] relative overflow-hidden rounded-t-2xl">
+                  <Image
+                    src={pilot4Image}
+                    alt="WORKSHOP"
+                    className="object-cover group-hover:scale-105 transition duration-300 w-full h-full"
+                    width={400}
+                    height={300}
+                  />
+                </div>
+                <div className="p-4">
+                  <h2 className="text-xl font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-gray-600">
+                    WORKSHOP
+                  </h2>
+                  <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                    Interactive workshops and hands-on learning experiences for aviation enthusiasts
+                  </p>
+                  <div className="flex items-center justify-between">
+                    <div className="relative group/menu" onClick={(e) => e.stopPropagation()}>
+                      <button className="inline-flex items-center gap-x-1 text-sm font-medium text-gray-700 hover:text-gray-900">
+                        <span>Workshops</span>
+                        <ChevronDownIcon aria-hidden="true" className="size-4" />
+                      </button>
+                      <div className="absolute left-0 z-50 mt-3 w-screen max-w-sm opacity-0 invisible group-hover/menu:opacity-100 group-hover/menu:visible transition-all duration-200">
+                        <div className="rounded-2xl bg-white p-3 shadow-lg ring-1 ring-gray-900/5">
+                          {courseMenus.workshop.map((item) => (
                             <div key={item.name} className="relative rounded-lg p-3 hover:bg-gray-50">
                               <button
                                 onClick={(e) => {

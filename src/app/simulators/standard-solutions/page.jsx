@@ -86,14 +86,20 @@ export default function StandardSolutionsPage() {
             <Image src={heroImage} alt="Standard simulator hero" className="size-full object-cover" priority />
             <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/70 to-slate-950" />
           </div>
-          <div className="relative z-10 mx-auto flex min-h-[60vh] w-full max-w-5xl items-end px-6 pb-16">
-            <div className="max-w-2xl">
-              <p className="text-xs font-semibold uppercase tracking-[0.4em] text-blue-200">Standard Solutions</p>
-              <h1 className="mt-4 text-4xl font-semibold leading-tight text-white md:text-5xl">Flight deck ecosystems ready for airline deployment</h1>
-              <p className="mt-4 text-base text-slate-100">
-                Full-flight simulators, rotorcraft suites, and instructor hubs engineered as a cohesive catalogue for crews who need reliable, repeatable
-                training hours.
-              </p>
+          <div className="relative z-10 mx-auto flex min-h-[60vh] w-full max-w-7xl items-end px-6 pb-16">
+            <div className="w-full space-y-4">
+              <div className="max-w-2xl">
+                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-blue-200">Standard Simulators</p>
+                <h1 className="mt-4 text-4xl font-semibold leading-tight text-white md:text-5xl">Turnkey training simulators for education</h1>
+              </div>
+              <div className="max-w-4xl">
+                <p className="text-base text-slate-100">
+                  TTA provides ready-to-install simulators for DA40, C172, DA42 and A320, engineered in Hong Kong specifically for education, ab-initio and cadet preparation.
+                </p>
+                <p className="mt-4 text-base text-slate-100">
+                  High-fidelity visuals, solid flight models and integrated instructor stations give schools, academies and clubs a reliable platform for procedural, skills and scenario-based training.
+                </p>
+              </div>
             </div>
           </div>
         </section>

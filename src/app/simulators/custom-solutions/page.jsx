@@ -105,13 +105,17 @@ export default function CustomSolutionsPage() {
             <Image src={heroImage} alt="Custom simulator hero" className="size-full object-cover" priority />
             <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/70 to-slate-950" />
           </div>
-          <div className="relative z-10 mx-auto flex min-h-[60vh] w-full max-w-5xl items-end px-6 pb-16">
-            <div className="max-w-2xl">
-              <p className="text-xs font-semibold uppercase tracking-[0.4em] text-blue-200">Custom Solutions</p>
-              <h1 className="mt-4 text-4xl font-semibold leading-tight text-white md:text-5xl">Flight deck ecosystems tailored to your fleet and mission</h1>
-              <p className="mt-4 text-base text-slate-100">
-                Full-flight simulators, rotorcraft suites, and instructor hubs engineered to match your exact aircraft configurations, operational procedures, and training requirements.
-              </p>
+          <div className="relative z-10 mx-auto flex min-h-[60vh] w-full max-w-7xl items-end px-6 pb-16">
+            <div className="w-full space-y-4">
+              <div className="max-w-3xl">
+                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-blue-200">Custom Solutions</p>
+                <h1 className="mt-4 text-4xl font-semibold leading-tight text-white md:text-5xl">Built around your aircraft, your procedures, your space.</h1>
+              </div>
+              <div className="max-w-4xl">
+                <p className="text-base text-slate-100">
+                  TTA Custom Simulator Solutions are co-designed with your team, delivering bespoke cockpits, layouts and features that match your fleet, training syllabus and physical constraints – from concept mock-ups to full training and R&D platforms.
+                </p>
+              </div>
             </div>
           </div>
         </section>
