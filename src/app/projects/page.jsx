@@ -3,9 +3,6 @@ import Link from 'next/link'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import heroImage from '@/images/education/take-off.jpeg'
-import campusImage from '@/images/training/pilot.jpg'
-import labImage from '@/images/training/pilot-2.jpg'
-import outreachImage from '@/images/training/pilot-4.jpg'
 import pilotSixImage from '@/images/training/pilot-6.jpg'
 import cockpitImage from '@/images/training/cockpit.jpg'
 import simulatorImage from '@/images/training/simulator.jpeg'
@@ -21,9 +18,9 @@ const initiativeTracks = [
     description:
       'TTA delivers end-to-end simulator projects, covering the full journey from initial design and engineering through development, testing and final handover in one integrated workflow.',
     bullets: [
-      'Consulting & Concept Design – Training needs analysis, cockpit and room layout definition, system specification.',
-      'Development & Integration – Hardware build, assembly and software integration, including controls, visuals and instructor tools.',
-      'Commissioning & Training Support – On-site installation, functional testing, acceptance, and initial operator / instructor training.',
+      'Consulting & Concept Design',
+      'Development & Integration',
+      'Commissioning & Training Support',
     ],
     image: simulatorImage,
     link: '/projects/simulator-projects',
@@ -33,9 +30,9 @@ const initiativeTracks = [
     description:
       'Integrated project support for UAV, eVTOL and general aviation concepts, from feasibility and simulation to pilot projects and training ecosystems.',
     bullets: [
-      'UAV Solutions – Concept design, operating frameworks and training plans for unmanned and cargo drone operations.',
-      'eVTOL Solutions – Route, vertiport and procedure concepts supported by simulation and pilot / operator training models.',
-      'General Aviation & Air Mobility – GA and charter concepts linking simulators, training pathways and future low-altitude operations.',
+      'UAV Solutions',
+      'eVTOL Solutions',
+      'General Aviation & Air Mobility',
     ],
     image: laeImage,
     link: '/projects/lae-projects',

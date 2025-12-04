@@ -3,12 +3,12 @@ import { Footer } from '@/components/Footer'
 import Image from 'next/image'
 
 // Import training images for hero section
-import pilot3Image from '@/images/training/pilot-3.jpg'
-import pilot5Image from '@/images/training/aboutus-1.jpeg'
-import cockpitImage from '@/images/training/aboutus-2.jpeg'
+import pilot5Image from '@/images/training/pilot-5.jpg'
 import pilot4Image from '@/images/training/pilot-4.jpg'
 import pilot6Image from '@/images/training/pilot-6.jpg'
 import ffsImage from '@/images/education/ffs.jpeg'
+import aboutusImage1 from '@/images/training/aboutus-1.jpeg'
+import aboutusImage2 from '@/images/training/aboutus-2.jpeg'
 
 
 const milestones = [
@@ -113,7 +113,7 @@ export default function AboutPage() {
                     <div className="relative">
                       <Image
                         alt=""
-                        src={pilot3Image}
+                        src={aboutusImage2}
                         className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         width={352}
                         height={528}
@@ -135,7 +135,7 @@ export default function AboutPage() {
                     <div className="relative">
                       <Image
                         alt=""
-                        src={cockpitImage}
+                        src={aboutusImage1}
                         className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         width={352}
                         height={528}
