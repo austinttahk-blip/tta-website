@@ -73,7 +73,7 @@ export function Footer() {
 
   const legalPages = [
     {
-      title: "Terms of Service & Privacy Policy",
+      title: "Terms",
       href: "/terms-and-privacy",
     },
   ];
