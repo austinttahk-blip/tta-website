@@ -146,7 +146,7 @@ export default function StandardSolutionsPage() {
                       <svg className="h-2 w-2 flex-none text-gray-400 mt-2" viewBox="0 0 8 8" fill="currentColor" aria-hidden="true">
                         <circle cx="4" cy="4" r="4" />
                       </svg>
-                      <span className="text-base font-medium text-slate-700">{feature}</span>
+                      <span className="text-sm font-medium text-slate-700">{feature}</span>
                     </li>
                   ))}
                 </ul>

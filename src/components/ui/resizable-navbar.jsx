@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { IconMenu2, IconX } from "@tabler/icons-react";
+import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import {
   motion,
   AnimatePresence,
@@ -96,8 +97,7 @@ export const NavItems = ({
         <div
           key={`nav-item-${idx}`}
           className="relative"
-          onMouseEnter={() => setHovered(idx)}
-          onMouseLeave={() => setHovered(null)}>
+          onMouseEnter={() => setHovered(idx)}>
           <a
             onClick={onItemClick}
             style={{
@@ -119,16 +119,37 @@ export const NavItems = ({
                 }}
                 className="absolute inset-0 h-full w-full rounded-full" />
             )}
-            <span className="relative z-20">{item.name}</span>
+            <span className="relative z-20 flex items-center gap-1">
+              {item.name}
+              {item.subItems && item.subItems.length > 0 && (
+                <motion.span
+                  animate={{
+                    rotate: hovered === idx ? 180 : 0,
+                  }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 400,
+                    damping: 30,
+                  }}
+                  className="inline-flex">
+                  <ChevronDownIcon className="w-4 h-4" />
+                </motion.span>
+              )}
+            </span>
           </a>
           {item.subItems && item.subItems.length > 0 && (
             <AnimatePresence>
               {hovered === idx && (
                 <motion.div
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -10 }}
-                  transition={{ duration: 0.2 }}
+                  initial={{ opacity: 0, y: 10, scale: 0.95 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: 10, scale: 0.95 }}
+                  transition={{
+                    type: "spring",
+                    stiffness: 400,
+                    damping: 30,
+                    mass: 0.8,
+                  }}
                   className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 z-[70]"
                   style={{ minWidth: '200px' }}>
                   <div
