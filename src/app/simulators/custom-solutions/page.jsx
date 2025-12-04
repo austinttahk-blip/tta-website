@@ -10,6 +10,10 @@ import pilotSixImage from '@/images/training/pilot-6.jpg'
 import pilotImage from '@/images/training/pilot.jpg'
 import pilotTwoImage from '@/images/training/pilot-2.jpg'
 import pilotThreeImage from '@/images/training/pilot-3.jpg'
+import gallery1Image from '@/images/gallery/gallery-1.jpeg'
+import gallery2Image from '@/images/gallery/gallery-2.jpeg'
+import gallery3Image from '@/images/gallery/gallery-3.jpeg'
+import gallery4Image from '@/images/gallery/gallery-4.jpeg'
 
 export const metadata = {
   title: 'TTA Custom Flight Simulator Solutions',
@@ -17,7 +21,7 @@ export const metadata = {
     'A detail-rich view of the TTA Custom Simulator portfolio, tailored to your fleet and mission requirements, built for training leaders who need precision.',
 }
 
-const galleryImages = [heroImage, cockpitImage, pilotFiveImage, pilotSixImage, pilotImage, pilotThreeImage]
+const galleryImages = [gallery4Image, gallery3Image, gallery2Image, gallery1Image, pilotImage, pilotThreeImage]
 
 const solutionHighlights = [
   {

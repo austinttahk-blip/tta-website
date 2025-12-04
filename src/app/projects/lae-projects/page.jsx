@@ -73,7 +73,7 @@ export default function LaeProjectsPage() {
             <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-24">
               <div className="relative aspect-[4/3] overflow-hidden rounded-lg shadow-xl">
                 <Image
-                  src={operationsImage}
+                  src={infrastructureImage}
                   alt="General Aviation & Traditional Airspace"
                   fill
                   className="object-cover"
@@ -129,7 +129,7 @@ export default function LaeProjectsPage() {
             <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-24">
               <div className="relative aspect-[4/3] overflow-hidden rounded-lg shadow-xl">
                 <Image
-                  src={infrastructureImage}
+                  src={heroImage}
                   alt="eVTOL & Urban Air Mobility"
                   fill
                   className="object-cover"

@@ -7,8 +7,12 @@ import cockpitImage from '@/images/training/cockpit.jpg'
 import pilotFiveImage from '@/images/training/pilot-5.jpg'
 import pilotSixImage from '@/images/training/pilot-6.jpg'
 import pilotImage from '@/images/training/pilot.jpg'
-import pilotTwoImage from '@/images/training/pilot-2.jpg'
 import pilotThreeImage from '@/images/training/pilot-3.jpg'
+import A320Image from '@/images/solutions/A320.jpeg'
+import gallery1Image from '@/images/gallery/gallery-1.jpeg'
+import gallery2Image from '@/images/gallery/gallery-2.jpeg'
+import gallery3Image from '@/images/gallery/gallery-3.jpeg'
+import gallery4Image from '@/images/gallery/gallery-4.jpeg'
 
 export const metadata = {
   title: 'TTA Standard Flight Simulator Solutions',
@@ -16,61 +20,55 @@ export const metadata = {
     'A detail-rich view of the TTA Standard Simulator portfolio, inspired by flagship OEM programme pages and built for training leaders who need depth.',
 }
 
-const galleryImages = [heroImage, cockpitImage, pilotFiveImage, pilotSixImage, pilotImage, pilotThreeImage]
+const galleryImages = [gallery1Image, gallery2Image, gallery3Image, gallery4Image, pilotSixImage, pilotFiveImage]
 
 const productSections = [
   {
-    name: 'core',
-    title: 'Core flight decks',
-    subtitle: 'airline-grade baseline',
+    name: 'c172',
+    title: 'C172 Flight Simulator',
+    subtitle: '',
     description: [
-      'Level-D pathing with dual GNSS, integrated EFBs, and 210-degree domes tuned for Asia-Pacific met models.',
-      'Pods arrive with motion, data, and instructor cabling pre-routed so installations stay inside sub-18-week windows.',
-      'Instructor decks mirror the layout on /simulators but add telemetry for maintenance planners and dispatch leads.',
+      'Our C172 simulator is the core single-engine trainer for basic handling, circuits and navigation, ideal for PPL-style and school programmes. It gives students a familiar, forgiving platform to build solid flying fundamentals before moving on to more complex types.',
     ],
     ctaText: 'Explore flagship builds',
     ctaLink: '/simulators',
-    image: cockpitImage,
-    stats: [
-      { value: '210°', label: 'Visual dome' },
-      { value: '99.3%', label: 'Availability' },
-      { value: 'Level-D', label: 'Qualification' },
+    video: '/videos/C172.mp4',
+    features: [
+      'G1000 glass cockpit',
+      'Circuits & nav exercises',
+      'School & club friendly',
     ],
   },
   {
-    name: 'mission',
-    title: 'Mission variants',
-    subtitle: 'rotary + cabin kits',
+    name: 'da40-da42',
+    title: 'DA40 / DA42 Flight Simulator',
+    subtitle: '',
     description: [
-      'SAR and EMS packs blend hoists, sling loads, and NVG-ready domes tied into the same instructor/data spine.',
-      'Cabin safety trainers bolt to the flight deck infrastructure so power + diagnostics remain unified.',
-      'Analytics layers surface utilisation, fault codes, and maintenance prompts live for ops managers.',
+      'The DA40/42 simulator provides a full glass-cockpit environment for IFR and multi-engine progression, bridging the gap between basic SEP training and more advanced commercial pathways. It is designed for serious procedure practice while remaining accessible for training organisations and academies.',
     ],
     ctaText: 'See mission-ready kits',
     ctaLink: '/projects',
-    image: pilotFiveImage,
-    stats: [
-      { value: '3', label: 'Mission packs' },
-      { value: 'NVG', label: 'Calibrated' },
-      { value: 'EMS', label: 'Ready' },
+    video: '/videos/DA40.mp4',
+    features: [
+      'Full G1000 suite',
+      'Single & multi-engine modes',
+      'IFR & procedures focus',
     ],
   },
   {
-    name: 'training',
-    title: 'Training infrastructure',
-    subtitle: 'instructor stations + analytics',
+    name: 'a320',
+    title: 'A320 Flight Simulator',
+    subtitle: '',
     description: [
-      'Advanced instructor operator stations with comprehensive debrief capabilities and real-time monitoring of training sessions.',
-      'Integrated training analytics platforms that track pilot performance, identify skill gaps, and optimize training curricula.',
-      'Unified data management systems connecting simulators, training records, and compliance reporting across your entire fleet.',
+      'Our A320 simulator introduces students to a modern airline-style cockpit, supporting procedural training, crew coordination and airline-style operations. It is built for flows, checklists and scenario-based sessions that mirror real airline environments at an educational, non-certified level.',
     ],
     ctaText: 'Explore training systems',
     ctaLink: '/education',
-    image: pilotTwoImage,
-    stats: [
-      { value: 'Real-time', label: 'Monitoring' },
-      { value: 'Advanced', label: 'Analytics' },
-      { value: 'Unified', label: 'Data platform' },
+    image: A320Image,
+    features: [
+      'Airline-style flight deck',
+      'Procedure & SOP training',
+      'Crew coordination & scenarios',
     ],
   },
 ]
@@ -89,13 +87,10 @@ export default function StandardSolutionsPage() {
           <div className="relative z-10 mx-auto flex min-h-[60vh] w-full max-w-7xl items-end px-6 pb-16">
             <div className="w-full space-y-4">
               <div className="max-w-2xl">
-                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-blue-200">Standard Simulators</p>
-                <h1 className="mt-4 text-4xl font-semibold leading-tight text-white md:text-5xl">Turnkey training simulators for education</h1>
+                <p className="text-xs font-semibold uppercase tracking-[0.4em] text-blue-200">Standard Solutions</p>
+                <h1 className="mt-4 text-4xl font-semibold leading-tight text-white md:text-5xl">Training simulators for education</h1>
               </div>
               <div className="max-w-4xl">
-                <p className="text-base text-slate-100">
-                  TTA provides ready-to-install simulators for DA40, C172, DA42 and A320, engineered in Hong Kong specifically for education, ab-initio and cadet preparation.
-                </p>
                 <p className="mt-4 text-base text-slate-100">
                   High-fidelity visuals, solid flight models and integrated instructor stations give schools, academies and clubs a reliable platform for procedural, skills and scenario-based training.
                 </p>
@@ -108,37 +103,55 @@ export default function StandardSolutionsPage() {
           <section key={section.name} className="bg-white">
             <div className="grid gap-y-10 lg:grid-cols-12 lg:items-stretch lg:gap-0">
               <div className={`relative min-h-[420px] lg:col-span-7 lg:min-h-[640px] ${index % 2 === 1 ? 'lg:order-2' : 'lg:order-1'}`}>
-                <Image src={section.image} alt={section.name} fill className="object-cover" />
+                {section.image ? (
+                  <Image src={section.image} alt={section.name} fill className="object-cover" />
+                ) : (
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="absolute inset-0 h-full w-full object-cover"
+                  >
+                    <source src={section.video} type="video/mp4" />
+                  </video>
+                )}
               </div>
               <div
-                className={`flex flex-col justify-center px-6 py-16 lg:col-span-5 lg:px-16 xl:px-24 ${
+                className={`flex flex-col justify-center px-6 py-16 lg:col-span-5 lg:min-h-[640px] lg:px-16 xl:px-24 ${
                   index % 2 === 1 ? 'lg:order-1' : 'lg:order-2'
                 }`}
               >
                 <div className="max-w-xl">
                   <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-400">Standard Solutions</p>
-                  <h2 className="text-3xl font-semibold text-slate-900 sm:text-4xl lg:text-[42px] lg:leading-tight">
+                  <h2 className="mt-4 text-3xl font-semibold text-slate-900 sm:text-4xl lg:text-[42px] lg:leading-tight">
                     {section.title}
-                    <br />
-                    <span className="text-slate-500">{section.subtitle}</span>
+                    {section.subtitle && (
+                      <>
+                        <br />
+                        <span className="text-slate-500">{section.subtitle}</span>
+                      </>
+                    )}
                   </h2>
                   <div className="mt-4 h-1 w-12 bg-slate-900" />
-                  <div className="mt-8 space-y-4">
+                  <div className="mt-8 space-y-6">
                     {section.description.map((paragraph, i) => (
-                      <p key={i} className="text-base leading-relaxed text-slate-600">
+                      <p key={i} className="text-base leading-relaxed text-slate-600 lg:text-lg">
                         {paragraph}
                       </p>
                     ))}
                   </div>
                 </div>
-                <div className="mt-12 grid grid-cols-3 gap-4">
-                  {section.stats.map((stat) => (
-                    <div key={stat.label} className="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-center">
-                      <p className="text-2xl font-semibold text-slate-900">{stat.value}</p>
-                      <p className="mt-1 text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{stat.label}</p>
-                    </div>
+                <ul className="mt-10 grid grid-cols-1 gap-y-4 sm:grid-cols-3 sm:gap-x-8">
+                  {section.features.map((feature) => (
+                    <li key={feature} className="flex items-start gap-3">
+                      <svg className="h-6 w-5 flex-none text-blue-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
+                      </svg>
+                      <span className="text-base font-medium text-slate-700">{feature}</span>
+                    </li>
                   ))}
-                </div>
+                </ul>
               </div>
             </div>
           </section>
