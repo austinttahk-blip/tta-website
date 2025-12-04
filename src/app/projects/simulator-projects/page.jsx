@@ -5,6 +5,8 @@ import { CTASection } from '@/components/CTASection'
 import heroImage from '@/images/solutions/education_solution.jpeg'
 import cockpitImage from '@/images/training/cockpit.jpg'
 import pilotImage from '@/images/training/pilot.jpg'
+import simulationImage from '@/images/training/simulator.jpeg'
+import uavImage from '@/images/solutions/uav.jpg'
 import installationImage from '@/images/training/pilot-2.jpg'
 
 export const metadata = {
@@ -73,8 +75,8 @@ export default function SimulatorProjectsPage() {
             <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-24">
               <div className="relative aspect-[4/3] overflow-hidden rounded-lg shadow-xl">
                 <Image
-                  src={cockpitImage}
-                  alt="Plane Simulators"
+                  src={simulationImage}
+                  alt="General Simulators"
                   fill
                   className="object-cover"
                 />
@@ -82,7 +84,7 @@ export default function SimulatorProjectsPage() {
               <div>
                 <p className="text-sm font-bold tracking-widest text-slate-500 uppercase">Simulator Type</p>
                 <h3 className="mt-2 text-3xl font-light text-slate-900 sm:text-4xl">
-                  Plane Simulators
+                  General Simulators
                 </h3>
                 <div className="mt-6 h-1 w-12 bg-blue-600"></div>
                 <div className="mt-8 space-y-6 text-lg text-slate-600 leading-relaxed">
@@ -129,7 +131,7 @@ export default function SimulatorProjectsPage() {
             <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-24">
               <div className="relative aspect-[4/3] overflow-hidden rounded-lg shadow-xl">
                 <Image
-                  src={pilotImage}
+                  src={uavImage}
                   alt="UAV Simulators"
                   fill
                   className="object-cover"

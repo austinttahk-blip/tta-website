@@ -6,6 +6,8 @@ import heroImage from '@/images/solutions/LAE.jpeg'
 import simulationImage from '@/images/education/map2.jpeg'
 import infrastructureImage from '@/images/education/runway.jpeg'
 import operationsImage from '@/images/solutions/custom-solution.jpeg'
+import uavImage from '@/images/solutions/uav.jpg'
+import uavSystemsImage from '@/images/solutions/uav_system.jpeg'
 
 export const metadata = {
   title: 'LAE Projects - TTA Aviation',
@@ -21,7 +23,7 @@ export default function LaeProjectsPage() {
         {/* Hero Section */}
         <section className="relative h-[80vh] min-h-[600px] overflow-hidden">
           <Image
-            src={heroImage}
+            src={uavSystemsImage}
             alt="LAE Projects"
             fill
             className="object-cover"
@@ -113,7 +115,7 @@ export default function LaeProjectsPage() {
               </div>
               <div className="relative order-1 aspect-[4/3] overflow-hidden rounded-lg shadow-xl lg:order-2">
                 <Image
-                  src={simulationImage}
+                  src={uavImage}
                   alt="UAV Systems & Homing Technology"
                   fill
                   className="object-cover"
