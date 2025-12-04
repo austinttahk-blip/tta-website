@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+import { CTASection } from '@/components/CTASection'
 import heroImage from '@/images/training/simulator.jpeg'
 import cockpitImage from '@/images/training/cockpit.jpg'
 import pilotFiveImage from '@/images/training/pilot-5.jpg'
@@ -165,30 +165,13 @@ export default function StandardSolutionsPage() {
           </div>
         </section>
 
-        <section className="bg-slate-950 py-20 text-white">
-          <div className="mx-auto max-w-5xl space-y-6 px-6 text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-blue-200">Get started</p>
-            <h2 className="text-3xl font-bold">Line up your delivery slot</h2>
-            <p className="text-base text-slate-200">
-              Share your fleet mix, regulatory pathway, and preferred motion options. Our programme managers will lock the right baseline
-              configuration and guide you to factory acceptance.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link
-                href="mailto:info@ttahk.com?subject=TTA%20Standard%20Simulator%20Catalogue"
-                className="inline-flex items-center justify-center rounded-full bg-blue-500 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-400"
-              >
-                Request catalogue
-              </Link>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center rounded-full border border-white px-6 py-3 text-sm font-semibold text-white hover:bg-white/10"
-              >
-                Schedule consultation
-              </Link>
-            </div>
-          </div>
-        </section>
+        <CTASection
+          emailSubject="TTA Standard Simulator Catalogue"
+          emailText="Request catalogue"
+          eyebrow="Get started"
+          title="Line up your delivery slot"
+          description="Share your fleet mix, regulatory pathway, and preferred motion options. Our programme managers will lock the right baseline configuration and guide you to factory acceptance."
+        />
       </main>
 
       <Footer />

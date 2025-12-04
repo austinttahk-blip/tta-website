@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+import { CTASection } from '@/components/CTASection'
 import heroImage from '@/images/solutions/LAE.jpeg'
 import simulationImage from '@/images/education/map2.jpeg'
 import infrastructureImage from '@/images/education/runway.jpeg'
@@ -149,6 +150,15 @@ export default function LaeProjectsPage() {
             </div>
           </div>
         </section>
+
+        {/* CTA Section */}
+        <CTASection
+          emailSubject="TTA LAE Project Inquiry"
+          emailText="Request project briefing"
+          eyebrow="Get started"
+          title="Discuss your LAE project"
+          description="Share your low-altitude economy vision, operational requirements, and project goals. Our team will help turn your concept into a practical, scalable solution."
+        />
 
       </main>
 

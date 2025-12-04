@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
+import { CTASection } from '@/components/CTASection'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 
 // Import course images
@@ -352,6 +353,15 @@ export default function TrainingPage() {
             </div>
           </div>
         </section>
+
+        {/* CTA Section */}
+        <CTASection
+          emailSubject="TTA Education Inquiry"
+          emailText="Request information"
+          eyebrow="Get started"
+          title="Start your aviation journey"
+          description="Explore our comprehensive training programs and discover the pathway that's right for you. Contact us to learn more about our courses and schedule a consultation."
+        />
       </main>
 
       <Footer />

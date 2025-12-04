@@ -2,14 +2,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
+import { CTASection } from '@/components/CTASection'
 import heroImage from '@/images/training/simulator.jpeg'
 import cockpitImage from '@/images/training/cockpit.jpg'
 import pilotImage from '@/images/training/pilot.jpg'
 import pilotTwoImage from '@/images/training/pilot-2.jpg'
-import pilotThreeImage from '@/images/training/pilot-3.jpg'
-import pilotFourImage from '@/images/training/pilot-4.jpg'
-import pilotFiveImage from '@/images/training/pilot-5.jpg'
-import pilotSixImage from '@/images/training/pilot-6.jpg'
 import standardSolutionImage from '@/images/solutions/standard-solution.jpeg'
 import customSolutionImage from '@/images/solutions/custom-solution.jpeg'
 import educationSolutionImage from '@/images/solutions/education_solution.jpeg'
@@ -309,30 +306,17 @@ export default function SimulatorsPage() {
         </section>
 
         {/* Contact CTA Section */}
-        <section className="bg-[#00122e] py-20">
+        <CTASection
+          emailSubject="TTA Simulator Brochure"
+          emailText="Request brochure"
+          bgColor="bg-[#00122e]"
+          title="Connect with our simulator team"
+          description="Request a brochure, discuss certification requirements, or schedule an engineering workshop."
+        />
+        <section className="bg-[#00122e] pb-8">
           <div className="container mx-auto px-6">
             <div className="mx-auto max-w-3xl text-center">
-              <h2 className="text-3xl font-light text-white sm:text-4xl">
-                Connect with our simulator team
-              </h2>
-              <p className="mt-4 text-lg text-white/80">
-                Request a brochure, discuss certification requirements, or schedule an engineering workshop.
-              </p>
-              <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-                <Link
-                  href="mailto:info@ttahk.com?subject=TTA%20Simulator%20Brochure"
-                  className="inline-flex items-center justify-center rounded border border-white px-8 py-3 text-sm font-medium text-white transition-colors hover:bg-white hover:text-[#00122e]"
-                >
-                  Request brochure
-                </Link>
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center justify-center rounded bg-white px-8 py-3 text-sm font-medium text-[#00205B] transition-colors hover:bg-gray-100"
-                >
-                  Contact us
-                </Link>
-              </div>
-              <div className="mt-8 text-sm text-white/60">
+              <div className="text-sm text-white/60">
                 <p>P30, Telford Plaza Phase 1, Kowloon Bay</p>
                 <p className="mt-1">
                   <a href="tel:+85269360374" className="hover:text-white">+852 6936 0374</a>

@@ -1,5 +1,6 @@
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+import { CTASection } from '@/components/CTASection'
 import Image from 'next/image'
 
 // Import training images for hero section
@@ -172,7 +173,7 @@ export default function AboutPage() {
         </div>
 
         {/* Milestone timeline section */}
-        <div className="mx-auto -mt-12 max-w-7xl px-6 sm:mt-0 lg:px-8 xl:-mt-8">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 mb-20">
           <div className="mx-auto max-w-7xl lg:max-w-none">
             <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-stretch">
               {/* Image - 50% width */}
@@ -186,7 +187,7 @@ export default function AboutPage() {
                 />
                 <div className="pointer-events-none absolute inset-0 rounded-3xl ring-1 ring-gray-900/10 ring-inset" />
               </div>
-              
+
               {/* Timeline - 50% width */}
               <div className="flex h-full min-h-[500px] flex-col justify-center">
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-600">Milestone</p>
@@ -210,8 +211,33 @@ export default function AboutPage() {
           </div>
         </div>
 
+        {/* CTA Section */}
+        <CTASection
+          emailSubject="TTA General Inquiry"
+          emailText="Contact us"
+          eyebrow="Get in touch"
+          bgColor="bg-[#00122e]"
+          title="Join us in shaping the future of aviation"
+          description="Let's work together to build the next generation of aviation professionals."
+        />
+
+        <section className="bg-[#00122e] pb-8">
+          <div className="container mx-auto px-6">
+            <div className="mx-auto max-w-3xl text-center">
+              <div className="text-sm text-white/60">
+                <p>P30, Telford Plaza Phase 1, Kowloon Bay</p>
+                <p className="mt-1">
+                  <a href="tel:+85269360374" className="hover:text-white">+852 6936 0374</a>
+                  {' · '}
+                  <a href="mailto:info@ttahk.com" className="hover:text-white">info@ttahk.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Feature section */}
-        <div className="mx-auto my-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+        <div className="mx-auto my-32 max-w-7xl px-6 sm:mt-20 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">Our Values</h2>
             <p className="mt-6 text-lg/8 text-gray-700">
@@ -227,7 +253,6 @@ export default function AboutPage() {
             ))}
           </dl>
         </div>
-
       </main>
 
       {/* Footer */}

@@ -24,6 +24,10 @@ export function Footer() {
       href: "/education/flight-simulator-training",
     },
     {
+      title: "Workshop",
+      href: "/education/workshop",
+    },
+    {
       title: "Professional Training",
       href: "/education/professional-training",
     },

@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
+import { CTASection } from '@/components/CTASection'
 import heroImage from '@/images/solutions/education_solution.jpeg'
 import cockpitImage from '@/images/training/cockpit.jpg'
 import pilotImage from '@/images/training/pilot.jpg'
@@ -149,6 +150,15 @@ export default function SimulatorProjectsPage() {
             </div>
           </div>
         </section>
+
+        {/* CTA Section */}
+        <CTASection
+          emailSubject="TTA Simulator Project Inquiry"
+          emailText="Request project briefing"
+          eyebrow="Get started"
+          title="Discuss your simulator project"
+          description="Share your training requirements, aircraft types, and project timeline. Our team will design a simulator solution that meets your needs."
+        />
 
       </main>
 

@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { StandardSolutionShowcase } from '@/components/StandardSolutionShowcase'
+import { CTASection } from '@/components/CTASection'
 import heroImage from '@/images/training/simulator.jpeg'
 import cockpitImage from '@/images/training/cockpit.jpg'
 import pilotFiveImage from '@/images/training/pilot-5.jpg'
@@ -183,29 +183,13 @@ export default function CustomSolutionsPage() {
           </div>
         </section>
 
-        <section className="bg-slate-950 py-20 text-white">
-          <div className="mx-auto max-w-5xl space-y-6 px-6 text-center">
-            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-blue-200">Get started</p>
-            <h2 className="text-3xl font-bold">Discuss your custom requirements</h2>
-            <p className="text-base text-slate-200">
-              Share your fleet specifications, mission profiles, and training objectives. Our engineering team will design a simulator solution that perfectly matches your operational needs.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link
-                href="mailto:info@ttahk.com?subject=TTA%20Custom%20Simulator%20Consultation"
-                className="inline-flex items-center justify-center rounded-full bg-blue-500 px-6 py-3 text-sm font-semibold text-white hover:bg-blue-400"
-              >
-                Request consultation
-              </Link>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center rounded-full border border-white px-6 py-3 text-sm font-semibold text-white hover:bg-white/10"
-              >
-                Schedule meeting
-              </Link>
-            </div>
-          </div>
-        </section>
+        <CTASection
+          emailSubject="TTA Custom Simulator Consultation"
+          emailText="Request consultation"
+          eyebrow="Get started"
+          title="Discuss your custom requirements"
+          description="Share your fleet specifications, mission profiles, and training objectives. Our engineering team will design a simulator solution that perfectly matches your operational needs."
+        />
       </main>
 
       <Footer />

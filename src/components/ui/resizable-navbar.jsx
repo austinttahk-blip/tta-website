@@ -93,31 +93,73 @@ export const NavItems = ({
         className
       )}>
       {items.map((item, idx) => (
-        <a
+        <div
+          key={`nav-item-${idx}`}
+          className="relative"
           onMouseEnter={() => setHovered(idx)}
-          onClick={onItemClick}
-          style={{
-            color: enableColorTransition
-              ? (visible ? "rgb(0, 0, 0)" : "rgb(255, 255, 255)")
-              : "rgb(0, 0, 0)",
-            transition: "color 0.3s ease",
-          }}
-          className="relative px-4 py-2"
-          key={`link-${idx}`}
-          href={item.link}>
-          {hovered === idx && (
-            <motion.div
-              layoutId="hovered"
-              style={{
-                backgroundColor: enableColorTransition
-                  ? (visible ? "rgba(0, 0, 0, 0.05)" : "rgba(255, 255, 255, 0.1)")
-                  : "rgba(0, 0, 0, 0.05)",
-                transition: "background-color 0.3s ease",
-              }}
-              className="absolute inset-0 h-full w-full rounded-full" />
+          onMouseLeave={() => setHovered(null)}>
+          <a
+            onClick={onItemClick}
+            style={{
+              color: enableColorTransition
+                ? (visible ? "rgb(0, 0, 0)" : "rgb(255, 255, 255)")
+                : "rgb(0, 0, 0)",
+              transition: "color 0.3s ease",
+            }}
+            className="relative px-4 py-2 block"
+            href={item.link}>
+            {hovered === idx && (
+              <motion.div
+                layoutId="hovered"
+                style={{
+                  backgroundColor: enableColorTransition
+                    ? (visible ? "rgba(0, 0, 0, 0.05)" : "rgba(255, 255, 255, 0.1)")
+                    : "rgba(0, 0, 0, 0.05)",
+                  transition: "background-color 0.3s ease",
+                }}
+                className="absolute inset-0 h-full w-full rounded-full" />
+            )}
+            <span className="relative z-20">{item.name}</span>
+          </a>
+          {item.subItems && item.subItems.length > 0 && (
+            <AnimatePresence>
+              {hovered === idx && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.2 }}
+                  className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 z-[70]"
+                  style={{ minWidth: '200px' }}>
+                  <div
+                    style={{
+                      backgroundColor: enableColorTransition
+                        ? (visible ? "rgba(255, 255, 255, 0.98)" : "rgba(255, 255, 255, 0.98)")
+                        : "rgba(255, 255, 255, 0.98)",
+                      backdropFilter: "blur(10px)",
+                      boxShadow: "0 0 24px rgba(34, 42, 53, 0.06), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.04), 0 0 4px rgba(34, 42, 53, 0.08), 0 16px 68px rgba(47, 48, 55, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1) inset",
+                    }}
+                    className="rounded-2xl p-2">
+                    {item.subItems.map((subItem, subIdx) => (
+                      <Link
+                        key={`sub-item-${idx}-${subIdx}`}
+                        href={subItem.link}
+                        onClick={onItemClick}
+                        className="block px-3 py-2 rounded-lg text-sm text-gray-700 hover:bg-gray-50 transition-colors"
+                        style={{
+                          color: enableColorTransition
+                            ? (visible ? "rgb(55, 65, 81)" : "rgb(55, 65, 81)")
+                            : "rgb(55, 65, 81)",
+                        }}>
+                        {subItem.name}
+                      </Link>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
           )}
-          <span className="relative z-20">{item.name}</span>
-        </a>
+        </div>
       ))}
     </motion.div>
   );
