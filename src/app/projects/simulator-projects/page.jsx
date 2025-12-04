@@ -153,8 +153,6 @@ export default function SimulatorProjectsPage() {
 
         {/* CTA Section */}
         <CTASection
-          emailSubject="TTA Simulator Project Inquiry"
-          emailText="Request project briefing"
           eyebrow="Get started"
           title="Discuss your simulator project"
           description="Share your training requirements, aircraft types, and project timeline. Our team will design a simulator solution that meets your needs."

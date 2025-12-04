@@ -305,8 +305,6 @@ export default function SimulatorsPage() {
 
         {/* Contact CTA Section */}
         <CTASection
-          emailSubject="TTA Simulator Brochure"
-          emailText="Request brochure"
           bgColor="bg-[#00122e]"
           title="Connect with our simulator team"
           description="Request a brochure, discuss certification requirements, or schedule an engineering workshop."

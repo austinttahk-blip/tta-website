@@ -12,7 +12,7 @@ export default function ContactUsPage() {
       <Header enableColorTransition={false} />
 
       <main>
-        <section className="py-16 lg:py-24">
+        <section id="contact" className="scroll-mt-24 py-16 lg:py-24">
           <div className="container mx-auto px-6 lg:px-12 max-w-4xl">
             <h1 className="text-4xl font-light text-slate-900 sm:text-5xl mb-8">
               Contact Us
@@ -34,7 +34,7 @@ export default function ContactUsPage() {
               <div className="border-t border-slate-200"></div>
 
               {/* Education Programmes & School Partnerships */}
-              <div>
+              <div id="education" className="scroll-mt-24">
                 <h2 className="text-2xl font-semibold text-slate-900 mb-3">
                   Education Programmes & School Partnerships
                 </h2>
@@ -58,7 +58,7 @@ export default function ContactUsPage() {
               <div className="border-t border-slate-200"></div>
 
               {/* Operations & Training Centre */}
-              <div>
+              <div id="operations" className="scroll-mt-24">
                 <h2 className="text-2xl font-semibold text-slate-900 mb-3">
                   Operations & Training Centre
                 </h2>
@@ -73,7 +73,7 @@ export default function ContactUsPage() {
                     Email: <a href="mailto:david.lai@ttahk.com" className="text-blue-600 hover:text-blue-800">david.lai@ttahk.com</a>
                   </p>
                   <p className="text-slate-700">
-                    Tel / WhatsApp: <a href="tel:+85269360374" className="text-blue-600 hover:text-blue-800">+852 6936 0374</a>
+                    Tel / WhatsApp: <a href="tel:+85293036593" className="text-blue-600 hover:text-blue-800">+852 6936 0374</a>
                   </p>
                 </div>
               </div>
@@ -82,7 +82,7 @@ export default function ContactUsPage() {
               <div className="border-t border-slate-200"></div>
 
               {/* Business Development & Strategic Partnerships */}
-              <div>
+              <div id="business" className="scroll-mt-24">
                 <h2 className="text-2xl font-semibold text-slate-900 mb-3">
                   Business Development & Strategic Partnerships
                 </h2>
@@ -94,7 +94,7 @@ export default function ContactUsPage() {
                     <strong>Austin Wong</strong> – Business Development Manager
                   </p>
                   <p className="text-slate-700">
-                    Email: <a href="mailto:austin@ttahk.com" className="text-blue-600 hover:text-blue-800">austin@ttahk.com</a>
+                    Email: <a href="mailto:info@ttahk.com" className="text-blue-600 hover:text-blue-800">info@ttahk.com</a>
                   </p>
                   <p className="text-slate-700">
                     Tel / WhatsApp: <a href="tel:+85296849366" className="text-blue-600 hover:text-blue-800">+852 9684 9366</a>

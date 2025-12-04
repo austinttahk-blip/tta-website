@@ -169,8 +169,6 @@ export default function CustomSolutionsPage() {
         </section>
 
         <CTASection
-          emailSubject="TTA Custom Simulator Consultation"
-          emailText="Request consultation"
           eyebrow="Get started"
           title="Discuss your custom requirements"
           description="Share your fleet specifications, mission profiles, and training objectives. Our engineering team will design a simulator solution that perfectly matches your operational needs."

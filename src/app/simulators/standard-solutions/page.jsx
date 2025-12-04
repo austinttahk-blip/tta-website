@@ -177,8 +177,6 @@ export default function StandardSolutionsPage() {
         </section>
 
         <CTASection
-          emailSubject="TTA Standard Simulator Catalogue"
-          emailText="Request catalogue"
           eyebrow="Get started"
           title="Line up your delivery slot"
           description="Share your fleet mix, regulatory pathway, and preferred motion options. Our programme managers will lock the right baseline configuration and guide you to factory acceptance."

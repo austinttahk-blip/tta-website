@@ -152,8 +152,6 @@ export default function LaeProjectsPage() {
 
         {/* CTA Section */}
         <CTASection
-          emailSubject="TTA LAE Project Inquiry"
-          emailText="Request project briefing"
           eyebrow="Get started"
           title="Discuss your LAE project"
           description="Share your low-altitude economy vision, operational requirements, and project goals. Our team will help turn your concept into a practical, scalable solution."

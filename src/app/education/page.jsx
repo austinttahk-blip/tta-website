@@ -356,8 +356,6 @@ export default function TrainingPage() {
 
         {/* CTA Section */}
         <CTASection
-          emailSubject="TTA Education Inquiry"
-          emailText="Request information"
           eyebrow="Get started"
           title="Start your aviation journey"
           description="Explore our comprehensive training programs and discover the pathway that's right for you. Contact us to learn more about our courses and schedule a consultation."

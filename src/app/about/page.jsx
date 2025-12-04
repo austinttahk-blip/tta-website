@@ -8,6 +8,8 @@ import pilotTwoImage from '@/images/training/pilot-2.jpg'
 import ffsImage from '@/images/education/ffs.jpeg'
 import aboutusImage1 from '@/images/training/aboutus-1.jpeg'
 import aboutusImage2 from '@/images/training/aboutus-2.jpeg'
+import simulatorImage from '@/images/training/simulator.jpeg'
+import flightViewImage from '@/images/education/flight-view.jpeg'
 
 
 const milestones = [
@@ -146,7 +148,7 @@ export default function AboutPage() {
                     <div className="relative">
                       <Image
                         alt=""
-                        src={aboutusImage1}
+                        src={flightViewImage}
                         className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         width={352}
                         height={528}
@@ -156,7 +158,8 @@ export default function AboutPage() {
                     <div className="relative">
                       <Image
                         alt=""
-                        src={pilotTwoImage}
+
+                        src={simulatorImage}
                         className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         width={352}
                         height={528}
@@ -211,8 +214,6 @@ export default function AboutPage() {
 
         {/* CTA Section */}
         <CTASection
-          emailSubject="TTA General Inquiry"
-          emailText="Contact us"
           eyebrow="Get in touch"
           bgColor="bg-[#00122e]"
           title="Join us in shaping the future of aviation"

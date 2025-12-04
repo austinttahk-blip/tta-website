@@ -3,7 +3,7 @@ import Link from 'next/link'
 const audiences = [
   {
     title: 'For schools & institutions',
-    href: '/training',
+    href: '/contact-us#education',
     action: 'Partner with us',
     icon: (
       <svg className="h-full w-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -13,7 +13,7 @@ const audiences = [
   },
   {
     title: 'For parents & students',
-    href: '/events',
+    href: '/contact-us#education',
     action: 'Explore journeys',
     icon: (
       <svg className="h-full w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
@@ -25,7 +25,7 @@ const audiences = [
   },
   {
     title: 'For industry & partners',
-    href: '/consultation',
+    href: '/contact-us#business',
     action: 'Connect now',
     icon: (
       <svg className="h-full w-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -52,7 +52,7 @@ export function JoinUs() {
             </h2>
           </div>
           <Link
-            href="/contact"
+            href="/contact-us#contact"
             className="inline-flex items-center rounded-full bg-white px-6 py-3 text-sm font-semibold uppercase tracking-wide text-slate-900 transition hover:bg-slate-100"
           >
             Contact us
