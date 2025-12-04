@@ -65,6 +65,10 @@ export function Footer() {
       title: "About Us",
       href: "/about",
     },
+    {
+      title: "Contact Us",
+      href: "/contact-us",
+    },
   ];
 
   const legalPages = [

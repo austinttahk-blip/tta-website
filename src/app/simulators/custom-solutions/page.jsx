@@ -4,10 +4,10 @@ import { Footer } from '@/components/Footer'
 import { StandardSolutionShowcase } from '@/components/StandardSolutionShowcase'
 import { CTASection } from '@/components/CTASection'
 import heroImage from '@/images/training/simulator.jpeg'
-import cockpitImage from '@/images/training/cockpit.jpg'
-import pilotFiveImage from '@/images/training/pilot-5.jpg'
-import pilotImage from '@/images/training/pilot.jpg'
-import pilotThreeImage from '@/images/training/pilot-3.jpg'
+import handoverImage from '@/images/solutions/handover.jpeg'
+import designImage from '@/images/solutions/simulator_design.jpeg'
+import aboutusImage1 from '@/images/training/aboutus-1.jpeg'
+import aboutusImage2 from '@/images/training/aboutus-2.jpeg'
 import A350Image from '@/images/solutions/A350.jpeg'
 import C919Image from '@/images/solutions/C919.jpeg'
 import gallery1Image from '@/images/gallery/gallery-1.jpeg'
@@ -22,13 +22,13 @@ export const metadata = {
     'A detail-rich view of the TTA Custom Simulator portfolio, tailored to your fleet and mission requirements, built for training leaders who need precision.',
 }
 
-const galleryImages = [gallery4Image, gallery3Image, gallery2Image, gallery1Image, pilotImage, pilotThreeImage]
+const galleryImages = [gallery4Image, gallery3Image, gallery2Image, gallery1Image, aboutusImage1, aboutusImage2]
 
 const solutionHighlights = [
   {
     title: 'Concept & Design',
     description: 'Training needs analysis, cockpit and room layout, 3D models and specifications.',
-    image: cockpitImage,
+    image: designImage,
   },
   {
     title: 'Build & Integration',
@@ -38,7 +38,7 @@ const solutionHighlights = [
   {
     title: 'Commissioning & Handover',
     description: 'On-site installation, testing, optimisation and initial operator / instructor training.',
-    image: pilotFiveImage,
+    image: handoverImage,
   },
 ]
 

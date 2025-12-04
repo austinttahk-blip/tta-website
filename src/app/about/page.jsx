@@ -4,9 +4,7 @@ import { CTASection } from '@/components/CTASection'
 import Image from 'next/image'
 
 // Import training images for hero section
-import pilot5Image from '@/images/training/pilot-5.jpg'
-import pilot4Image from '@/images/training/pilot-4.jpg'
-import pilot6Image from '@/images/training/pilot-6.jpg'
+import pilotTwoImage from '@/images/training/pilot-2.jpg'
 import ffsImage from '@/images/education/ffs.jpeg'
 import aboutusImage1 from '@/images/training/aboutus-1.jpeg'
 import aboutusImage2 from '@/images/training/aboutus-2.jpeg'
@@ -126,7 +124,7 @@ export default function AboutPage() {
                     <div className="relative">
                       <Image
                         alt=""
-                        src={pilot5Image}
+                        src={pilotTwoImage}
                         className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         width={352}
                         height={528}
@@ -148,7 +146,7 @@ export default function AboutPage() {
                     <div className="relative">
                       <Image
                         alt=""
-                        src={pilot4Image}
+                        src={aboutusImage1}
                         className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         width={352}
                         height={528}
@@ -158,7 +156,7 @@ export default function AboutPage() {
                     <div className="relative">
                       <Image
                         alt=""
-                        src={pilot6Image}
+                        src={pilotTwoImage}
                         className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                         width={352}
                         height={528}

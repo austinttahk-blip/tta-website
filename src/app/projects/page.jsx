@@ -3,10 +3,9 @@ import Link from 'next/link'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import heroImage from '@/images/education/take-off.jpeg'
-import pilotSixImage from '@/images/training/pilot-6.jpg'
-import cockpitImage from '@/images/training/cockpit.jpg'
 import simulatorImage from '@/images/training/simulator.jpeg'
 import laeImage from '@/images/solutions/LAE.jpeg'
+import aboutusImage1 from '@/images/training/aboutus-1.jpeg'
 
 export const metadata = {
   title: 'Projects - TTA Aviation',
@@ -43,13 +42,13 @@ const relatedCapabilities = [
   {
     title: 'Simulator & Training Ecosystems',
     description: 'Full-flight, FTD, and classroom trainers that slot directly into each project scope.',
-    image: cockpitImage,
+    image: simulatorImage,
     href: '/simulators',
   },
   {
     title: 'Operations & Talent Services',
     description: 'Instructor pipelines, maintenance crews, and marketing launch teams stationed across Asia.',
-    image: pilotSixImage,
+    image: aboutusImage1,
     href: '/education',
   },
 ]

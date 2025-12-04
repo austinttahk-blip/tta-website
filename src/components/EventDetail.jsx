@@ -2,6 +2,7 @@ import { format } from "date-fns";
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import Link from "next/link";
+import Image from "next/image";
 
 // Event data - shared with RecentEvents component
 const events = [
@@ -147,7 +148,7 @@ export default function EventDetail({ eventId }) {
       </h2>
 
       <div className="flex items-center">
-        <img
+        <Image
           src="https://assets.aceternity.com/manu.png"
           alt="TTA Aviation"
           className="h-5 w-5 rounded-full"

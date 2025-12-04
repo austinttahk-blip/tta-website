@@ -3,10 +3,9 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { CTASection } from '@/components/CTASection'
 import heroImage from '@/images/training/simulator.jpeg'
-import pilotFiveImage from '@/images/training/pilot-5.jpg'
-import pilotSixImage from '@/images/training/pilot-6.jpg'
-import pilotImage from '@/images/training/pilot.jpg'
-import pilotThreeImage from '@/images/training/pilot-3.jpg'
+import pilotTwoImage from '@/images/training/pilot-2.jpg'
+import aboutusImage1 from '@/images/training/aboutus-1.jpeg'
+import aboutusImage2 from '@/images/training/aboutus-2.jpeg'
 import A320Image from '@/images/solutions/A320.jpeg'
 import gallery1Image from '@/images/gallery/gallery-1.jpeg'
 import gallery2Image from '@/images/gallery/gallery-2.jpeg'
@@ -19,7 +18,7 @@ export const metadata = {
     'A detail-rich view of the TTA Standard Simulator portfolio, inspired by flagship OEM programme pages and built for training leaders who need depth.',
 }
 
-const galleryImages = [gallery1Image, gallery2Image, gallery3Image, gallery4Image, pilotSixImage, pilotFiveImage]
+const galleryImages = [gallery1Image, gallery2Image, gallery3Image, gallery4Image, aboutusImage1, aboutusImage2]
 
 const productSections = [
   {
