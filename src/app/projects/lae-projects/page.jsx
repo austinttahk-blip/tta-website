@@ -11,7 +11,6 @@ export const metadata = {
   title: 'LAE Projects - TTA Aviation',
   description: 'Building the future low-altitude ecosystem.',
 }
-
 export default function LaeProjectsPage() {
   return (
     <div className="bg-white text-gray-900 font-sans">
