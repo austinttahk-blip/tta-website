@@ -4,7 +4,7 @@ import { Footer } from '@/components/Footer'
 import { CTASection } from '@/components/CTASection'
 import heroImage from '@/images/solutions/LAE.jpeg'
 import infrastructureImage from '@/images/education/runway.jpeg'
-import uavImage from '@/images/solutions/uav.jpg'
+import uavImage from '@/images/solutions/uav_landing.jpg'
 import uavSystemsImage from '@/images/solutions/uav_system.jpeg'
 
 export const metadata = {
