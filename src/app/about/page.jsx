@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 // Import training images for hero section
 import pilot3Image from '@/images/training/pilot-3.jpg'
-import pilot5Image from '@/images/training/pilot-5.jpg'
-import cockpitImage from '@/images/training/cockpit.jpg'
+import pilot5Image from '@/images/training/aboutus-1.jpeg'
+import cockpitImage from '@/images/training/aboutus-2.jpeg'
 import pilot4Image from '@/images/training/pilot-4.jpg'
 import pilot6Image from '@/images/training/pilot-6.jpg'
 import ffsImage from '@/images/education/ffs.jpeg'
@@ -51,196 +51,6 @@ const values = [
       'We use modern simulators, digital tools and new teaching methods to create immersive learning experiences that prepare students for tomorrow\'s aviation and LAE environment.',
   },
 ]
-
-
-import Link from "next/link";
-import React from "react";
-
-export function SimpleFooterWithFourGrids() {
-  const pages = [
-    {
-      title: "All Products",
-      href: "#",
-    },
-    {
-      title: "Studio",
-      href: "#",
-    },
-    {
-      title: "Clients",
-      href: "#",
-    },
-    {
-      title: "Pricing",
-      href: "#",
-    },
-    {
-      title: "Blog",
-      href: "#",
-    },
-  ];
-
-  const socials = [
-    {
-      title: "Facebook",
-      href: "#",
-    },
-    {
-      title: "Instagram",
-      href: "#",
-    },
-    {
-      title: "Twitter",
-      href: "#",
-    },
-    {
-      title: "LinkedIn",
-      href: "#",
-    },
-  ];
-  const legals = [
-    {
-      title: "Privacy Policy",
-      href: "#",
-    },
-    {
-      title: "Terms of Service",
-      href: "#",
-    },
-    {
-      title: "Cookie Policy",
-      href: "#",
-    },
-  ];
-
-  const signups = [
-    {
-      title: "Sign Up",
-      href: "#",
-    },
-    {
-      title: "Login",
-      href: "#",
-    },
-    {
-      title: "Forgot Password",
-      href: "#",
-    },
-  ];
-  return (
-    <div
-      className="relative w-full overflow-hidden border-t border-neutral-100 bg-white px-8 py-20">
-      <div
-        className="mx-auto flex max-w-7xl flex-col items-start justify-between text-sm text-neutral-500 sm:flex-row md:px-8">
-        <div>
-          <div className="mr-0 mb-4 md:mr-4 md:flex">
-            <Logo />
-          </div>
-
-          <div className="mt-2 ml-2">
-            &copy; copyright DevStudios 2024. All rights reserved.
-          </div>
-        </div>
-        <div
-          className="mt-10 grid grid-cols-2 items-start gap-10 sm:mt-0 md:mt-0 lg:grid-cols-4">
-          <div className="flex w-full flex-col justify-center space-y-4">
-            <p
-              className="hover:text-text-neutral-800 font-bold text-neutral-600 transition-colors">
-              Pages
-            </p>
-            <ul
-              className="hover:text-text-neutral-800 list-none space-y-4 text-neutral-600 transition-colors ">
-              {pages.map((page, idx) => (
-                <li key={"pages" + idx} className="list-none">
-                  <Link
-                    className="hover:text-text-neutral-800 transition-colors"
-                    href="/products">
-                    {page.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="flex flex-col justify-center space-y-4">
-            <p
-              className="hover:text-text-neutral-800 font-bold text-neutral-600 transition-colors ">
-              Socials
-            </p>
-            <ul
-              className="hover:text-text-neutral-800 list-none space-y-4 text-neutral-600 transition-colors ">
-              {socials.map((social, idx) => (
-                <li key={"social" + idx} className="list-none">
-                  <Link
-                    className="hover:text-text-neutral-800 transition-colors"
-                    href="/products">
-                    {social.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="flex flex-col justify-center space-y-4">
-            <p
-              className="hover:text-text-neutral-800 font-bold text-neutral-600 transition-colors ">
-              Legal
-            </p>
-            <ul
-              className="hover:text-text-neutral-800 list-none space-y-4 text-neutral-600 transition-colors ">
-              {legals.map((legal, idx) => (
-                <li key={"legal" + idx} className="list-none">
-                  <Link
-                    className="hover:text-text-neutral-800 transition-colors"
-                    href="/products">
-                    {legal.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="flex flex-col justify-center space-y-4">
-            <p
-              className="hover:text-text-neutral-800 font-bold text-neutral-600 transition-colors ">
-              Register
-            </p>
-            <ul
-              className="hover:text-text-neutral-800 list-none space-y-4 text-neutral-600 transition-colors ">
-              {signups.map((auth, idx) => (
-                <li key={"auth" + idx} className="list-none">
-                  <Link
-                    className="hover:text-text-neutral-800 transition-colors"
-                    href="/products">
-                    {auth.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
-      <p
-        className="inset-x-0 mt-20 bg-gradient-to-b from-neutral-50 to-neutral-200 bg-clip-text text-center text-5xl font-bold text-transparent md:text-9xl lg:text-[12rem] xl:text-[13rem]">
-        DevStudio
-      </p>
-    </div>
-  );
-}
-
-const Logo = () => {
-  return (
-    <Link
-      href="/"
-      className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black">
-      <Image
-        src="https://assets.aceternity.com/logo-dark.svg"
-        alt="logo"
-        width={30}
-        height={30} />
-      <span className="font-medium text-black">DevStudio</span>
-    </Link>
-  );
-};
 
 
 export default function AboutPage() {
@@ -295,7 +105,7 @@ export default function AboutPage() {
                     Pioneering Aviation Education in Hong Kong
                   </h1>
                   <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">
-                    TTA Aviation is a Hong Kong-based aviation education and simulation hub, dedicated to inspiring and developing the next generation of aviation and low-altitude professionals through practical training, modern simulators and experienced instructors.
+                    TTA Aviation brings together flight simulators, education programmes and low-altitude solutions to turn aviation learning into real skills, real pathways and real opportunities for the next generation.
                   </p>
                 </div>
                 <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
@@ -417,8 +227,6 @@ export default function AboutPage() {
             ))}
           </dl>
         </div>
-
-
 
       </main>
 

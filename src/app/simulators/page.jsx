@@ -25,7 +25,7 @@ const simulatorFamilies = [
   {
     name: 'Standard Solutions',
     title: 'TTA Standard Simulator Solutions',
-    subtitle: 'Turnkey training simulators for education',
+    subtitle: 'Training simulators for education',
     description: [
       'TTA provides ready-to-install simulators for DA40, C172, DA42 and A320, engineered in Hong Kong specifically for education, ab-initio and cadet preparation.',
       'High-fidelity visuals, solid flight models and integrated instructor stations give schools, academies and clubs a reliable platform for procedural, skills and scenario-based training.',
@@ -138,8 +138,8 @@ export default function SimulatorsPage() {
                 TTA Flight Simulators
               </h1>
               <p className="mt-6 max-w-4xl text-lg text-white/90 lg:text-xl">
-                Discover TTA&apos;s professional flight simulator solutions, engineered in Hong Kong for airlines and training academies across Asia.
-                Education-focused flight simulator solutions, engineered in Hong Kong for schools, academies and flying clubs realistic, reliable platforms for ab-initio and cadet training.              </p>
+                We integrate capital advisory, technical design and training development into a single project squad, giving owners one accountable team from feasibility to activation. With a multi-city footprint, we keep procurement and certification aligned with requirements in Hong Kong, Mainland China and key ASEAN markets.
+              </p>
             </div>
           </div>
         </section>

@@ -19,11 +19,11 @@ const initiativeTracks = [
   {
     title: 'Simulator Projects',
     description:
-      'Our simulator projects cover the full journey from 3D design and prototyping to installation and training support, delivering practical flight training devices for schools, academies and industry clients across the region.',
+      'TTA delivers end-to-end simulator projects, covering the full journey from initial design and engineering through development, testing and final handover in one integrated workflow.',
     bullets: [
-      'From cockpit concept to training-ready device',
-      '3D design, prototyping, and installation services',
-      'Training support for schools, academies and industry clients across the region',
+      'Consulting & Concept Design – Training needs analysis, cockpit and room layout definition, system specification.',
+      'Development & Integration – Hardware build, assembly and software integration, including controls, visuals and instructor tools.',
+      'Commissioning & Training Support – On-site installation, functional testing, acceptance, and initial operator / instructor training.',
     ],
     image: simulatorImage,
     link: '/projects/simulator-projects',
@@ -31,11 +31,11 @@ const initiativeTracks = [
   {
     title: 'LAE Projects',
     description:
-      'TTA\'s LAE projects focus on UAV, eVTOL and low-altitude operations, using simulation, training and consulting to help partners move from concept on paper to safe, scalable real-world deployment.',
+      'Integrated project support for UAV, eVTOL and general aviation concepts, from feasibility and simulation to pilot projects and training ecosystems.',
     bullets: [
-      'Building the future low-altitude ecosystem',
-      'UAV, eVTOL and low-altitude operations expertise',
-      'From concept to safe, scalable real-world deployment',
+      'UAV Solutions – Concept design, operating frameworks and training plans for unmanned and cargo drone operations.',
+      'eVTOL Solutions – Route, vertiport and procedure concepts supported by simulation and pilot / operator training models.',
+      'General Aviation & Air Mobility – GA and charter concepts linking simulators, training pathways and future low-altitude operations.',
     ],
     image: laeImage,
     link: '/projects/lae-projects',
