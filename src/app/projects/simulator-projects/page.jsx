@@ -8,7 +8,7 @@ import installationImage from '@/images/training/pilot-2.jpg'
 
 export const metadata = {
   title: 'Simulator Projects - TTA Aviation',
-  description: 'From cockpit concept to training-ready device.',
+  description: 'End-to-end flight simulation projects from first 3D sketch to training-ready infrastructure.',
 }
 
 export default function SimulatorProjectsPage() {
@@ -34,7 +34,7 @@ export default function SimulatorProjectsPage() {
                   Simulator Projects
                 </h1>
                 <p className="mt-6 text-xl text-white/90 lg:text-2xl font-light">
-                  From cockpit concept to training-ready device
+                  End-to-end flight simulation projects from first 3D sketch to training-ready infrastructure.
                 </p>
               </div>
             </div>
@@ -56,7 +56,7 @@ export default function SimulatorProjectsPage() {
                   Our simulator projects cover the full journey from 3D design and prototyping to installation and training support, delivering practical flight training devices for schools, academies and industry clients across the region.
                 </p>
                 <p>
-                  We understand that effective flight training requires more than just hardware. It demands a seamless integration of realistic controls, accurate flight models, and immersive visuals. TTA provides end-to-end solutions that ensure your training devices are not only compliant but also pedagogical tools that enhance pilot competency.
+                  We understand that effective flight training requires more than just hardware. It demands a seamless integration of realistic controls, accurate flight models and immersive visuals. TTA provides end-to-end solutions that ensure your training devices are not only robust, but also true pedagogical tools that enhance pilot competency.
                 </p>
                 <p className="font-semibold text-slate-900">
                   TTA is your partner in building the next generation of flight training infrastructure.
@@ -73,23 +73,20 @@ export default function SimulatorProjectsPage() {
               <div className="relative aspect-[4/3] overflow-hidden rounded-lg shadow-xl">
                 <Image
                   src={cockpitImage}
-                  alt="3D Design & Prototyping"
+                  alt="Plane Simulators"
                   fill
                   className="object-cover"
                 />
               </div>
               <div>
-                <p className="text-sm font-bold tracking-widest text-slate-500 uppercase">Design Phase</p>
+                <p className="text-sm font-bold tracking-widest text-slate-500 uppercase">Simulator Type</p>
                 <h3 className="mt-2 text-3xl font-light text-slate-900 sm:text-4xl">
-                  3D Design & Prototyping
+                  Plane Simulators
                 </h3>
                 <div className="mt-6 h-1 w-12 bg-blue-600"></div>
                 <div className="mt-8 space-y-6 text-lg text-slate-600 leading-relaxed">
                   <p>
-                    Every great simulator starts with a precise design. Our engineering team utilizes advanced 3D modeling to visualize cockpits and systems before manufacturing begins. This ensures ergonomic fidelity and optimal instrument placement tailored to your specific training aircraft.
-                  </p>
-                  <p>
-                    <strong>We bridge the gap between concept and reality.</strong> By rapid prototyping key components, we validate the look and feel, ensuring the final device meets the rigorous demands of daily training operations.
+                    Full and partial cockpit simulators for general aviation and airline-style aircraft (e.g. C172, DA40/42, A320), built for ab-initio, cadet preparation and procedural training in schools, academies and clubs.
                   </p>
                 </div>
               </div>
@@ -102,24 +99,21 @@ export default function SimulatorProjectsPage() {
           <div className="container mx-auto px-6 lg:px-12">
             <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-24">
               <div className="order-2 lg:order-1">
-                <p className="text-sm font-bold tracking-widest text-slate-500 uppercase">Implementation</p>
+                <p className="text-sm font-bold tracking-widest text-slate-500 uppercase">Simulator Type</p>
                 <h3 className="mt-2 text-3xl font-light text-slate-900 sm:text-4xl">
-                  Installation & Support
+                  eVTOL Simulators
                 </h3>
                 <div className="mt-6 h-1 w-12 bg-blue-600"></div>
                 <div className="mt-8 space-y-6 text-lg text-slate-600 leading-relaxed">
                   <p>
-                    Delivery is just the beginning. Our specialized installation teams ensure seamless integration of flight training devices into your facility. We handle the complex logistics, assembly, and calibration required to bring the simulator to life.
-                  </p>
-                  <p>
-                    <strong>End-to-end lifecycle management.</strong> TTA provides ongoing maintenance and technical support, minimizing downtime and ensuring your training schedule remains uninterrupted. We stand by our projects with long-term commitment.
+                    Concept and training simulators for eVTOL and urban air mobility, used to explore routes, vertiport operations, procedures and crew training models before real-world deployment.
                   </p>
                 </div>
               </div>
               <div className="relative order-1 aspect-[4/3] overflow-hidden rounded-lg shadow-xl lg:order-2">
                 <Image
                   src={installationImage}
-                  alt="Installation & Support"
+                  alt="eVTOL Simulators"
                   fill
                   className="object-cover"
                 />
@@ -135,23 +129,20 @@ export default function SimulatorProjectsPage() {
               <div className="relative aspect-[4/3] overflow-hidden rounded-lg shadow-xl">
                 <Image
                   src={pilotImage}
-                  alt="Training Support"
+                  alt="UAV Simulators"
                   fill
                   className="object-cover"
                 />
               </div>
               <div>
-                <p className="text-sm font-bold tracking-widest text-slate-500 uppercase">Operational Success</p>
+                <p className="text-sm font-bold tracking-widest text-slate-500 uppercase">Simulator Type</p>
                 <h3 className="mt-2 text-3xl font-light text-slate-900 sm:text-4xl">
-                  Training & Certification
+                  UAV Simulators
                 </h3>
                 <div className="mt-6 h-1 w-12 bg-blue-600"></div>
                 <div className="mt-8 space-y-6 text-lg text-slate-600 leading-relaxed">
                   <p>
-                    Hardware is only as good as the training it enables. We assist schools and academies in developing curriculum modules that leverage the full capabilities of the simulator.
-                  </p>
-                  <p>
-                    <strong>Regulatory compliance assistance.</strong> Our team helps navigate the certification requirements of local aviation authorities, ensuring your device is approved for logging flight hours and conducting checkrides.
+                    Ground-control and mission simulators for UAV operations, supporting homing / return-to-home logic, mission rehearsal and remote-pilot training for future low-altitude economy use cases.
                   </p>
                 </div>
               </div>

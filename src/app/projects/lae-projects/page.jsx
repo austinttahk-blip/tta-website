@@ -47,16 +47,16 @@ export default function LaeProjectsPage() {
             <div className="grid gap-12 lg:grid-cols-[1fr_2fr] lg:gap-24">
               <div>
                 <h2 className="text-3xl font-light text-slate-900 sm:text-4xl">
-                  Low-Altitude <br/> Economy Solutions
+                  Low-Altitude <br /> Economy Solutions
                 </h2>
                 <div className="mt-6 h-1 w-12 bg-blue-600"></div>
               </div>
               <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
                 <p>
-                  TTA’s LAE projects focus on UAV, eVTOL and low-altitude operations, using simulation, training and consulting to help partners move from concept on paper to safe, scalable real-world deployment.
+                  TTA's LAE projects develop practical UAV, eVTOL and low-altitude operation solutions, using simulation, training and advisory support to move partners from concept on paper to safe, scalable deployment.
                 </p>
                 <p>
-                  As the low-altitude economy takes flight, the need for robust infrastructure, precise traffic management, and skilled operators becomes paramount. TTA leverages its deep aviation expertise to bridge the gap between traditional aerospace standards and the dynamic world of urban air mobility.
+                  As the low-altitude economy emerges, TTA helps project owners define routes, vertiports, procedures and talent pipelines that meet real aviation standards while fitting local city and regional needs. By integrating technical design, training frameworks and operational concepts into one coordinated project stream, TTA turns LAE ideas into implementable, future-ready air mobility projects.
                 </p>
                 <p className="font-semibold text-slate-900">
                   We are architecting the skylanes of tomorrow, today.
@@ -73,23 +73,20 @@ export default function LaeProjectsPage() {
               <div className="relative aspect-[4/3] overflow-hidden rounded-lg shadow-xl">
                 <Image
                   src={operationsImage}
-                  alt="UAV & eVTOL Operations"
+                  alt="General Aviation & Traditional Airspace"
                   fill
                   className="object-cover"
                 />
               </div>
               <div>
-                <p className="text-sm font-bold tracking-widest text-slate-500 uppercase">Future Flight</p>
+                <p className="text-sm font-bold tracking-widest text-slate-500 uppercase">Project Type</p>
                 <h3 className="mt-2 text-3xl font-light text-slate-900 sm:text-4xl">
-                  UAV & eVTOL Operations
+                  General Aviation & Traditional Airspace
                 </h3>
                 <div className="mt-6 h-1 w-12 bg-blue-600"></div>
                 <div className="mt-8 space-y-6 text-lg text-slate-600 leading-relaxed">
                   <p>
-                    The integration of unmanned aerial vehicles and electric vertical takeoff and landing aircraft requires new operational paradigms. TTA works with manufacturers and operators to define standard operating procedures (SOPs) and safety management systems (SMS).
-                  </p>
-                  <p>
-                    <strong>Operational readiness from day one.</strong> We help clients navigate the complexities of regulatory approval, ensuring that their fleets are ready for commercial service with safety as the foundation.
+                    TTA supports general aviation and traditional airspace projects by linking flight training, simulator environments and operational concepts. Work in this area includes the design of GA training centres, simulator-based procedure training, and foundational air mobility projects that connect today's conventional aircraft operations with tomorrow's low-altitude ecosystem.
                   </p>
                 </div>
               </div>
@@ -102,24 +99,21 @@ export default function LaeProjectsPage() {
           <div className="container mx-auto px-6 lg:px-12">
             <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-24">
               <div className="order-2 lg:order-1">
-                <p className="text-sm font-bold tracking-widest text-slate-500 uppercase">Digital Twin</p>
+                <p className="text-sm font-bold tracking-widest text-slate-500 uppercase">Project Type</p>
                 <h3 className="mt-2 text-3xl font-light text-slate-900 sm:text-4xl">
-                  Simulation & Analysis
+                  UAV Systems & Homing Technology
                 </h3>
                 <div className="mt-6 h-1 w-12 bg-blue-600"></div>
                 <div className="mt-8 space-y-6 text-lg text-slate-600 leading-relaxed">
                   <p>
-                    Before a single propeller spins, we simulate the environment. TTA uses advanced simulation technologies to create digital twins of flight corridors and urban environments. This allows us to stress-test operational concepts and identify potential risks in a risk-free virtual world.
-                  </p>
-                  <p>
-                    <strong>Data-driven decision making.</strong> Our analysis informs infrastructure planning, noise mitigation strategies, and emergency response protocols, ensuring a harmonious integration with the community.
+                    TTA's UAV projects focus on developing smart homing and return systems that keep drone operations safe, predictable and scalable. This includes route and return-to-home logic, contingency profiles, and integration with ground control and training simulators, enabling operators to test and validate UAV behaviour in realistic scenarios before live deployment.
                   </p>
                 </div>
               </div>
               <div className="relative order-1 aspect-[4/3] overflow-hidden rounded-lg shadow-xl lg:order-2">
                 <Image
                   src={simulationImage}
-                  alt="Simulation & Analysis"
+                  alt="UAV Systems & Homing Technology"
                   fill
                   className="object-cover"
                 />
@@ -135,23 +129,20 @@ export default function LaeProjectsPage() {
               <div className="relative aspect-[4/3] overflow-hidden rounded-lg shadow-xl">
                 <Image
                   src={infrastructureImage}
-                  alt="Consulting & Deployment"
+                  alt="eVTOL & Urban Air Mobility"
                   fill
                   className="object-cover"
                 />
               </div>
               <div>
-                <p className="text-sm font-bold tracking-widest text-slate-500 uppercase">Strategic Growth</p>
+                <p className="text-sm font-bold tracking-widest text-slate-500 uppercase">Project Type</p>
                 <h3 className="mt-2 text-3xl font-light text-slate-900 sm:text-4xl">
-                  Consulting & Deployment
+                  eVTOL & Urban Air Mobility
                 </h3>
                 <div className="mt-6 h-1 w-12 bg-blue-600"></div>
                 <div className="mt-8 space-y-6 text-lg text-slate-600 leading-relaxed">
                   <p>
-                    From feasibility studies to final deployment, TTA is your strategic partner. We advise governments, developers, and technology firms on the roadmap to a thriving low-altitude economy.
-                  </p>
-                  <p>
-                    <strong>Scalable solutions for the real world.</strong> We don't just deliver reports; we help build the ecosystem. Our consulting services cover vertiport design, airspace management integration, and workforce training, enabling a safe and scalable rollout of low-altitude services.
+                    In the eVTOL and urban air mobility space, TTA works on route concepts, vertiport layouts, procedures and training frameworks supported by simulation. These projects aim to turn early eVTOL ideas into implementable concepts, with clear thinking around infrastructure, operator training and integration into existing city and regional airspace.
                   </p>
                 </div>
               </div>
