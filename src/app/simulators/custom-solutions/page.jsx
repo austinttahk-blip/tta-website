@@ -6,10 +6,10 @@ import { CTASection } from '@/components/CTASection'
 import heroImage from '@/images/training/simulator.jpeg'
 import cockpitImage from '@/images/training/cockpit.jpg'
 import pilotFiveImage from '@/images/training/pilot-5.jpg'
-import pilotSixImage from '@/images/training/pilot-6.jpg'
 import pilotImage from '@/images/training/pilot.jpg'
-import pilotTwoImage from '@/images/training/pilot-2.jpg'
 import pilotThreeImage from '@/images/training/pilot-3.jpg'
+import A350Image from '@/images/solutions/A350.jpeg'
+import C919Image from '@/images/solutions/C919.jpeg'
 import gallery1Image from '@/images/gallery/gallery-1.jpeg'
 import gallery2Image from '@/images/gallery/gallery-2.jpeg'
 import gallery3Image from '@/images/gallery/gallery-3.jpeg'
@@ -25,75 +25,53 @@ const galleryImages = [gallery4Image, gallery3Image, gallery2Image, gallery1Imag
 
 const solutionHighlights = [
   {
-    title: 'Fleet-Matched FFS',
-    category: 'Custom flight deck',
-    timeline: '100% fleet match',
-    description: 'Cockpit configurations that mirror your exact aircraft type, avionics suite, and operational procedures.',
-    metrics: [
-      { label: 'Fleet match', value: '100%' },
-      { label: 'Deployment', value: 'Custom timeline' },
-    ],
+    title: 'Concept & Design',
+    description: 'Training needs analysis, cockpit and room layout, 3D models and specifications.',
     image: cockpitImage,
   },
   {
-    title: 'Mission-Specific Rotary',
-    category: 'HEMS / SAR',
-    timeline: 'Mission ready',
-    description: 'Tailored helicopter simulators with dynamic control loading, hoist profiles, and NVG-ready interiors for specialized operations.',
-    metrics: [
-      { label: 'Mission kits', value: 'HEMS / SAR' },
-      { label: 'Interior', value: 'NVG ready' },
-    ],
+    title: 'Build & Integration',
+    description: 'Hardware fabrication, assembly and software integration, including controls, visuals and instructor tools.',
     image: pilotThreeImage,
   },
   {
-    title: 'Custom Avionics Suite',
-    category: 'Integrated systems',
-    timeline: 'Your configuration',
-    description: 'Avionics packages configured to match your specific aircraft systems, EFB integration, and training requirements.',
-    metrics: [
-      { label: 'Avionics', value: 'Custom config' },
-      { label: 'Integration', value: 'Fleet-specific' },
-    ],
+    title: 'Commissioning & Handover',
+    description: 'On-site installation, testing, optimisation and initial operator / instructor training.',
     image: pilotFiveImage,
   },
 ]
 
 const productSections = [
   {
-    name: 'fleet',
-    title: 'Fleet-matched simulators',
-    subtitle: 'tailored to your aircraft',
+    name: 'a350',
+    title: 'A350 Simulator',
+    subtitle: 'Under Development',
     description: [
-      'Every detail of the cockpit, avionics, and visual systems adapted to your airline or rotary fleet so you can train the way you fly.',
-      'Configurable environments that mirror your fleet—fixed-wing, rotary, or mission-specific—while keeping integrations turnkey.',
-      'High-fidelity cueing with dynamic control loading, mission rehearsal packages with sling, winch, and hoist profiles for helicopter operations.',
+      'Our A350 simulator project is a next-generation widebody flight deck environment designed for procedure training, airline-style operations and advanced education and R&D. It aims to give students, instructors and partners access to a realistic long-haul cockpit for flows, checklists, abnormal handling and systems familiarisation, optimised for education and concept work rather than formal type rating.',
     ],
     ctaText: 'Explore custom builds',
     ctaLink: '/simulators',
-    image: cockpitImage,
-    stats: [
-      { value: '100%', label: 'Fleet match' },
-      { value: 'NVG', label: 'Ready interior' },
-      { value: 'Custom', label: 'Configuration' },
+    image: A350Image,
+    features: [
+      'Widebody long-haul cockpit',
+      'Procedure & SOP training',
+      'Advanced education & R&D',
     ],
   },
   {
-    name: 'mission',
-    title: 'Mission-specific kits',
-    subtitle: 'rotary + specialized ops',
+    name: 'c919',
+    title: 'C919 Simulator',
+    subtitle: 'Under Development',
     description: [
-      'HEMS and SAR mission packs with hoists, sling loads, and NVG-ready domes tailored to your operational requirements.',
-      'Cabin configurations and safety trainers designed to match your specific aircraft interior and emergency procedures.',
-      'Analytics and telemetry layers customized to track the metrics that matter most to your training program.',
+      'The C919 simulator project focuses on a modern narrow-body flight deck tailored for procedure practice, line-operation scenarios and future R&D related to emerging fleets in the region. Built around accurate cockpit geometry and representative systems logic, it is intended as a platform for familiarisation, training concept development and regional / low-altitude integration studies.',
     ],
     ctaText: 'See mission kits',
     ctaLink: '/projects',
-    image: pilotFiveImage,
-    stats: [
-      { value: 'HEMS', label: 'Mission kits' },
-      { value: 'NVG', label: 'Calibrated' },
-      { value: 'Custom', label: 'Profiles' },
+    image: C919Image,
+    features: [
+      'Narrow-body regional cockpit',
+      'Line ops & abnormal scenarios',
+      'Familiarisation & concept testing',
     ],
   },
 ]
@@ -113,11 +91,11 @@ export default function CustomSolutionsPage() {
             <div className="w-full space-y-4">
               <div className="max-w-3xl">
                 <p className="text-xs font-semibold uppercase tracking-[0.4em] text-blue-200">Custom Solutions</p>
-                <h1 className="mt-4 text-4xl font-semibold leading-tight text-white md:text-5xl">Built around your aircraft, your procedures, your space.</h1>
+                <h1 className="mt-4 text-4xl font-semibold leading-tight text-white md:text-5xl">Designed for your aircraft, your procedures, your space.</h1>
               </div>
               <div className="max-w-4xl">
                 <p className="text-base text-slate-100">
-                  TTA Custom Simulator Solutions are co-designed with your team, delivering bespoke cockpits, layouts and features that match your fleet, training syllabus and physical constraints – from concept mock-ups to full training and R&D platforms.
+                  TTA Custom Simulator Solutions are developed in close collaboration with your team, creating bespoke cockpits, layouts and functions that reflect your fleet, training syllabus and operational environment – from early concept and mock-ups through to full training and R&D platforms.
                 </p>
               </div>
             </div>
@@ -127,7 +105,7 @@ export default function CustomSolutionsPage() {
         <StandardSolutionShowcase items={solutionHighlights} />
 
         {productSections.map((section, index) => (
-          <section key={section.name} className="bg-white">
+          <section key={section.name} className="bg-white pt-1">
             <div className="grid gap-y-10 lg:grid-cols-12 lg:items-stretch lg:gap-0">
               <div className={`relative min-h-[420px] lg:col-span-7 lg:min-h-[640px] ${index % 2 === 1 ? 'lg:order-2' : 'lg:order-1'}`}>
                 <Image src={section.image} alt={section.name} fill className="object-cover" />
@@ -153,14 +131,16 @@ export default function CustomSolutionsPage() {
                     ))}
                   </div>
                 </div>
-                <div className="mt-12 grid grid-cols-3 gap-4">
-                  {section.stats.map((stat) => (
-                    <div key={stat.label} className="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-center">
-                      <p className="text-2xl font-semibold text-slate-900">{stat.value}</p>
-                      <p className="mt-1 text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">{stat.label}</p>
-                    </div>
+                <ul className="mt-10 flex flex-col gap-4">
+                  {section.features.map((feature) => (
+                    <li key={feature} className="flex items-start gap-3">
+                      <svg className="h-2 w-2 flex-none text-gray-400 mt-2 animate-pulse" viewBox="0 0 8 8" fill="currentColor" aria-hidden="true">
+                        <circle cx="4" cy="4" r="4" />
+                      </svg>
+                      <span className="text-base font-medium text-slate-700">{feature}</span>
+                    </li>
                   ))}
-                </div>
+                </ul>
               </div>
             </div>
           </section>

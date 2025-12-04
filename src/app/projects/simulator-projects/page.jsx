@@ -3,11 +3,9 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { CTASection } from '@/components/CTASection'
 import heroImage from '@/images/solutions/education_solution.jpeg'
-import cockpitImage from '@/images/training/cockpit.jpg'
-import pilotImage from '@/images/training/pilot.jpg'
-import simulationImage from '@/images/training/simulator.jpeg'
-import uavImage from '@/images/solutions/uav.jpg'
-import installationImage from '@/images/training/pilot-2.jpg'
+import evtolImage from '@/images/solutions/evtol.jpeg'
+import uavSimulatorsImage from '@/images/solutions/uav_simulators.jpeg'
+import gallery2Image from '@/images/gallery/gallery-2.jpeg'
 
 export const metadata = {
   title: 'Simulator Projects - TTA Aviation',
@@ -75,7 +73,7 @@ export default function SimulatorProjectsPage() {
             <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-24">
               <div className="relative aspect-[4/3] overflow-hidden rounded-lg shadow-xl">
                 <Image
-                  src={simulationImage}
+                  src={gallery2Image}
                   alt="General Simulators"
                   fill
                   className="object-cover"
@@ -115,7 +113,7 @@ export default function SimulatorProjectsPage() {
               </div>
               <div className="relative order-1 aspect-[4/3] overflow-hidden rounded-lg shadow-xl lg:order-2">
                 <Image
-                  src={installationImage}
+                  src={evtolImage}
                   alt="eVTOL Simulators"
                   fill
                   className="object-cover"
@@ -131,7 +129,7 @@ export default function SimulatorProjectsPage() {
             <div className="grid gap-12 lg:grid-cols-2 lg:items-center lg:gap-24">
               <div className="relative aspect-[4/3] overflow-hidden rounded-lg shadow-xl">
                 <Image
-                  src={uavImage}
+                  src={uavSimulatorsImage}
                   alt="UAV Simulators"
                   fill
                   className="object-cover"

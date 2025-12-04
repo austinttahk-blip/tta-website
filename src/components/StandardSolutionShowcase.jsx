@@ -37,7 +37,7 @@ export function StandardSolutionShowcase({ items = [] }) {
 
   return (
     <section className="bg-white py-20 text-slate-900">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-7xl px-6">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
           {/* Left: Image */}
           <div className="relative aspect-[4/3] overflow-hidden rounded-xl lg:aspect-auto lg:min-h-[500px]">
@@ -71,7 +71,7 @@ export function StandardSolutionShowcase({ items = [] }) {
                     onClick={() => handleCardClick(index)}
                     className="group flex w-full items-center gap-5 rounded-2xl px-5 py-4 text-left transition-colors"
                   >
-                    <div className="relative h-30 w-1 overflow-hidden rounded-full bg-slate-200">
+                    <div className="relative h-24 w-1 overflow-hidden rounded-full bg-slate-200">
                       <div
                         className={`absolute inset-x-0 top-0 rounded-full bg-slate-900 transition-[height,opacity] duration-75 ${
                           isActive ? 'opacity-100' : 'opacity-0'
@@ -81,7 +81,7 @@ export function StandardSolutionShowcase({ items = [] }) {
                     </div>
                     <div className="flex-1">
                       <div className="flex flex-wrap items-center justify-between gap-3">
-                        <h3 className={`text-lg font-semibold ${isActive ? 'text-slate-900' : 'text-slate-500 group-hover:text-slate-600'}`}>
+                        <h3 className={`text-xl font-semibold ${isActive ? 'text-slate-900' : 'text-slate-500 group-hover:text-slate-600'}`}>
                           {item.title}
                         </h3>
                         {item.timeline ? (

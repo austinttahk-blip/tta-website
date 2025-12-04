@@ -3,7 +3,6 @@ import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { CTASection } from '@/components/CTASection'
 import heroImage from '@/images/training/simulator.jpeg'
-import cockpitImage from '@/images/training/cockpit.jpg'
 import pilotFiveImage from '@/images/training/pilot-5.jpg'
 import pilotSixImage from '@/images/training/pilot-6.jpg'
 import pilotImage from '@/images/training/pilot.jpg'
@@ -145,8 +144,8 @@ export default function StandardSolutionsPage() {
                 <ul className="mt-10 grid grid-cols-1 gap-y-4 sm:grid-cols-3 sm:gap-x-8">
                   {section.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-3">
-                      <svg className="h-6 w-5 flex-none text-blue-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
+                      <svg className="h-2 w-2 flex-none text-gray-400 mt-2" viewBox="0 0 8 8" fill="currentColor" aria-hidden="true">
+                        <circle cx="4" cy="4" r="4" />
                       </svg>
                       <span className="text-base font-medium text-slate-700">{feature}</span>
                     </li>
