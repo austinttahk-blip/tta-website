@@ -14,6 +14,7 @@ import gallery1Image from '@/images/gallery/gallery-1.jpeg'
 import gallery2Image from '@/images/gallery/gallery-2.jpeg'
 import gallery3Image from '@/images/gallery/gallery-3.jpeg'
 import gallery4Image from '@/images/gallery/gallery-4.jpeg'
+import threeDPrintImage from '@/images/solutions/3D-print.jpeg'
 
 export const metadata = {
   title: 'TTA Custom Flight Simulator Solutions',
@@ -32,7 +33,7 @@ const solutionHighlights = [
   {
     title: 'Build & Integration',
     description: 'Hardware fabrication, assembly and software integration, including controls, visuals and instructor tools.',
-    image: pilotThreeImage,
+    image: threeDPrintImage,
   },
   {
     title: 'Commissioning & Handover',
