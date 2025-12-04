@@ -67,6 +67,17 @@ export function Footer() {
     },
   ];
 
+  const legalPages = [
+    {
+      title: "Privacy Policy",
+      href: "/privacy-policy",
+    },
+    {
+      title: "Terms of Service",
+      href: "/terms-of-service",
+    },
+  ];
+
   const contacts = [
     {
       title: "Rm 07, RCC2.0E, Building 5W, Science Park, HK",
@@ -163,7 +174,26 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="flex flex-col justify-center space-y-4 col-span-3">
+          <div className="flex flex-col justify-center space-y-4">
+            <p
+              className="font-bold text-white transition-colors hover:text-white ">
+              Legal
+            </p>
+            <ul
+              className="list-none space-y-4 text-slate-400 transition-colors ">
+              {legalPages.map((legalPage, idx) => (
+                <li key={"legal-page" + idx} className="list-none">
+                  <Link
+                    className="transition-colors hover:text-white"
+                    href={legalPage.href}>
+                    {legalPage.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="flex flex-col justify-center space-y-4 col-span-2">
             <p
               className="font-bold text-white transition-colors hover:text-white ">
               Contact Us
