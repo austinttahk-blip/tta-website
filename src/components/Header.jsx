@@ -93,7 +93,7 @@ export function Header({ enableColorTransition = true }) {
                         <button
                           onClick={() => toggleExpanded(idx)}
                           className="text-neutral-400 p-2 -mr-2"
-                          aria-label={expandedItems.has(idx) ? '收起菜单' : '展开菜单'}>
+                          aria-label={expandedItems.has(idx) ? 'Collapse menu' : 'Expand menu'}>
                           <svg
                             className={`w-5 h-5 transition-transform ${expandedItems.has(idx) ? 'rotate-180' : ''}`}
                             fill="none"
