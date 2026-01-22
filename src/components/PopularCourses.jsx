@@ -1,8 +1,9 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import map1Image from '@/images/education/map1.jpeg'
-import map5Image from '@/images/education/map5.jpeg'
-import map6Image from '@/images/education/map6.jpeg'
+import adpImage from '@/images/courses/ADP.jpeg'
+import icaoImage from '@/images/courses/ICAO.jpg'
+import afpImage from '@/images/courses/AFP.jpeg'
+import engineImage from '@/images/courses/engine.jpeg'
 
 export function PopularCourses() {
   const featuredCourse = {
@@ -10,7 +11,7 @@ export function PopularCourses() {
     description:
       'An engaging introductory course designed for young learners aged 8–12 who are curious about how airplanes fly and how the aviation world works.',
     href: '/education/youth-aviation?tab=adp',
-    image: map6Image,
+    image: adpImage,
     category: { title: 'Youth Aviation', href: '#' },
   }
 
@@ -21,7 +22,7 @@ export function PopularCourses() {
       href: '/education/youth-aviation?tab=afp',
       description:
         'Designed for secondary-level students who wish to gain a deeper understanding of aircraft operations and aviation systems.',
-      image: map6Image,
+      image: afpImage,
       category: { title: 'Youth Aviation', href: '#' },
     },
     {
@@ -30,7 +31,7 @@ export function PopularCourses() {
       href: '/education/aviation-english',
       description:
         'Professional aviation communication skills training designed to meet ICAO Doc 9835 standards for aspiring pilots and aviation professionals.',
-      image: map1Image,
+      image: icaoImage,
       category: { title: 'Language Training', href: '#' },
     },
     {
@@ -39,7 +40,7 @@ export function PopularCourses() {
       href: '/education/workshop',
       description:
         'Hands-on workshop where students discover how engines create power and build a working engine model guided by aviation instructors.',
-      image: map5Image,
+      image: engineImage,
       category: { title: 'Workshop', href: '#' },
     },
   ]
