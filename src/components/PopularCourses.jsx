@@ -75,7 +75,7 @@ export function PopularCourses() {
                 <h3 className="text-3xl font-semibold leading-tight sm:text-4xl">
                   {featuredCourse.title}
                 </h3>
-                <p className="text-base text-white/85 sm:text-lg">{featuredCourse.description}</p>
+                <p className="hidden md:block text-base text-white/85 sm:text-lg">{featuredCourse.description}</p>
                 <span className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-white transition group-hover:text-emerald-300">
                   Learn more
                   <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
