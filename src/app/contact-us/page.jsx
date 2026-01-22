@@ -46,7 +46,7 @@ export default function ContactUsPage() {
                     <strong>Max Togher</strong> – Education Programme Manager
                   </p>
                   <p className="text-slate-700">
-                    Email: <a href="mailto:max.ttahk@gmail.com" className="text-blue-600 hover:text-blue-800">max.ttahk@gmail.com</a>
+                    Email: <a href="mailto:max@simtta.com" className="text-blue-600 hover:text-blue-800">Max@simtta.com</a>
                   </p>
                   <p className="text-slate-700">
                     Tel / WhatsApp: <a href="tel:+85257124527" className="text-blue-600 hover:text-blue-800">+852 5712 4527</a>
@@ -70,10 +70,10 @@ export default function ContactUsPage() {
                     <strong>David Lai</strong> – Operations Manager
                   </p>
                   <p className="text-slate-700">
-                    Email: <a href="mailto:david.lai@ttahk.com" className="text-blue-600 hover:text-blue-800">david.lai@ttahk.com</a>
+                    Email: <a href="mailto:david@simtta.com" className="text-blue-600 hover:text-blue-800">David@simtta.com</a>
                   </p>
                   <p className="text-slate-700">
-                    Tel / WhatsApp: <a href="tel:+85293036593" className="text-blue-600 hover:text-blue-800">+852 6936 0374</a>
+                    Tel / WhatsApp: <a href="tel:+85293036593" className="text-blue-600 hover:text-blue-800">+852 93036593</a>
                   </p>
                 </div>
               </div>
